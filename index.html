@@ -1,0 +1,1121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Lisa Belisle, MD, PhD, MPH, MBA — Physician, Writer, Host, Teacher</title>
+<meta name="description" content="Lisa Belisle is a board-certified family physician, host of Radio Maine, and creator of The Bountiful Path. She speaks nationally on medicine, creativity, leadership, and seasonal wellbeing.">
+<meta property="og:title" content="Lisa Belisle, MD, PhD, MPH, MBA">
+<meta property="og:description" content="Physician, writer, host, and teacher working at the intersection of medicine and the human spirit.">
+<meta property="og:url" content="https://drlisabelisle.com">
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400&family=DM+Sans:wght@300;400;500&display=swap');
+</style>
+<style>
+:root {
+  --bg: #F8F6F1;
+  --bg-secondary: #F0EDE6;
+  --text: #1E1D1B;
+  --text-secondary: #5A5854;
+  --text-tertiary: #9A9690;
+  --border: rgba(30,29,27,0.12);
+  --border-mid: rgba(30,29,27,0.22);
+  --accent: #8B7355;
+  --accent-light: #EDE8DF;
+  --serif: 'Cormorant Garamond', 'Palatino Linotype', Palatino, Georgia, serif;
+  --sans: 'DM Sans', -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif;
+  --max: 860px;
+  --pad: 2rem;
+}
+
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+html { scroll-behavior: smooth; }
+
+body {
+  font-family: var(--sans);
+  background: var(--bg);
+  color: var(--text);
+  font-size: 16px;
+  line-height: 1.7;
+  font-weight: 300;
+}
+
+.wrap {
+  max-width: var(--max);
+  margin: 0 auto;
+  padding: 0 var(--pad);
+}
+
+/* NAV */
+nav {
+  position: sticky;
+  top: 0;
+  background: var(--bg);
+  border-bottom: 0.5px solid var(--border);
+  z-index: 100;
+  padding: 1.1rem 0;
+}
+
+.nav-inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: var(--max);
+  margin: 0 auto;
+  padding: 0 var(--pad);
+}
+
+.nav-name {
+  font-family: var(--serif);
+  font-size: 15px;
+  font-weight: 500;
+  letter-spacing: 0.04em;
+  color: var(--text);
+  text-decoration: none;
+}
+
+.nav-links {
+  display: flex;
+  gap: 2rem;
+  list-style: none;
+}
+
+.nav-links a {
+  font-size: 12px;
+  font-weight: 400;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--text-secondary);
+  text-decoration: none;
+  transition: color 0.2s;
+}
+
+.nav-links a:hover { color: var(--text); }
+
+.nav-toggle {
+  display: none;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 4px;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.nav-toggle span {
+  display: block;
+  width: 22px;
+  height: 1px;
+  background: var(--text);
+  transition: all 0.2s;
+}
+
+/* HERO */
+.hero {
+  padding: 5rem 0 4rem;
+  border-bottom: 0.5px solid var(--border);
+}
+
+.hero-eyebrow {
+  font-size: 11px;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--accent);
+  margin-bottom: 1.25rem;
+  font-weight: 400;
+}
+
+.hero-layout {
+  display: grid;
+  grid-template-columns: 1fr 220px;
+  gap: 3rem;
+  align-items: start;
+}
+
+.hero-name {
+  font-family: var(--serif);
+  font-size: 52px;
+  font-weight: 400;
+  line-height: 1.05;
+  margin-bottom: 1rem;
+  letter-spacing: -0.01em;
+}
+
+.hero-roles {
+  font-size: 13px;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--text-tertiary);
+  margin-bottom: 2rem;
+  font-weight: 400;
+}
+
+.hero-bio {
+  font-size: 17px;
+  line-height: 1.8;
+  color: var(--text-secondary);
+  margin-bottom: 2.5rem;
+  font-weight: 300;
+}
+
+.hero-bio em {
+  font-style: italic;
+  color: var(--text);
+  font-family: var(--serif);
+  font-size: 18px;
+}
+
+.btn {
+  display: inline-block;
+  font-size: 12px;
+  font-weight: 400;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  padding: 11px 22px;
+  border: 0.5px solid var(--border-mid);
+  color: var(--text);
+  text-decoration: none;
+  transition: background 0.2s, border-color 0.2s;
+}
+
+.btn:hover {
+  background: var(--bg-secondary);
+  border-color: var(--accent);
+}
+
+.btn-accent {
+  background: var(--accent);
+  color: var(--bg);
+  border-color: var(--accent);
+}
+
+.btn-accent:hover {
+  background: #7a6448;
+  border-color: #7a6448;
+}
+
+/* PHOTO PLACEHOLDER */
+.hero-photo {
+  width: 220px;
+  height: 280px;
+  background: var(--bg-secondary);
+  border: 0.5px solid var(--border);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.hero-photo img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.hero-photo-placeholder {
+  text-align: center;
+  padding: 1rem;
+}
+
+.hero-photo-placeholder p {
+  font-size: 11px;
+  color: var(--text-tertiary);
+  line-height: 1.5;
+  font-style: italic;
+}
+
+/* SECTIONS */
+section {
+  padding: 4rem 0;
+  border-bottom: 0.5px solid var(--border);
+}
+
+.section-label {
+  font-size: 11px;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--accent);
+  margin-bottom: 2.5rem;
+  font-weight: 400;
+}
+
+/* WORK GRID */
+.work-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1px;
+  background: var(--border);
+  border: 0.5px solid var(--border);
+}
+
+.work-card {
+  background: var(--bg);
+  padding: 1.75rem;
+  transition: background 0.2s;
+}
+
+.work-card:hover { background: var(--bg-secondary); }
+
+.work-card-label {
+  font-size: 11px;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--text-tertiary);
+  margin-bottom: 0.6rem;
+  font-weight: 400;
+}
+
+.work-card-title {
+  font-family: var(--serif);
+  font-size: 19px;
+  font-weight: 400;
+  margin-bottom: 0.7rem;
+  line-height: 1.25;
+}
+
+.work-card-desc {
+  font-size: 13px;
+  color: var(--text-secondary);
+  line-height: 1.65;
+  margin-bottom: 1.25rem;
+  font-weight: 300;
+}
+
+.work-card-link {
+  font-size: 12px;
+  letter-spacing: 0.06em;
+  color: var(--accent);
+  text-decoration: none;
+  font-weight: 400;
+}
+
+.work-card-link:hover { text-decoration: underline; }
+
+/* COURSE FEATURE */
+.course-feature {
+  background: var(--accent-light);
+  border: 0.5px solid rgba(139,115,85,0.25);
+  padding: 2.5rem;
+  display: grid;
+  grid-template-columns: 1fr auto;
+  gap: 2rem;
+  align-items: start;
+}
+
+.coming-badge {
+  display: inline-block;
+  font-size: 10px;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  padding: 4px 10px;
+  border: 0.5px solid var(--accent);
+  color: var(--accent);
+  margin-bottom: 1rem;
+  font-weight: 400;
+}
+
+.course-title {
+  font-family: var(--serif);
+  font-size: 28px;
+  font-weight: 400;
+  line-height: 1.2;
+  margin-bottom: 1rem;
+}
+
+.course-desc {
+  font-size: 14px;
+  color: var(--text-secondary);
+  line-height: 1.75;
+  margin-bottom: 0.75rem;
+  font-weight: 300;
+  max-width: 480px;
+}
+
+.course-meta {
+  font-size: 12px;
+  color: var(--text-tertiary);
+  margin-bottom: 1.5rem;
+  letter-spacing: 0.04em;
+}
+
+.course-meta span { margin-right: 1.25rem; }
+
+.course-notify {
+  display: flex;
+  gap: 0;
+  max-width: 380px;
+}
+
+.course-notify input {
+  flex: 1;
+  font-size: 13px;
+  font-family: var(--sans);
+  padding: 10px 14px;
+  border: 0.5px solid var(--border-mid);
+  background: var(--bg);
+  color: var(--text);
+  outline: none;
+  font-weight: 300;
+}
+
+.course-notify input:focus {
+  border-color: var(--accent);
+}
+
+/* SPEAKING */
+.speaking-intro {
+  font-size: 15px;
+  color: var(--text-secondary);
+  line-height: 1.8;
+  max-width: 580px;
+  margin-bottom: 2.5rem;
+  font-weight: 300;
+}
+
+.speaking-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1px;
+  background: var(--border);
+  border: 0.5px solid var(--border);
+  margin-bottom: 2rem;
+}
+
+.speaking-card {
+  background: var(--bg);
+  padding: 1.5rem;
+}
+
+.speaking-card-venue {
+  font-size: 11px;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--accent);
+  margin-bottom: 0.4rem;
+  font-weight: 400;
+}
+
+.speaking-card-title {
+  font-family: var(--serif);
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.3;
+  margin-bottom: 0.5rem;
+}
+
+.speaking-card-desc {
+  font-size: 13px;
+  color: var(--text-secondary);
+  line-height: 1.6;
+  font-weight: 300;
+}
+
+.speaking-actions {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.link-plain {
+  font-size: 12px;
+  letter-spacing: 0.08em;
+  color: var(--text-secondary);
+  text-decoration: none;
+}
+
+.link-plain:hover { color: var(--text); }
+
+/* GATHERINGS */
+.event-row {
+  display: grid;
+  grid-template-columns: 90px 1fr auto;
+  gap: 1.5rem;
+  padding: 1.25rem 0;
+  border-bottom: 0.5px solid var(--border);
+  align-items: start;
+}
+
+.event-row:last-child { border-bottom: none; }
+
+.event-date {
+  font-size: 12px;
+  color: var(--text-tertiary);
+  font-weight: 300;
+  padding-top: 2px;
+  letter-spacing: 0.04em;
+}
+
+.event-title {
+  font-family: var(--serif);
+  font-size: 17px;
+  font-weight: 400;
+  margin-bottom: 4px;
+  line-height: 1.3;
+}
+
+.event-detail {
+  font-size: 13px;
+  color: var(--text-secondary);
+  font-weight: 300;
+}
+
+.event-link {
+  font-size: 12px;
+  letter-spacing: 0.08em;
+  color: var(--accent);
+  text-decoration: none;
+  white-space: nowrap;
+  padding-top: 3px;
+  font-weight: 400;
+}
+
+.event-link:hover { text-decoration: underline; }
+
+/* FEED */
+.feed-post {
+  display: grid;
+  grid-template-columns: 1fr 64px;
+  gap: 1.25rem;
+  padding: 1.25rem 0;
+  border-bottom: 0.5px solid var(--border);
+  align-items: start;
+}
+
+.feed-post:last-child { border-bottom: none; }
+
+.feed-post-section {
+  font-size: 10px;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--accent);
+  margin-bottom: 5px;
+  font-weight: 400;
+}
+
+.feed-post-title {
+  font-family: var(--serif);
+  font-size: 17px;
+  font-weight: 400;
+  line-height: 1.3;
+  margin-bottom: 5px;
+  color: var(--text);
+  text-decoration: none;
+  display: block;
+}
+
+.feed-post-title:hover { color: var(--accent); }
+
+.feed-post-date {
+  font-size: 12px;
+  color: var(--text-tertiary);
+  font-weight: 300;
+}
+
+.feed-thumb {
+  width: 64px;
+  height: 64px;
+  object-fit: cover;
+  background: var(--bg-secondary);
+  border: 0.5px solid var(--border);
+}
+
+.feed-center {
+  text-align: center;
+  margin-top: 2rem;
+}
+
+/* ABOUT */
+.about-grid {
+  display: grid;
+  grid-template-columns: 1fr 230px;
+  gap: 4rem;
+}
+
+.about-body {
+  font-size: 15px;
+  line-height: 1.85;
+  color: var(--text-secondary);
+  font-weight: 300;
+}
+
+.about-body p { margin-bottom: 1.1rem; }
+.about-body p:last-child { margin-bottom: 0; }
+
+.about-body strong {
+  color: var(--text);
+  font-weight: 500;
+}
+
+.about-body em {
+  font-style: italic;
+  font-family: var(--serif);
+  font-size: 16px;
+}
+
+.cred-group { margin-bottom: 1.75rem; }
+
+.cred-label {
+  font-size: 10px;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: var(--accent);
+  margin-bottom: 0.5rem;
+  font-weight: 400;
+}
+
+.cred-rule {
+  height: 0.5px;
+  background: var(--border);
+  margin: 1.25rem 0;
+}
+
+.cred-item {
+  font-size: 13px;
+  color: var(--text-secondary);
+  line-height: 1.75;
+  font-weight: 300;
+}
+
+.career-note {
+  font-size: 13px;
+  color: var(--text-tertiary);
+  font-style: italic;
+  font-family: var(--serif);
+  line-height: 1.6;
+  margin-top: 1.25rem;
+  padding-top: 1.25rem;
+  border-top: 0.5px solid var(--border);
+}
+
+/* CONTACT */
+.contact-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1.5rem;
+}
+
+.contact-card {
+  padding: 2rem;
+  border: 0.5px solid var(--border);
+  background: var(--bg);
+}
+
+.contact-card-title {
+  font-family: var(--serif);
+  font-size: 20px;
+  font-weight: 400;
+  margin-bottom: 0.6rem;
+}
+
+.contact-card-desc {
+  font-size: 13px;
+  color: var(--text-secondary);
+  line-height: 1.7;
+  margin-bottom: 1.5rem;
+  font-weight: 300;
+}
+
+/* FOOTER */
+footer {
+  padding: 2.5rem 0;
+  border-top: 0.5px solid var(--border);
+}
+
+.footer-inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: var(--max);
+  margin: 0 auto;
+  padding: 0 var(--pad);
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.footer-name {
+  font-family: var(--serif);
+  font-size: 13px;
+  color: var(--text-secondary);
+  font-weight: 300;
+}
+
+.footer-links {
+  display: flex;
+  gap: 2rem;
+  list-style: none;
+}
+
+.footer-links a {
+  font-size: 12px;
+  color: var(--text-tertiary);
+  text-decoration: none;
+  letter-spacing: 0.06em;
+}
+
+.footer-links a:hover { color: var(--text-secondary); }
+
+/* FADE IN */
+.fade-in {
+  opacity: 0;
+  transform: translateY(16px);
+  transition: opacity 0.6s ease, transform 0.6s ease;
+}
+
+.fade-in.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* MOBILE */
+@media (max-width: 700px) {
+  :root { --pad: 1.25rem; }
+
+  .hero-layout { grid-template-columns: 1fr; }
+  .hero-photo { display: none; }
+  .hero-name { font-size: 38px; }
+
+  .work-grid { grid-template-columns: 1fr; }
+  .speaking-grid { grid-template-columns: 1fr; }
+  .about-grid { grid-template-columns: 1fr; }
+  .contact-grid { grid-template-columns: 1fr; }
+
+  .course-feature { grid-template-columns: 1fr; }
+  .course-notify { flex-direction: column; }
+
+  .event-row { grid-template-columns: 1fr; gap: 0.25rem; }
+  .event-link { padding-top: 0; }
+
+  .feed-post { grid-template-columns: 1fr; }
+  .feed-thumb { display: none; }
+
+  .nav-links { display: none; }
+  .nav-links.open {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    background: var(--bg);
+    border-bottom: 0.5px solid var(--border);
+    padding: 1rem var(--pad);
+    gap: 1rem;
+  }
+  .nav-toggle { display: flex; }
+}
+</style>
+</head>
+<body>
+
+<nav>
+  <div class="nav-inner">
+    <a href="#" class="nav-name">Lisa Belisle</a>
+    <ul class="nav-links" id="nav-links">
+      <li><a href="#work">Work</a></li>
+      <li><a href="#speaking">Speaking</a></li>
+      <li><a href="#gatherings">Gatherings</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+    <button class="nav-toggle" id="nav-toggle" aria-label="Menu">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</nav>
+
+<div class="wrap">
+
+  <!-- HERO -->
+  <section class="hero fade-in">
+    <div class="hero-eyebrow">drlisabelisle.com</div>
+    <div class="hero-layout">
+      <div>
+        <h1 class="hero-name">Lisa Belisle,<br>MD, PhD, MPH, MBA</h1>
+        <div class="hero-roles">Physician &nbsp;·&nbsp; Writer &nbsp;·&nbsp; Host &nbsp;·&nbsp; Teacher</div>
+        <p class="hero-bio">Lisa Belisle works at the intersection of <em>medicine and the human spirit</em>, in the clinic, on the air, on the page, and in conversation with artists, healers, and thinkers who believe that how we live matters as much as how long we live. She is the founder and host of <a href="https://www.youtube.com/@radiomaine" target="_blank" style="color:inherit;text-decoration:underline;text-decoration-color:rgba(30,29,27,0.3);">Radio Maine</a>, creator of <a href="https://drlisabelisle.substack.com" target="_blank" style="color:inherit;text-decoration:underline;text-decoration-color:rgba(30,29,27,0.3);">The Bountiful Path</a>, and a board-certified family physician whose clinical practice integrates Western medicine with acupuncture and Five Phase theory. She lives and works off the coast of Maine.</p>
+        <a href="#work" class="btn">Explore the work →</a>
+      </div>
+      <div class="hero-photo">
+        <img src="photo.jpg" alt="Lisa Belisle, MD, PhD, MPH, MBA">
+      </div>
+    </div>
+  </section>
+
+  <!-- MAINE DIVIDER -->
+  <div style="width:100%;overflow:hidden;border-bottom:0.5px solid var(--border);margin:0 calc(-1 * var(--pad));">
+    <img src="maine-boat.png" alt="Maine coast at dawn" style="width:100%;height:280px;object-fit:cover;object-position:center 60%;display:block;opacity:0.92;">
+  </div>
+
+  <!-- WORK -->
+  <section id="work" class="fade-in">
+    <div class="section-label">The work</div>
+    <div class="work-grid">
+      <div class="work-card">
+        <div class="work-card-label">Newsletter</div>
+        <img src="bp-icon-transparent.png" alt="The Bountiful Path" style="width:44px;height:44px;object-fit:contain;margin-bottom:0.75rem;display:block;">
+        <div class="work-card-title">The Bountiful Path</div>
+        <div class="work-card-desc">Writing and conversations where medicine, art, and seasonal wisdom meet. Published weekly on Substack.</div>
+        <a class="work-card-link" href="https://drlisabelisle.substack.com" target="_blank">Read on Substack →</a>
+      </div>
+      <div class="work-card">
+        <div class="work-card-label">Video podcast</div>
+        <img src="rm-logo.png" alt="Radio Maine" style="width:100%;max-height:52px;object-fit:contain;object-position:left center;margin-bottom:0.75rem;display:block;padding:4px 0;mix-blend-mode:multiply;">
+        <div class="work-card-title">Radio Maine</div>
+        <div class="work-card-desc">Conversations exploring creativity and the human spirit with artists, physicians, writers, and community leaders.</div>
+        <a class="work-card-link" href="https://www.youtube.com/@radiomaine" target="_blank">Watch on YouTube →</a>
+      <a style="font-size:12px;color:var(--text-tertiary);text-decoration:none;display:block;margin-top:4px;" href="https://www.youtube.com/@bountifulpath" target="_blank">The Bountiful Path series →</a>
+      </div>
+      <div class="work-card">
+        <div class="work-card-label">Course</div>
+        <div class="work-card-title">The Life That's Asking to Be Lived</div>
+        <div class="work-card-desc">Five lessons for anyone who senses something more is possible. Self-paced, grounded in medicine and seasonal wisdom.</div>
+        <a class="work-card-link" href="#course">Coming soon →</a>
+      </div>
+      <div class="work-card">
+        <div class="work-card-label">Seasonal practice</div>
+        <div class="work-card-title">Reflection Toolkits</div>
+        <div class="work-card-desc">Guided companions for each season, grounded in Five Phase theory and circadian science.</div>
+        <a class="work-card-link" href="https://lb0.podia.com/bountiful-path-spring-seasonal-reflection" target="_blank">Get the spring toolkit →</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- COURSE -->
+  <section id="course" class="fade-in" style="padding-top:0; border-bottom: none;">
+    <div class="course-feature">
+      <div>
+        <div class="coming-badge">Coming soon</div>
+        <div class="course-title">The Life That's<br>Asking to Be Lived</div>
+        <div class="course-desc">Something more is possible. You've sensed it. This course is a gentle starting point for finding your way back to it, grounded in medicine, seasonal wisdom, and the stories that restore us.</div>
+        <div class="course-meta">
+          <span>5 lessons</span>
+          <span>Self-paced</span>
+          <span>Lifetime access</span>
+          <span>Downloadable resources</span>
+        </div>
+        <div style="font-size:12px;color:var(--text-tertiary);margin-bottom:0.75rem;letter-spacing:0.04em;">Be notified when the course opens:</div>
+        <div class="course-notify">
+          <input type="email" placeholder="your@email.com" id="notify-email" />
+          <a class="btn btn-accent" href="#" onclick="handleNotify(event)">Notify me</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SPEAKING -->
+  <section id="speaking" class="fade-in">
+    <div class="section-label">Speaking</div>
+    <div style="display:grid;grid-template-columns:1fr 280px;gap:3rem;align-items:start;margin-bottom:2.5rem;">
+      <p class="speaking-intro" style="margin-bottom:0;">Lisa has presented at national medical conferences and cultural gatherings on the intersections of medicine, creativity, leadership, and seasonal wellbeing. Her talks draw on more than three decades of clinical experience, Five Phase theory, and the stories that emerge when medicine and art share a room.</p>
+      <img src="speaking.jpg" alt="Lisa Belisle speaking on stage" style="width:100%;object-fit:cover;border:0.5px solid var(--border);">
+    </div>
+    <div class="speaking-grid">
+      <div class="speaking-card">
+        <div class="speaking-card-venue">AAFP FMX Learning 2024</div>
+        <div class="speaking-card-title">American Academy of Family Physicians</div>
+        <div class="speaking-card-desc">Leading into the Future: Ready or Not, Here We Go!</div>
+      </div>
+      <div class="speaking-card">
+        <div class="speaking-card-venue">AAPL Vanguard Meeting, 2023</div>
+        <div class="speaking-card-title">American Association for Physician Leadership</div>
+        <div class="speaking-card-desc">Generative AI in Healthcare: One Year Later</div>
+      </div>
+      <div class="speaking-card">
+        <div class="speaking-card-venue">DocExecutive, 2024</div>
+        <div class="speaking-card-title">Leadership Building for Women in Medicine</div>
+        <div class="speaking-card-desc">A comprehensive virtual 5-part series on leadership development for women physicians.</div>
+      </div>
+      <div class="speaking-card">
+        <div class="speaking-card-venue">Radio Maine Live Series</div>
+        <div class="speaking-card-title">Portland Art Gallery, Portland, Maine</div>
+        <div class="speaking-card-desc">Quarterly live panel conversations at the gallery exploring emergence, creativity, and community.</div>
+      </div>
+      <div class="speaking-card">
+        <div class="speaking-card-venue">Hanley Center, 2023</div>
+        <div class="speaking-card-title">Women in Health Leadership Seminar Series</div>
+        <div class="speaking-card-desc">Empathetic Leadership &amp; the Value of Vulnerability</div>
+      </div>
+      <div class="speaking-card">
+        <div class="speaking-card-venue">Artful Escapes Series</div>
+        <div class="speaking-card-title">Portland Art Gallery, Portland, Maine</div>
+        <div class="speaking-card-desc">Intimate conversations on intentional travel, place, and the art of paying attention.</div>
+      </div>
+    </div>
+    <div class="speaking-actions">
+      <a href="mailto:lbelisle@littlejohnisland.me?subject=Speaking inquiry" class="btn">Inquire about speaking →</a>
+      <a href="LisaBelisle_SpeakerBio.docx" download class="link-plain">Download speaker bio →</a>
+    </div>
+  </section>
+
+  <!-- GATHERINGS -->
+  <section id="gatherings" class="fade-in">
+    <div class="section-label">Gatherings</div>
+    <div>
+      <div class="event-row">
+        <div class="event-date">Apr 16, 2026</div>
+        <div>
+          <div class="event-title">Radio Maine Live: Emergence and Light</div>
+          <div class="event-detail">Portland Art Gallery, Portland, Maine &nbsp;·&nbsp; 5–7 pm &nbsp;·&nbsp; Free, limited seating</div>
+        </div>
+        <a class="event-link" href="https://www.eventbrite.com/e/radio-maine-live-spring-2026-emergence-light-tickets-1983367118442" target="_blank">RSVP →</a>
+      </div>
+      <div class="event-row">
+        <div class="event-date">Apr 21, 2026</div>
+        <div>
+          <div class="event-title">Bountiful Path Spring Virtual Book Circle</div>
+          <div class="event-detail">Online &nbsp;·&nbsp; Free &nbsp;·&nbsp; No required reading</div>
+        </div>
+        <a class="event-link" href="https://www.eventbrite.com/e/bountiful-path-spring-virtual-book-circle-tickets-1984397026926" target="_blank">Join →</a>
+      </div>
+      <div class="event-row">
+        <div class="event-date">Ongoing</div>
+        <div>
+          <div class="event-title">Artful Escapes Series</div>
+          <div class="event-detail">Portland Art Gallery &nbsp;·&nbsp; Seasonal conversations on intentional travel</div>
+        </div>
+        <a class="event-link" href="https://www.portlandartgallery.com/events" target="_blank">Learn more →</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- GATHERINGS PHOTO -->
+  <div style="width:100%;overflow:hidden;border-bottom:0.5px solid var(--border);">
+    <img src="gathering.jpg" alt="A Bountiful Path gathering" style="width:100%;height:220px;object-fit:cover;object-position:center 40%;display:block;opacity:0.88;">
+  </div>
+
+  <!-- RECENT POSTS -->
+  <section id="recent" class="fade-in">
+    <div class="section-label">Recent from The Bountiful Path</div>
+    <div id="feed-container">
+      <div style="font-size:13px;color:var(--text-tertiary);padding:1rem 0;">Loading recent posts...</div>
+    </div>
+    <div class="feed-center">
+      <a class="link-plain" href="https://drlisabelisle.substack.com" target="_blank">View all on Substack →</a>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section id="about" class="fade-in">
+    <div class="section-label">About</div>
+    <div class="about-grid">
+      <div class="about-body">
+        <p>Lisa Belisle is a board-certified family physician and preventive medicine specialist whose clinical work integrates Western medicine with acupuncture, Five Phase theory, mindfulness-based stress reduction, qigong, and herbalism. Across more than three decades of practice, she has understood health as something that unfolds within relationships, rhythms, and time.</p>
+        <p>Her career has never moved in a single direction. Alongside clinical practice, she has served in medical executive and advisory roles within health systems, founded and led her own practice, directed digital health initiatives, and taught in residency and medical education for more than a decade. Simultaneously, she built a parallel career in media, working as a wellness editor and editor in chief for a regional publication. These worlds have always informed each other. The result is a perspective on medicine, leadership, and creative life that is genuinely integrative, not as a philosophy but as a lived experience.</p>
+        <p>She is the founder and host of <strong><a href="https://www.youtube.com/@radiomaine" target="_blank" style="color:var(--text-primary);text-decoration:none;">Radio Maine</a></strong>, a video podcast exploring creativity and the human spirit through conversations with artists, physicians, writers, and community leaders. She co-hosts <strong><a href="https://wgan.com/podcasts/categories/podcasts-healthy-conversation/" target="_blank" style="color:var(--text-primary);text-decoration:none;">A Healthy Conversation</a></strong> with Dr. Jeffrey Barkin, a radio show bringing medicine and its human dimensions into open dialogue. She publishes <strong><a href="https://drlisabelisle.substack.com" target="_blank" style="color:var(--text-primary);text-decoration:none;">The Bountiful Path</a></strong>, a weekly Substack newsletter at the intersection of medicine, art, and seasonal wisdom.</p>
+        <div style="display:grid;grid-template-columns:150px 1fr;gap:1rem;align-items:center;padding:1rem 0;border-top:0.5px solid rgba(30,29,27,0.12);border-bottom:0.5px solid rgba(30,29,27,0.12);margin:1rem 0;">
+        <img src="studio-group.jpg" alt="A Healthy Conversation" style="width:100%;height:95px;object-fit:cover;object-position:center 30%;display:block;border:0.5px solid rgba(30,29,27,0.12);">
+        <p style="font-size:13px;color:#9A9690;font-style:italic;line-height:1.6;"><em>A Healthy Conversation</em> with Dr. Jeffrey Barkin, co-hosted by Dr. Lisa Belisle. <a href="https://wgan.com/podcasts/categories/podcasts-healthy-conversation/" target="_blank" style="color:#8B7355;text-decoration:none;">Listen on WGAN →</a></p>
+      </div>
+
+      <p>She is a collaborator with <strong><a href="https://portlandartgallery.com" target="_blank" style="color:var(--text-primary);text-decoration:none;">The Portland Art Gallery</a></strong> in Portland, Maine, where the <a href="https://www.portlandartgallery.com/events" target="_blank" style="color:var(--text-primary);text-decoration:none;">Radio Maine Live</a> panel series and the <a href="https://www.portlandartgallery.com/events" target="_blank" style="color:var(--text-primary);text-decoration:none;">Artful Escapes</a> conversation series take place.</p>
+
+      <div style="display:grid;grid-template-columns:190px 1fr;gap:1.5rem;align-items:start;margin:1.5rem 0;background:var(--color-background-secondary, #F0EDE6);border:0.5px solid rgba(30,29,27,0.12);padding:1.5rem;">
+        <div>
+          <img src="pag-painting.jpg" alt="The Old Meetinghouse by Page Eastburn O'Rourke" style="width:100%;display:block;border:0.5px solid rgba(30,29,27,0.12);">
+          <div style="font-size:11px;color:var(--text-tertiary, #9A9690);font-style:italic;margin-top:0.5rem;line-height:1.5;"><em>The Old Meetinghouse</em> by Page Eastburn O'Rourke<br><a href="https://www.portlandartgallery.com/artist/page-eastburn-orourke" target="_blank" style="color:#8B7355;text-decoration:none;">The Portland Art Gallery</a></div>
+        </div>
+        <p style="font-size:14px;color:var(--text-secondary, #5A5854);line-height:1.8;">She holds a PhD in Community Leadership from the University of Central Arkansas. She is working on a memoir, <em>Daughter, Doctor, Mom</em>, centered on her relationship with her late father, Charles Belisle, MD, a family physician who practiced for nearly fifty years at Maine Medical Center's Family Medicine Residency Program.</p>
+      </div>
+        <p>She and her husband have six children between them. They live on Littlejohn Island, off the coast of Maine.</p>
+      </div>
+      <div>
+        <div class="cred-group">
+          <div class="cred-label">Degrees</div>
+          <div class="cred-item">MD, PhD, MPH, MBA</div>
+        </div>
+        <div class="cred-rule"></div>
+        <div class="cred-group">
+          <div class="cred-label">Board certifications</div>
+          <div class="cred-item">Family Medicine</div>
+          <div class="cred-item">Preventive Medicine</div>
+          <div class="cred-item">Health Care Administration,<br>Leadership and Management (HALM)</div>
+        </div>
+        <div class="cred-rule"></div>
+        <div class="cred-group">
+          <div class="cred-label">Fellowships & designations</div>
+          <div class="cred-item">Fellow, AAFP</div>
+          <div class="cred-item">Certified Physician Executive, AAPL</div>
+        </div>
+        <div class="cred-rule"></div>
+        <div class="cred-group">
+          <div class="cred-label">Speaking</div>
+          <div class="cred-item">AAFP FMX Learning 2024</div>
+          <div class="cred-item">AAPL Vanguard Meeting, 2023</div>
+          <div class="cred-item">DocExecutive 5-Part Series, 2024</div>
+          <div class="cred-item">Radio Maine Live Series, Portland Art Gallery</div>
+          <div class="cred-item">Portland Art Gallery Series</div>
+        </div>
+        <div class="cred-rule"></div>
+        <div class="cred-group">
+          <div class="cred-label">Based on</div>
+          <div class="cred-item">Littlejohn Island, off the coast of Maine</div>
+        </div>
+        <div class="cred-rule"></div>
+        <div class="cred-group">
+          <div class="cred-label">Medical education</div>
+          <div class="cred-item">Tufts University School of Medicine (current)</div>
+          <div class="cred-item">Larner College of Medicine, University of Vermont</div>
+          <div class="cred-item">University of New England College of Osteopathic Medicine</div>
+          <div class="cred-item">Maine Medical Center Family Medicine Residency (preceptor)</div>
+          <div class="cred-item">St. Matthew's University School of Medicine</div>
+        </div>
+        <div class="cred-rule"></div>
+        <div class="cred-group">
+          <div class="cred-label">Selected publications &nbsp;<a href="https://authory.com/LisaBelisle" target="_blank" style="color:var(--accent);font-size:10px;text-decoration:none;letter-spacing:0.04em;">View all →</a></div>
+          <div class="cred-item">Leading Through Change in a Healthcare Delivery Setting. <em>Healthcare Administration Leadership &amp; Management Journal</em>, 2025</div>
+          <div class="cred-item">Leading Through Change in a Healthcare Delivery System. Doctoral Dissertation, University of Central Arkansas, 2023</div>
+          <div class="cred-item"><a href="https://authory.com/LisaBelisle" target="_blank" style="color:var(--text-secondary);text-decoration:none;">Essays in Doximity Op Med, 2023–2024</a></div>
+        </div>
+        <div class="cred-rule"></div>
+        <div class="cred-group">
+          <div class="cred-label">Additional honors</div>
+          <div class="cred-item">Doximity Op Med Fellow, 2023–2024</div>
+          <div class="cred-item">Lean Six Sigma Yellow Belt, 2023</div>
+          <div class="cred-item">Faculty Teaching Award, St. Matthew's University School of Medicine</div>
+          <div class="cred-item">Resident Teaching Award, Maine Medical Center</div>
+        </div>
+        <div class="career-note">Medical executive, educator, researcher, entrepreneur, and media editor across a career in medicine and public life.</div>
+        <div style="margin-top:1.5rem;">
+          <a href="LisaBelisle_SpeakerBio.docx" download class="btn" style="font-size:11px;padding:8px 16px;">Download speaker bio →</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- MAINE SUNRISE DIVIDER -->
+  <div style="width:100%;overflow:hidden;border-bottom:0.5px solid var(--border);">
+    <img src="maine-sunrise.png" alt="Sunrise over the Maine coast" style="width:100%;height:220px;object-fit:cover;object-position:center 50%;display:block;opacity:0.88;">
+  </div>
+
+  <!-- CONTACT -->
+  <section id="contact" class="fade-in">
+    <div class="section-label">Contact</div>
+    <div class="contact-grid">
+      <div class="contact-card">
+        <div class="contact-card-title">Speaking inquiries</div>
+        <div class="contact-card-desc">Interested in inviting Lisa to present at a conference, symposium, institutional event, or gallery program? Please reach out with event details and we will respond promptly.</div>
+        <a href="mailto:lbelisle@littlejohnisland.me?subject=Speaking inquiry" class="btn">Send a speaking inquiry →</a>
+      </div>
+      <div class="contact-card">
+        <div class="contact-card-title">General contact</div>
+        <div class="contact-card-desc">Questions about the course, the seasonal toolkits, Radio Maine, or The Bountiful Path? We'd love to hear from you.</div>
+        <a href="mailto:lbelisle@littlejohnisland.me" class="btn">Get in touch →</a>
+      </div>
+    </div>
+  </section>
+
+</div><!-- end .wrap -->
+
+<footer>
+  <div class="footer-inner">
+    <span class="footer-name">The Bountiful Path &nbsp;·&nbsp; Lisa Belisle, MD, PhD, MPH, MBA &nbsp;·&nbsp; Littlejohn Island, Maine</span>
+    <ul class="footer-links">
+      <li><a href="https://drlisabelisle.substack.com" target="_blank">Substack</a></li>
+      <li><a href="https://portlandartgallery.com" target="_blank">Portland Art Gallery</a></li>
+      <li><a href="https://bountifulpath.com"><img src="bp-logo.png" alt="The Bountiful Path" style="height:24px;vertical-align:middle;opacity:0.7;"></a></li>
+      <li><a href="mailto:lbelisle@littlejohnisland.me">Contact</a></li>
+    </ul>
+  </div>
+</footer>
+
+<script>
+// Mobile nav
+document.getElementById('nav-toggle').addEventListener('click', function() {
+  document.getElementById('nav-links').classList.toggle('open');
+});
+
+// Fade in on scroll
+const observer = new IntersectionObserver((entries) => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      entry.target.classList.add('visible');
+      observer.unobserve(entry.target);
+    }
+  });
+}, { threshold: 0.08 });
+
+document.querySelectorAll('.fade-in').forEach(el => observer.observe(el));
+
+// Course notification
+function handleNotify(e) {
+  e.preventDefault();
+  const email = document.getElementById('notify-email').value.trim();
+  if (!email || !email.includes('@')) {
+    alert('Please enter a valid email address.');
+    return;
+  }
+  window.location.href = 'mailto:lbelisle@littlejohnisland.me?subject=Course notification request&body=Please notify me when The Life That\'s Asking to Be Lived opens. My email: ' + email;
+}
+
+// RSS Feed
+const RSS_URL = 'https://drlisabelisle.substack.com/feed';
+const API_URL = 'https://api.rss2json.com/v1/api.json?rss_url=' + encodeURIComponent(RSS_URL) + '&count=5';
+
+const SECTIONS = {
+  'radio maine': 'Radio Maine',
+  'jennifer': 'Radio Maine',
+  'tobias': 'Radio Maine',
+  'parkhurst': 'Radio Maine',
+  'off the wall': 'Off the Wall',
+  'gallery': 'Off the Wall',
+  'books on the boat': 'Books on the Boat',
+  'botb': 'Books on the Boat',
+  'a healthy conversation': 'A Healthy Conversation',
+};
+
+function detectSection(title) {
+  const t = title.toLowerCase();
+  for (const [key, val] of Object.entries(SECTIONS)) {
+    if (t.includes(key)) return val;
+  }
+  return 'The Bountiful Path';
+}
+
+function formatDate(str) {
+  return new Date(str).toLocaleDateString('en-US', { month: 'short', day: 'numeric', year: 'numeric' });
+}
+
+function stripHtml(html) {
+  const d = document.createElement('div');
+  d.innerHTML = html;
+  return (d.textContent || d.innerText || '').trim();
+}
+
+function getThumb(item) {
+  if (item.thumbnail && item.thumbnail.startsWith('http')) return item.thumbnail;
+  const m = (item.content || item.description || '').match(/src="([^"]+\.(jpg|jpeg|png|webp))"/i);
+  return m ? m[1] : null;
+}
+
+fetch(API_URL)
+  .then(r => r.json())
+  .then(data => {
+    if (data.status !== 'ok' || !data.items.length) throw new Error();
+    const container = document.getElementById('feed-container');
+    container.innerHTML = data.items.map(item => {
+      const thumb = getThumb(item);
+      return `
+        <div class="feed-post">
+          <div>
+            <div class="feed-post-section">${detectSection(item.title)}</div>
+            <a class="feed-post-title" href="${item.link}" target="_blank">${item.title}</a>
+            <div class="feed-post-date">${formatDate(item.pubDate)}</div>
+          </div>
+          ${thumb
+            ? `<img class="feed-thumb" src="${thumb}" alt="" onerror="this.style.display='none'">`
+            : `<div class="feed-thumb"></div>`
+          }
+        </div>`;
+    }).join('');
+  })
+  .catch(() => {
+    document.getElementById('feed-container').innerHTML =
+      '<div style="font-size:13px;color:var(--text-tertiary);padding:0.5rem 0;">Visit <a href="https://drlisabelisle.substack.com" style="color:var(--accent);">The Bountiful Path on Substack</a> for the latest posts.</div>';
+  });
+</script>
+</body>
+</html>
