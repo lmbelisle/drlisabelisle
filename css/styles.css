@@ -57,8 +57,8 @@ nav { position: sticky; top: 0; background: var(--bg); border-bottom: 0.5px soli
 
 /* === Layout === */
 .wrap { max-width: var(--max); margin: 0 auto; padding: 0 var(--pad); }
-section { padding: 1.75rem 0 2rem; border-bottom: 0.5px solid var(--bd); }
-section.no-rule { border-bottom: none; padding-bottom: 1.25rem; }
+section { padding: 1.5rem 0 1.75rem; border-bottom: 0.5px solid var(--bd); }
+section.no-rule { border-bottom: none; padding-bottom: 1rem; }
 .section-outer { display: flex; align-items: flex-start; gap: 0; }
 .section-label-vert { writing-mode: vertical-rl; transform: rotate(180deg); font-size: 9px; letter-spacing: 0.22em; text-transform: uppercase; color: var(--teal); font-weight: 400; flex-shrink: 0; width: 36px; padding-top: 2px; border-left: 1.5px solid var(--teal); padding-left: 8px; align-self: flex-start; margin-top: 4.5rem; }
 .section-content { flex: 1; min-width: 0; }
@@ -78,13 +78,13 @@ section.no-rule { border-bottom: none; padding-bottom: 1.25rem; }
 .feature-piece-img { width: 100%; aspect-ratio: 4/3; object-fit: cover; display: block; margin-bottom: 1.4rem; }
 .feature-piece-img--bp { aspect-ratio: 1/1; background: var(--bg2); padding: 2rem; max-width: 320px; margin: 0 auto 1.4rem; object-fit: contain; }
 .feature-piece-cat { font-size: 10px; letter-spacing: 0.2em; text-transform: uppercase; color: var(--tx3); margin-bottom: 0.55rem; }
-.feature-piece-title { font-family: var(--serif); font-size: 34px; font-style: italic; font-weight: 400; line-height: 1.15; margin-bottom: 0.85rem; color: var(--tx); }
-.feature-piece-desc { font-size: 17px; color: var(--tx2); line-height: 1.7; margin-bottom: 1rem; }
+.feature-piece-title { font-family: var(--serif); font-size: 36px; font-style: italic; font-weight: 400; line-height: 1.15; margin-bottom: 0.85rem; color: var(--tx); }
+.feature-piece-desc { font-size: 18px; color: var(--tx2); line-height: 1.7; margin-bottom: 1rem; }
 .feature-piece-link { font-size: 12px; color: var(--teal); text-decoration: none; display: inline-block; margin-right: 1.5rem; letter-spacing: 0.04em; }
 .feature-piece-link:hover { text-decoration: underline; }
 
 /* === Wide-feature row (image left, text right) === */
-.wide-feature { display: grid; grid-template-columns: 1.4fr 1fr; gap: 2.5rem; align-items: center; margin: 0.5rem 0 1rem; }
+.wide-feature { display: grid; grid-template-columns: 1.4fr 1fr; gap: 2rem; align-items: start; margin: 0; }
 .wide-feature--text-first { grid-template-columns: 1fr 1.4fr; }
 .wide-feature-img { width: 100%; aspect-ratio: 5/4; object-fit: cover; display: block; }
 .wide-feature .feature-piece-title { font-size: 40px; }
