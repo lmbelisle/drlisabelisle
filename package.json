@@ -1,0 +1,14 @@
+{
+  "name": "drlisabelisle",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "drlisabelisle.com — the personal hub for Lisa Belisle, MD",
+  "scripts": {
+    "build": "node scripts/build-data.js",
+    "dev": "python3 -m http.server 8000"
+  },
+  "engines": {
+    "node": ">=20"
+  }
+}
