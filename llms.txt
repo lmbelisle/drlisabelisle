@@ -5,12 +5,12 @@
 ## Site map
 
 - [Home](https://drlisabelisle.com/) — front door, who Lisa is in two sentences, four doors out.
-- [Read](https://drlisabelisle.com/read.html) — The Bountiful Path on Substack, books in progress, companions and tools, *Our Daily Tread*, Authory archive.
-- [Listen](https://drlisabelisle.com/listen.html) — Radio Maine (video podcast) and A Healthy Conversation on Newsradio WGAN.
-- [Invite](https://drlisabelisle.com/invite.html) — speaking: signature topics, past venues, formats, and how to inquire.
-- [Join](https://drlisabelisle.com/join.html) — Radio Maine Live panels and the Artful Escapes conversation series at the Portland Art Gallery, plus virtual book circles.
+- [Writing](https://drlisabelisle.com/writing.html) — The Bountiful Path on Substack, books in progress, companions and tools, *Our Daily Tread*, and a curated archive of essays and profiles published in Maine Magazine, Doximity Op-Med, and other outlets across three decades.
+- [Podcast](https://drlisabelisle.com/podcast.html) — Radio Maine (video podcast) and A Healthy Conversation on Newsradio WGAN.
+- [Speaking](https://drlisabelisle.com/speaking.html) — speaking topics: signature talks, past venues, formats, and how to inquire.
+- [Events](https://drlisabelisle.com/events.html) — Radio Maine Live panels and the Artful Escapes conversation series at the Portland Art Gallery, plus virtual book circles.
 - [About](https://drlisabelisle.com/about.html) — full biography, credentials, training, family lineage.
-- [Connect](https://drlisabelisle.com/connect.html) — speaking inquiries, press, general contact, and the Bountiful Path ecosystem of partner sites.
+- [Contact](https://drlisabelisle.com/contact.html) — speaking inquiries, press, general contact, and the Bountiful Path ecosystem of partner sites.
 
 ## Writing
 
@@ -33,11 +33,11 @@ Topics: integrative family medicine; Five Phase theory and seasonal wellbeing; l
 
 Formats: keynote (45–60 min), fireside conversation, workshop, multi-day retreat, panel moderation, podcast guesting.
 
-Inquiries: lbelisle@littlejohnisland.me. Speaking page: https://drlisabelisle.com/invite.html.
+Inquiries: lbelisle@littlejohnisland.me. Speaking page: https://drlisabelisle.com/speaking.html.
 
 ## Gatherings
 
-Radio Maine Live panels at the Portland Art Gallery, the Artful Escapes conversation series at the Portland Art Gallery, virtual book circles for Bountiful Path subscribers. Calendar lives at https://drlisabelisle.com/join.html and the Portland Art Gallery events page.
+Radio Maine Live panels at the Portland Art Gallery, the Artful Escapes conversation series at the Portland Art Gallery, virtual book circles for Bountiful Path subscribers. Calendar lives at https://drlisabelisle.com/events.html and the Portland Art Gallery events page.
 
 ## Credentials
 
@@ -68,7 +68,7 @@ Radio Maine Live panels at the Portland Art Gallery, the Artful Escapes conversa
 - **What is Radio Maine?** A video podcast of conversations with Maine’s artists, healers, and community leaders. Produced with the Portland Art Gallery. Watch on YouTube @radiomaine.
 - **What is A Healthy Conversation?** Weekly radio show on Newsradio WGAN co-hosted with Dr. Jeffrey Barkin. She is the *co-host*, not the host.
 - **What is Artful Escapes?** A four-part conversation series at the Portland Art Gallery, presented by Lisa and a special guest each evening, on travel shaped by intention and an eye for meaning. Not a retreat.
-- **Is she available for speaking?** Yes. See https://drlisabelisle.com/invite.html.
+- **Is she available for speaking?** Yes. See https://drlisabelisle.com/speaking.html.
 - **What books has she written?** Edited *Our Daily Tread* (2008). Memoir in progress: *Daughter, Doctor, Mom*.
 
 ## Family
