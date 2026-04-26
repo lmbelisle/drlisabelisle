@@ -1845,15 +1845,47 @@
   </div>
 </section>
 
-<!-- 4. Recent essays from Substack -->
-<section class="fade-in no-rule">
-  <div class="section-label">Recent essays</div>
-  <div id="feed-container">
-    <div style="font-size:13px;color:var(--tx3);padding:1rem 0;">Loading recent posts&hellip;</div>
+<!-- 4. Reflections: rotating Substack essays from The Bountiful Path -->
+<section class="fade-in no-rule" id="reflections">
+  <div class="section-label">Reflections</div>
+  <p class="bp-h2-sub">Selected essays from The Bountiful Path. Read on Substack, or visit the archive for earlier work.</p>
+  <div class="bp-essays-grid" id="reflections-grid">
+    <article class="bp-essay-card">
+      <a href="https://drlisabelisle.substack.com/p/books-on-the-boat-skylark-by-paula" target="_blank" rel="noopener" class="bp-essay-card-photo">
+        <img src="https://substackcdn.com/image/fetch/$s_!bRBV!,w_1200,h_675,c_fill,f_jpg,q_auto:good,fl_progressive:steep,g_auto/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Fb8664f65-c175-4436-ac36-8c682dc5bdaa.heic" alt="Skylark" loading="lazy">
+      </a>
+      <p class="bp-essay-card-eyebrow">Books on the Boat</p>
+      <h3 class="bp-essay-card-title"><a href="https://drlisabelisle.substack.com/p/books-on-the-boat-skylark-by-paula" target="_blank" rel="noopener">Skylark</a></h3>
+      <p class="bp-essay-card-subtitle">Color, catacombs, and the hidden chambers beneath a spring in Maine.</p>
+      <blockquote class="bp-essay-card-quote">Color was labor. It was trade. It was secrecy. It was status.</blockquote>
+      <a href="https://drlisabelisle.substack.com/p/books-on-the-boat-skylark-by-paula" target="_blank" rel="noopener" class="bp-essay-card-cta">Read on Substack &rarr;</a>
+    </article>
+    <article class="bp-essay-card">
+      <a href="https://drlisabelisle.substack.com/p/what-bloomed-in-the-woods" target="_blank" rel="noopener" class="bp-essay-card-photo">
+        <img src="https://substackcdn.com/image/fetch/$s_!ds6o!,w_1200,h_675,c_fill,f_jpg,q_auto:good,fl_progressive:steep,g_auto/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F08aab225-3529-48a9-8d01-409c166f9ab7_3024x4032.jpeg" alt="What Bloomed in the Woods" loading="lazy">
+      </a>
+      <p class="bp-essay-card-eyebrow">Essay</p>
+      <h3 class="bp-essay-card-title"><a href="https://drlisabelisle.substack.com/p/what-bloomed-in-the-woods" target="_blank" rel="noopener">What Bloomed in the Woods</a></h3>
+      <p class="bp-essay-card-subtitle">A spring gathering, a virtual book circle, and the relationships we do and do not plan.</p>
+      <blockquote class="bp-essay-card-quote">Some relationships are planted carefully. Others arrive like daffodils in the woods.</blockquote>
+      <a href="https://drlisabelisle.substack.com/p/what-bloomed-in-the-woods" target="_blank" rel="noopener" class="bp-essay-card-cta">Read on Substack &rarr;</a>
+    </article>
+    <article class="bp-essay-card">
+      <a href="https://drlisabelisle.substack.com/p/the-treehouse-in-april" target="_blank" rel="noopener" class="bp-essay-card-photo">
+        <img src="https://substackcdn.com/image/fetch/$s_!gt7i!,w_1200,h_675,c_fill,f_jpg,q_auto:good,fl_progressive:steep,g_auto/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Fe9383d9f-d13f-4c84-a9a1-0bac41ccc336_750x870.jpeg" alt="The Treehouse in April" loading="lazy">
+      </a>
+      <p class="bp-essay-card-eyebrow">Essay</p>
+      <h3 class="bp-essay-card-title"><a href="https://drlisabelisle.substack.com/p/the-treehouse-in-april" target="_blank" rel="noopener">The Treehouse in April</a></h3>
+      <p class="bp-essay-card-subtitle">Embracing the Wood phase in spring, a neighbor&rsquo;s treehouse on the West Side Trail, and what the bare branches let us see.</p>
+      <blockquote class="bp-essay-card-quote">The trouble with Wood is not growth itself. The trouble is an inability to bend.</blockquote>
+      <a href="https://drlisabelisle.substack.com/p/the-treehouse-in-april" target="_blank" rel="noopener" class="bp-essay-card-cta">Read on Substack &rarr;</a>
+    </article>
   </div>
-  <div style="text-align:center;margin-top:2rem;">
-    <a class="link-plain" href="https://drlisabelisle.substack.com" target="_blank">View all essays &rarr;</a>
-  </div>
+  <p style="margin-top:2.8rem; text-align:center; font-family:var(--sans); font-size:11px; letter-spacing:0.2em; text-transform:uppercase; font-weight:500;">
+    <a class="link-plain" href="https://drlisabelisle.substack.com" target="_blank" rel="noopener">Read on Substack</a>
+    <span style="color:var(--gold); margin: 0 0.7rem;">&middot;</span>
+    <a class="link-plain" href="https://www.bountifulpath.com" target="_blank" rel="noopener">The Bountiful Path</a>
+  </p>
 </section>
 
 <!-- 5. Memoir in progress -->
@@ -2027,21 +2059,69 @@ const observer = new IntersectionObserver((entries) => {
 }, { threshold: 0.06 });
 document.querySelectorAll('.fade-in').forEach(el => observer.observe(el));
 
-// === Substack feed (top of page) ===
-const API_URL = 'https://api.rss2json.com/v1/api.json?rss_url=' + encodeURIComponent('https://drlisabelisle.substack.com/feed') + '&count=5';
-const SECTIONS = { 'radio maine': 'Radio Maine', 'off the wall': 'Off the Wall', 'books on the boat': 'Books on the Boat', 'botb': 'Books on the Boat', 'a healthy conversation': 'A Healthy Conversation' };
-function detectSection(title) { const t = title.toLowerCase(); for (const [k, v] of Object.entries(SECTIONS)) { if (t.includes(k)) return v; } return 'The Bountiful Path'; }
-function fmtFeedDate(str) { return new Date(str).toLocaleDateString('en-US', { month: 'short', day: 'numeric', year: 'numeric' }); }
-function getThumb(item) { if (item.thumbnail && item.thumbnail.startsWith('http')) return item.thumbnail; const m = (item.content || item.description || '').match(/src="([^"]+\.(jpg|jpeg|png|webp))"/i); return m ? m[1] : null; }
-fetch(API_URL).then(r => r.json()).then(data => {
-  if (data.status !== 'ok' || !data.items.length) throw new Error();
-  document.getElementById('feed-container').innerHTML = data.items.map(item => {
-    const thumb = getThumb(item);
-    return '<div class="feed-post"><div><div class="feed-section">' + detectSection(item.title) + '</div><a class="feed-title" href="' + item.link + '" target="_blank">' + item.title + '</a><div class="feed-date">' + fmtFeedDate(item.pubDate) + '</div></div>' + (thumb ? '<img class="feed-thumb" src="' + thumb + '" alt="">' : '') + '</div>';
-  }).join('');
-}).catch(() => {
-  document.getElementById('feed-container').innerHTML = '<div style="font-size:13px;color:var(--tx3);padding:1rem 0;">Visit <a href="https://drlisabelisle.substack.com" target="_blank" style="color:var(--teal);">The Bountiful Path on Substack</a> for the latest.</div>';
-});
+// === Reflections: Substack rotation (3-of-N from featured-essays.json) ===
+// Mirrors the bountifulpath.com Reflections band. The pool is curated in the
+// BP Content Airtable table (Show on Site = true) and built into
+// featured-essays.json on each Netlify deploy. Falls back to shuffling the
+// static HTML cards if the fetch fails. No-JS visitors see the static cards.
+(function() {
+  const grid = document.getElementById('reflections-grid');
+  if (!grid) return;
+
+  function pickRandom(arr, n) {
+    const copy = arr.slice();
+    for (let i = copy.length - 1; i > 0; i--) {
+      const j = Math.floor(Math.random() * (i + 1));
+      [copy[i], copy[j]] = [copy[j], copy[i]];
+    }
+    return copy.slice(0, Math.min(n, copy.length));
+  }
+
+  function shuffleStaticCards(g) {
+    const cards = Array.from(g.querySelectorAll('.bp-essay-card'));
+    for (let i = cards.length - 1; i > 0; i--) {
+      const j = Math.floor(Math.random() * (i + 1));
+      [cards[i], cards[j]] = [cards[j], cards[i]];
+    }
+    cards.forEach(c => g.appendChild(c));
+  }
+
+  function esc(s) {
+    return String(s == null ? '' : s).replace(/[&<>"']/g, c => (
+      { '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#039;' }[c]
+    ));
+  }
+
+  function renderEssayCard(e) {
+    const subtitleHtml = e.subtitle
+      ? '<p class="bp-essay-card-subtitle">' + esc(e.subtitle) + '</p>'
+      : '';
+    return [
+      '<article class="bp-essay-card">',
+      '  <a href="' + esc(e.url) + '" target="_blank" rel="noopener" class="bp-essay-card-photo">',
+      '    <img src="' + esc(e.image) + '" alt="' + esc(e.title) + '" loading="lazy">',
+      '  </a>',
+      '  <p class="bp-essay-card-eyebrow">' + esc(e.eyebrow || 'Essay') + '</p>',
+      '  <h3 class="bp-essay-card-title"><a href="' + esc(e.url) + '" target="_blank" rel="noopener">' + esc(e.title) + '</a></h3>',
+      subtitleHtml,
+      '  <blockquote class="bp-essay-card-quote">' + esc(e.quote) + '</blockquote>',
+      '  <a href="' + esc(e.url) + '" target="_blank" rel="noopener" class="bp-essay-card-cta">Read on Substack &rarr;</a>',
+      '</article>',
+    ].join('\n');
+  }
+
+  fetch('featured-essays.json', { cache: 'no-store' })
+    .then(r => r.ok ? r.json() : null)
+    .then(pool => {
+      if (!Array.isArray(pool) || pool.length === 0) {
+        shuffleStaticCards(grid);
+        return;
+      }
+      const picks = pickRandom(pool, 3);
+      grid.innerHTML = picks.map(renderEssayCard).join('');
+    })
+    .catch(() => shuffleStaticCards(grid));
+})();
 
 // === Selected Work archive (bottom of page) ===
 (async function() {

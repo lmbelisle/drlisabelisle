@@ -325,3 +325,96 @@ footer { padding: 2.5rem 0; border-top: 0.5px solid var(--bd); background: var(-
   .ft-modal { padding: 2rem 1.25rem 1.5rem; }
   .ft-modal-title { font-size: 26px; }
 }
+
+/* Reflections: Substack rotation cards (ported from bountifulpath.com) -- */
+.bp-essays-grid {
+  max-width: 920px;
+  margin: 2rem auto 0;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+}
+.bp-essay-card {
+  display: flex;
+  flex-direction: column;
+}
+.bp-essay-card-photo {
+  display: block;
+  aspect-ratio: 16 / 9;
+  margin-bottom: 1rem;
+  overflow: hidden;
+  background: #F0EDE7;
+}
+.bp-essay-card-photo img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.5s ease-out;
+}
+.bp-essay-card:hover .bp-essay-card-photo img {
+  transform: scale(1.03);
+}
+.bp-essay-card-eyebrow {
+  font-family: var(--sans);
+  font-size: 0.7rem;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  color: #C9A84C;
+  margin-bottom: 0.4rem;
+  font-weight: 500;
+}
+.bp-essay-card-title {
+  font-family: var(--serif);
+  font-weight: 500;
+  font-size: 1.35rem;
+  line-height: 1.22;
+  margin: 0 0 0.4rem;
+}
+.bp-essay-card-title a { color: var(--tx); border: none; text-decoration: none; transition: color 0.2s; }
+.bp-essay-card-title a:hover { color: var(--teal-dark); }
+.bp-essay-card-subtitle {
+  font-family: var(--serif);
+  font-style: italic;
+  font-size: 0.95rem;
+  color: var(--tx2);
+  line-height: 1.45;
+  margin: 0 0 0.9rem;
+}
+.bp-essay-card-quote {
+  font-family: var(--serif);
+  font-style: italic;
+  font-size: 0.98rem;
+  line-height: 1.55;
+  color: var(--tx);
+  border-left: 2px solid #C9A84C;
+  padding-left: 0.9rem;
+  margin: 0.4rem 0 1rem;
+}
+.bp-essay-card-cta {
+  font-family: var(--sans);
+  font-size: 0.7rem;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  color: var(--teal);
+  font-weight: 500;
+  margin-top: auto;
+  border-bottom: 1px solid #C9A84C;
+  padding-bottom: 0.2rem;
+  align-self: flex-start;
+  text-decoration: none;
+}
+.bp-essay-card-cta:hover { color: var(--teal-dark); border-bottom-color: var(--teal-dark); }
+.bp-h2-sub {
+  font-family: var(--serif);
+  font-style: italic;
+  color: var(--tx2);
+  font-size: 1rem;
+  line-height: 1.55;
+  max-width: 720px;
+  margin: 0 0 0.5rem;
+}
+
+@media (max-width: 768px) {
+  .bp-essays-grid { grid-template-columns: 1fr; gap: 2.4rem; }
+}
