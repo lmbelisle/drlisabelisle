@@ -1821,20 +1821,15 @@
 
 <div class="wrap">
 
-<!-- 3. The Bountiful Path — current writing -->
-<section class="fade-in no-rule">
-  <div class="wide-feature" style="grid-template-columns: 1fr 1.4fr;">
-    <img class="wide-feature-img" src="maine-sunrise.png" alt="Sunrise on the Maine coast" style="aspect-ratio:5/4; object-position:center 60%;">
-    <div>
-      <div style="font-family: var(--serif); font-style: italic; font-size: clamp(40px, 5vw, 56px); font-weight: 400; line-height: 1; color: var(--tx); margin-bottom: 1.25rem; letter-spacing: -0.01em;">The Bountiful Path</div>
-      <div class="feature-piece-cat">Newsletter</div>
-      <div class="feature-piece-title">Medicine, art, and seasonal wisdom.</div>
-      <div class="feature-piece-desc" data-copy-key="read.bp.desc">Essays organized around four pillars: story, system, self, and seasonality. The Bountiful Path is the writing home: longer pieces, lighter pieces, and recurring features that take the work into the week and the year.</div>
-      <div>
-        <a class="feature-piece-link" href="https://www.bountifulpath.com" target="_blank">Visit Bountiful Path &rarr;</a>
-        <a class="feature-piece-link" href="https://drlisabelisle.substack.com" target="_blank">Read the newsletter &rarr;</a>
-      </div>
-    </div>
+<!-- 3. The Bountiful Path — current writing (centered brand callout) -->
+<section class="fade-in no-rule" style="text-align:center;">
+  <img src="bp-icon-transparent.png" alt="The Bountiful Path" style="height: 110px; width: auto; margin: 0.5rem auto 1.5rem; display: block;">
+  <div style="font-family: var(--serif); font-style: italic; font-size: clamp(38px, 5vw, 52px); font-weight: 400; line-height: 1; color: var(--tx); margin-bottom: 0.6rem; letter-spacing: -0.01em;">The Bountiful Path</div>
+  <div class="feature-piece-cat" style="margin-bottom: 1.25rem;">Newsletter &nbsp;&middot;&nbsp; Substack</div>
+  <p data-copy-key="read.bp.desc" style="font-family: var(--serif); font-size: clamp(18px, 1.9vw, 22px); font-weight: 300; line-height: 1.55; color: var(--tx2); max-width: 620px; margin: 0 auto 1.75rem;">Essays at the intersection of medicine, art, and seasonal wisdom &mdash; organized around four pillars: <em>story, system, self, seasonality</em>.</p>
+  <div>
+    <a class="feature-piece-link" href="https://www.bountifulpath.com" target="_blank" style="margin-right: 1.5rem;">Visit Bountiful Path &rarr;</a>
+    <a class="feature-piece-link" href="https://drlisabelisle.substack.com" target="_blank">Read the newsletter &rarr;</a>
   </div>
 </section>
 
@@ -1880,48 +1875,7 @@
 
 <div class="wrap">
 
-<!-- 7. From the archive — filterable list, defaults to 12 most recent -->
-<section class="fade-in" id="archive">
-  <div class="section-label">From the archive</div>
-
-  <div class="archive-filters" id="archive-filters">
-    <div class="archive-filter-row">
-      <span class="archive-filter-label">Topic</span>
-      <div class="archive-chip-row" id="topic-filters"></div>
-    </div>
-    <div class="archive-filter-row">
-      <span class="archive-filter-label">Audience</span>
-      <div class="archive-chip-row">
-        <button class="archive-chip active" data-audience="">All</button>
-        <button class="archive-chip" data-audience="General">General</button>
-        <button class="archive-chip" data-audience="Clinical">Clinical</button>
-      </div>
-    </div>
-    <div class="archive-filter-row">
-      <span class="archive-filter-label">Year</span>
-      <div class="archive-chip-row" id="year-filters"></div>
-    </div>
-    <div class="archive-filter-row">
-      <span class="archive-filter-label">Search</span>
-      <input type="text" id="archive-search" class="archive-search" placeholder="Search titles, themes, quotes&hellip;">
-    </div>
-  </div>
-
-  <div class="archive-meta-row">
-    <span id="result-count" class="archive-count">Loading&hellip;</span>
-    <button class="archive-clear" id="clear-filters" style="display:none;">Clear filters</button>
-  </div>
-
-  <div class="archive-list" id="archive-list">
-    <div style="font-size:13px;color:var(--tx3);padding:1rem 0;">Loading archive&hellip;</div>
-  </div>
-
-  <div id="browse-all-wrap" style="text-align:center; margin-top:2.5rem; display:none;">
-    <button class="btn" id="browse-all">Browse all <span id="browse-all-count"></span> pieces</button>
-  </div>
-</section>
-
-<!-- 8. Companions to the work -->
+<!-- 7. Companions to the work -->
 <section class="fade-in no-rule">
   <div class="section-label">Companions to the work</div>
   <p style="color:var(--tx2); line-height:1.65; max-width:760px; margin-bottom:1.25rem;">Tools and teachings that take the writing from the page into daily practice. The full catalog and downloads live at <a href="https://www.bountifulpath.com/companions.html" target="_blank" style="color:var(--teal);">bountifulpath.com/companions</a>.</p>
@@ -1949,7 +1903,7 @@
 
 </div>
 
-<!-- 9. Our Daily Tread — full-bleed, the founding project -->
+<!-- 8. Our Daily Tread — full-bleed, the founding project -->
 <div class="odt-section fade-in">
   <div class="odt-inner">
     <div class="odt-cover">
@@ -1966,6 +1920,58 @@
       <a href="https://www.safepassage.org" target="_blank" class="odt-link">Learn about Safe Passage &rarr;</a>
     </div>
   </div>
+</div>
+
+<!-- 9. From the archive — collapsible, closed by default. Lives at the bottom
+     so visitors who want to dig in have it available without it dominating
+     the page. -->
+<div class="wrap">
+<details class="archive-collapsible fade-in" id="archive">
+  <summary>
+    <span class="archive-toggle-label">Browse the published archive</span>
+    <span class="archive-toggle-meta">79 pieces · 2012–2024</span>
+  </summary>
+  <div class="archive-collapsible-body">
+    <p style="color:var(--tx2); line-height:1.65; max-width:760px; margin: 0 0 1.25rem; font-size: 15px;">
+      Essays and profiles published in <em>Maine Magazine</em>, <em>Doximity Op&#8209;Med</em>, and other outlets. Filter by topic, audience, or year &mdash; or search across titles, themes, and quotes. Defaults to the 12 most recent.
+    </p>
+    <div class="archive-filters" id="archive-filters">
+      <div class="archive-filter-row">
+        <span class="archive-filter-label">Topic</span>
+        <div class="archive-chip-row" id="topic-filters"></div>
+      </div>
+      <div class="archive-filter-row">
+        <span class="archive-filter-label">Audience</span>
+        <div class="archive-chip-row">
+          <button class="archive-chip active" data-audience="">All</button>
+          <button class="archive-chip" data-audience="General">General</button>
+          <button class="archive-chip" data-audience="Clinical">Clinical</button>
+        </div>
+      </div>
+      <div class="archive-filter-row">
+        <span class="archive-filter-label">Year</span>
+        <div class="archive-chip-row" id="year-filters"></div>
+      </div>
+      <div class="archive-filter-row">
+        <span class="archive-filter-label">Search</span>
+        <input type="text" id="archive-search" class="archive-search" placeholder="Search titles, themes, quotes&hellip;">
+      </div>
+    </div>
+
+    <div class="archive-meta-row">
+      <span id="result-count" class="archive-count">Loading&hellip;</span>
+      <button class="archive-clear" id="clear-filters" style="display:none;">Clear filters</button>
+    </div>
+
+    <div class="archive-list" id="archive-list">
+      <div style="font-size:13px;color:var(--tx3);padding:1rem 0;">Loading archive&hellip;</div>
+    </div>
+
+    <div id="browse-all-wrap" style="text-align:center; margin-top:2.5rem; display:none;">
+      <button class="btn" id="browse-all">Browse all <span id="browse-all-count"></span> pieces</button>
+    </div>
+  </div>
+</details>
 </div>
 
 <!-- Full Text fallback modal -->

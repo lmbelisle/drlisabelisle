@@ -243,20 +243,33 @@ footer { padding: 2.5rem 0; border-top: 0.5px solid var(--bd); background: var(-
    === Selected Work archive (writing.html)              ===
    ============================================================ */
 
-/* Featured work cards — 2-column grid, large pull quote treatment */
+/* Featured work cards — 2-column grid. Pull quote is the visual hero;
+   title sits above it as a supporting label. Tighter padding to reduce
+   text density. */
 .featured-work-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 1px; background: var(--bd); border: 0.5px solid var(--bd); margin-top: 1.25rem; }
-.featured-work { background: var(--bg); padding: 2rem 1.75rem; display: flex; flex-direction: column; transition: background 0.2s; }
+.featured-work { background: var(--bg); padding: 1.5rem 1.5rem; display: flex; flex-direction: column; transition: background 0.2s; }
 .featured-work:hover { background: var(--bg2); }
-.featured-work-cat { font-size: 10px; letter-spacing: 0.18em; text-transform: uppercase; color: var(--teal); margin-bottom: 0.65rem; }
-.featured-work-title { font-family: var(--serif); font-size: 28px; font-weight: 400; line-height: 1.15; color: var(--tx); margin-bottom: 1.1rem; font-style: italic; }
+.featured-work-cat { font-size: 10px; letter-spacing: 0.18em; text-transform: uppercase; color: var(--teal); margin-bottom: 0.4rem; }
+.featured-work-title { font-family: var(--serif); font-size: 22px; font-weight: 400; line-height: 1.2; color: var(--tx); margin-bottom: 0.7rem; font-style: italic; }
 .featured-work-link { font-size: 11px; letter-spacing: 0.08em; color: var(--teal); text-decoration: none; margin-top: auto; padding-top: 0.5rem; }
 .featured-work-link:hover { text-decoration: underline; }
 
-/* Pull quotes inside work cards/rows */
-.work-quote { font-family: var(--serif); font-style: italic; font-weight: 300; color: var(--tx); border-left: 1.5px solid var(--gold); padding: 0.4rem 0 0.4rem 1rem; margin: 0.4rem 0 1.1rem; line-height: 1.45; }
-.work-quote--big { font-size: 19px; }
-.work-quote { font-size: 14.5px; }
-.work-quote cite { display: block; font-style: normal; font-family: var(--sans); font-size: 11px; letter-spacing: 0.08em; color: var(--tx3); margin-top: 0.45rem; }
+/* Pull quotes inside work cards. */
+.work-quote { font-family: var(--serif); font-style: italic; font-weight: 300; color: var(--tx); border-left: 1.5px solid var(--gold); padding: 0.3rem 0 0.3rem 0.95rem; margin: 0 0 0.9rem; line-height: 1.45; font-size: 14.5px; }
+.work-quote--big { font-size: 18px; line-height: 1.4; }
+.work-quote cite { display: block; font-style: normal; font-family: var(--sans); font-size: 10.5px; letter-spacing: 0.08em; color: var(--tx3); margin-top: 0.4rem; }
+
+/* Collapsible archive disclosure (HTML <details> styled). */
+.archive-collapsible { margin-top: 0; }
+.archive-collapsible > summary { list-style: none; cursor: pointer; padding: 1.5rem 0; border-top: 0.5px solid var(--bd); border-bottom: 0.5px solid var(--bd); display: flex; align-items: center; justify-content: space-between; }
+.archive-collapsible > summary::-webkit-details-marker { display: none; }
+.archive-collapsible > summary::marker { content: ''; }
+.archive-collapsible > summary > .archive-toggle-label { font-family: var(--serif); font-style: italic; font-size: clamp(22px, 2.6vw, 28px); font-weight: 400; color: var(--tx); }
+.archive-collapsible > summary > .archive-toggle-meta { font-size: 11px; letter-spacing: 0.12em; text-transform: uppercase; color: var(--teal); }
+.archive-collapsible > summary > .archive-toggle-meta::after { content: ' ↓'; transition: transform 0.2s; display: inline-block; }
+.archive-collapsible[open] > summary > .archive-toggle-meta::after { content: ' ↑'; }
+.archive-collapsible[open] > summary { border-bottom: none; }
+.archive-collapsible > .archive-collapsible-body { padding-top: 1.5rem; padding-bottom: 1.5rem; border-bottom: 0.5px solid var(--bd); }
 
 /* Filters above the archive list */
 .archive-filters { display: flex; flex-direction: column; gap: 0.85rem; margin: 1rem 0 1.5rem; padding: 1.25rem 1.25rem; background: var(--bg2); border: 0.5px solid var(--bd); }
