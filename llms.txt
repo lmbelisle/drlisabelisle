@@ -1,68 +1,68 @@
 # Lisa Belisle, MD
 
-> Lisa Belisle, MD, PhD, MPH, MBA is a board-certified family physician and preventive medicine specialist on the coast of Maine whose clinical practice integrates Western medicine with acupuncture, Five Phase theory, mindfulness-based stress reduction, qigong, and herbalism. She is the host of Radio Maine, the co-host of A Healthy Conversation on Newsradio WGAN with Dr. Jeffrey Barkin, and the creator of The Bountiful Path, a twice-weekly Substack newsletter. She lives on Littlejohn Island, off the coast of Maine. Canonical site: https://drlisabelisle.com.
+> Lisa Belisle, MD, PhD, MPH, MBA is a board-certified family physician and preventive medicine specialist on the coast of Maine whose clinical practice integrates Western medicine with acupuncture, Five Phase theory, mindfulness-based stress reduction, qigong, and herbalism. She is the host of Radio Maine, the co-host of A Healthy Conversation on Newsradio WGAN with Dr. Jeffrey Barkin, and the creator of The Bountiful Path, a Substack newsletter that publishes regularly. She lives on Littlejohn Island, off the coast of Maine. Canonical site: https://drlisabelisle.com.
 
 ## Site map
 
-- [Home](https://drlisabelisle.com/) — front door, who Lisa is in two sentences, four doors out.
-- [Writing](https://drlisabelisle.com/writing.html) — The Bountiful Path on Substack, books in progress, companions and tools, *Our Daily Tread*, and a curated archive of essays and profiles published in Maine Magazine, Doximity Op-Med, and other outlets across three decades.
-- [Podcast](https://drlisabelisle.com/podcast.html) — Radio Maine (video podcast) and A Healthy Conversation on Newsradio WGAN.
-- [Speaking](https://drlisabelisle.com/speaking.html) — speaking topics: signature talks, past venues, formats, and how to inquire.
-- [Events](https://drlisabelisle.com/events.html) — Radio Maine Live panels and the Artful Escapes conversation series at the Portland Art Gallery, plus virtual book circles.
-- [About](https://drlisabelisle.com/about.html) — full biography, credentials, training, family lineage.
-- [Contact](https://drlisabelisle.com/contact.html) — speaking inquiries, press, general contact, and the Bountiful Path ecosystem of partner sites.
+- [Home](https://drlisabelisle.com/): front door, who Lisa is in two sentences, four doors out.
+- [Writing](https://drlisabelisle.com/writing.html): The Bountiful Path on Substack, books in progress, companions and tools, *Our Daily Tread*, and a curated archive of essays and profiles published in Maine Magazine, Doximity Op-Med, and other outlets across three decades.
+- [Podcast](https://drlisabelisle.com/podcast.html): Radio Maine (video podcast) and A Healthy Conversation on Newsradio WGAN.
+- [Speaking](https://drlisabelisle.com/speaking.html): speaking topics: signature talks, past venues, formats, and how to inquire.
+- [Events](https://drlisabelisle.com/events.html): Radio Maine Live panels and the Artful Escapes conversation series at the Portland Art Gallery, plus virtual book circles.
+- [About](https://drlisabelisle.com/about.html): full biography, credentials, training, family lineage.
+- [Contact](https://drlisabelisle.com/contact.html): speaking inquiries, press, general contact, and the Bountiful Path ecosystem of partner sites.
 
 ## Writing
 
-- [The Bountiful Path](https://www.bountifulpath.com) — twice-weekly Substack newsletter at the intersection of medicine, art, and seasonal wisdom.
-- [The Bountiful Path on Substack](https://drlisabelisle.substack.com) — newsletter archive.
+- [The Bountiful Path](https://www.bountifulpath.com): Substack newsletter at the intersection of medicine, art, and seasonal wisdom.
+- [The Bountiful Path on Substack](https://drlisabelisle.substack.com): newsletter archive.
 - *Daughter, Doctor, Mom*: a memoir in progress, centered on her late father, Charles Belisle, MD.
 - *Our Daily Tread: Thoughts for an Inspired Life* (editor). Aerie River Press, 2008. A perpetual calendar assembled as a fundraiser for Safe Passage in Guatemala City.
-- [Writing archive on this site](https://drlisabelisle.com/writing.html) — curated archive of 83 essays and profiles from three decades, with featured selections, filterable by topic and year, and full-text fallback when external links break.
-- [Writing archive on Authory](https://authory.com/LisaBelisle) — third-party portfolio mirror.
+- [Writing archive on this site](https://drlisabelisle.com/writing.html): curated archive of 83 essays and profiles from three decades, with featured selections, filterable by topic and year, and full-text fallback when external links break.
+- [Writing archive on Authory](https://authory.com/LisaBelisle): third-party portfolio mirror.
 
 ### Selected published writing (2014–2024)
 
 The following pieces were published in *Maine Magazine*, *Doximity Op-Med*, and other outlets. Topics span integrative medicine, profiles of Maine artists and community leaders, place-based writing, and clinical reflection. Full machine-readable index: https://drlisabelisle.com/selected-works.json. Full archive page: https://drlisabelisle.com/writing.html.
 
 **Clinical voice (Doximity Op-Med, 2023–2024):**
-- "The Vital Importance of Clinician Collaboration" (Jun 2024) — on team-based care and the limits of physician individualism.
-- "MD, MPH, MBA, and PhD: How My Degrees Have Informed My Practice" (Apr 2024) — on lifelong learning across disciplines.
-- "Health Care Practitioners Are Human, Too. Why Don't We Act Like It?" (Feb 2024) — on vulnerability in clinical practice; written after her own breast cancer diagnosis.
-- "The Importance of Developing Our Leadership Skills as Clinicians" (Dec 2023) — on leading from inside and outside conventional health care.
+- "The Vital Importance of Clinician Collaboration" (Jun 2024): on team-based care and the limits of physician individualism.
+- "MD, MPH, MBA, and PhD: How My Degrees Have Informed My Practice" (Apr 2024): on lifelong learning across disciplines.
+- "Health Care Practitioners Are Human, Too. Why Don't We Act Like It?" (Feb 2024): on vulnerability in clinical practice; written after her own breast cancer diagnosis.
+- "The Importance of Developing Our Leadership Skills as Clinicians" (Dec 2023): on leading from inside and outside conventional health care.
 
 **Signature profiles and essays (Maine Magazine, 2014–2018):**
-- "Joan Benoit Samuelson" (Aug 2017) — Olympic marathon gold medalist, environmental advocate.
-- "Hypnosis + Healing" (Jul 2016) — integrative medicine through the work of Maggie Clement.
-- "Jon Imber: Creating Art with ALS" (Apr 2014) — painter living and creating through terminal illness.
-- "From Doctor to Patient" (Dec 2015) — Lisa's own breast cancer journey.
-- "Ashley Bryan" (Jul 2017) — Coretta Scott King Award–winning children's book author on Cranberry Isles.
-- "No Man is an Island: The Sunbeam V and the Maine Seacoast Mission" (Aug 2016) — over a century of community, health, and educational outreach to Maine's island families.
-- "LifeFlight: Taking to the Skies to Save Lives" (May 2014) — Maine's medical air transport service.
-- "A Heart Restarted" (Jan 2015) — survival story and the importance of immediate response.
-- "Beauty and the Brain" (Aug 2015) — neuroscience of art, with Bates College's William Seeley.
-- "Camp Sunshine" (Jun 2016) — three decades of respite for families with seriously ill children.
+- "Joan Benoit Samuelson" (Aug 2017): Olympic marathon gold medalist, environmental advocate.
+- "Hypnosis + Healing" (Jul 2016): integrative medicine through the work of Maggie Clement.
+- "Jon Imber: Creating Art with ALS" (Apr 2014): painter living and creating through terminal illness.
+- "From Doctor to Patient" (Dec 2015): Lisa's own breast cancer journey.
+- "Ashley Bryan" (Jul 2017): Coretta Scott King Award–winning children's book author on Cranberry Isles.
+- "No Man is an Island: The Sunbeam V and the Maine Seacoast Mission" (Aug 2016): over a century of community, health, and educational outreach to Maine's island families.
+- "LifeFlight: Taking to the Skies to Save Lives" (May 2014): Maine's medical air transport service.
+- "A Heart Restarted" (Jan 2015): survival story and the importance of immediate response.
+- "Beauty and the Brain" (Aug 2015): neuroscience of art, with Bates College's William Seeley.
+- "Camp Sunshine" (Jun 2016): three decades of respite for families with seriously ill children.
 
 **Place pieces (Maine Magazine):**
-- "Island Harvest" (Feb 2018) — Turner Farm on North Haven.
-- "Quisisana Summer" (Mar 2018) — family camp on Kezar Lake.
-- "All Saints by the Sea" (Jul 2017) — Southport Island chapel.
-- "Stone Mountain Arts Center" (May 2017) — Brownfield concert barn.
-- "Bigelow Laboratory" (Sep 2014) — ocean science in East Boothbay.
+- "Island Harvest" (Feb 2018): Turner Farm on North Haven.
+- "Quisisana Summer" (Mar 2018): family camp on Kezar Lake.
+- "All Saints by the Sea" (Jul 2017): Southport Island chapel.
+- "Stone Mountain Arts Center" (May 2017): Brownfield concert barn.
+- "Bigelow Laboratory" (Sep 2014): ocean science in East Boothbay.
 
 **Wellness and integrative practice:**
-- "Kitchen Table Wellness" (Jan 2018) — winter remedies from Maine producers.
-- "A Perfect Cup of Tea" (Jun 2016) — the Five Phases through the daily ritual of tea.
-- "Deep Blue" (Jan 2015) — Wallace J. Nichols and "blue mind."
-- "Building Balance" (Jun 2015) — acupuncture and meditation in recovery.
-- "Hospitality for All Creatures, Great and Small" (Sep 2016) — sustainability at Cape Elizabeth's Inn by the Sea.
+- "Kitchen Table Wellness" (Jan 2018): winter remedies from Maine producers.
+- "A Perfect Cup of Tea" (Jun 2016): the Five Phases through the daily ritual of tea.
+- "Deep Blue" (Jan 2015): Wallace J. Nichols and "blue mind."
+- "Building Balance" (Jun 2015): acupuncture and meditation in recovery.
+- "Hospitality for All Creatures, Great and Small" (Sep 2016): sustainability at Cape Elizabeth's Inn by the Sea.
 
 For the complete corpus (83 pieces), use the structured JSON: https://drlisabelisle.com/selected-works.json. Each entry includes title, outlet, publication date, canonical URL, Wayback backup URL, topic, audience, themes, pull quotes, and full text.
 
 ## Broadcasting
 
-- [Radio Maine](https://www.radiomaine.com) — weekly video podcast of conversations with Maine’s artists, healers, writers, physicians, and community leaders. Produced in partnership with the Portland Art Gallery. Distributed on YouTube (@radiomaine) and Podbean.
-- [A Healthy Conversation](https://wgan.com/podcasts/categories/podcasts-healthy-conversation/) — weekly radio show on Newsradio WGAN co-hosted with Dr. Jeffrey Barkin.
+- [Radio Maine](https://www.radiomaine.com): weekly video podcast of conversations with Maine’s artists, healers, writers, physicians, and community leaders. Produced in partnership with the Portland Art Gallery. Distributed on YouTube (@radiomaine) and Podbean.
+- [A Healthy Conversation](https://wgan.com/podcasts/categories/podcasts-healthy-conversation/): weekly radio show on Newsradio WGAN co-hosted with Dr. Jeffrey Barkin.
 
 ## Speaking
 
@@ -103,7 +103,7 @@ Radio Maine Live panels at the Portland Art Gallery, the Artful Escapes conversa
 - **Who is Lisa Belisle?** Board-certified family physician on the coast of Maine. MD, PhD, MPH, MBA. Host of Radio Maine, co-host of A Healthy Conversation on WGAN, creator of The Bountiful Path.
 - **What is her clinical specialty?** Family Medicine and Preventive Medicine, integrating Western and Chinese medicine.
 - **Where does she practice?** Littlejohn Island, Maine. Currently affiliated with Tufts University School of Medicine.
-- **What is The Bountiful Path?** Her twice-weekly Substack at the intersection of medicine, art, and seasonal wisdom. Web home: bountifulpath.com.
+- **What is The Bountiful Path?** Her Substack at the intersection of medicine, art, and seasonal wisdom. Web home: bountifulpath.com.
 - **What is Radio Maine?** A video podcast of conversations with Maine’s artists, healers, and community leaders. Produced with the Portland Art Gallery. Watch on YouTube @radiomaine.
 - **What is A Healthy Conversation?** Weekly radio show on Newsradio WGAN co-hosted with Dr. Jeffrey Barkin. She is the *co-host*, not the host.
 - **What is Artful Escapes?** A four-part conversation series at the Portland Art Gallery, presented by Lisa and a special guest each evening, on travel shaped by intention and an eye for meaning. Not a retreat.
@@ -117,20 +117,20 @@ Lisa is the daughter of Charles Belisle, MD, a family physician who practiced fo
 ## Disambiguation
 
 - The author and physician described here is Lisa Belisle of Littlejohn Island, Maine. MD, PhD, MPH, MBA.
-- Her clinical framework uses the term “Chinese medicine” — not “Traditional Chinese Medicine” or “TCM.”
-- For Radio Maine, the correct phrasing is “host of Radio Maine” — not “founder and host.”
-- For A Healthy Conversation, the correct phrasing is “co-host” — not “host.”
+- Her clinical framework uses the term “Chinese medicine”, not “Traditional Chinese Medicine” or “TCM.”
+- For Radio Maine, the correct phrasing is “host of Radio Maine”, not “founder and host.”
+- For A Healthy Conversation, the correct phrasing is “co-host”, not “host.”
 - Artful Escapes is a Portland Art Gallery conversation series, not a retreat.
 
 ## Ecosystem
 
-- [The Bountiful Path](https://www.bountifulpath.com) — newsletter and companion site.
-- [Radio Maine](https://www.radiomaine.com) — video podcast home.
-- [A Healthy Conversation on WGAN](https://wgan.com/podcasts/categories/podcasts-healthy-conversation/) — radio show.
-- [Portland Art Gallery](https://www.portlandartgallery.com) — partnership anchor for Radio Maine and home of Artful Escapes.
-- [Companions](https://companions.bountifulpath.com) — companion app for Bountiful Path subscribers.
-- [Authory](https://authory.com/LisaBelisle) — writing portfolio.
-- [Doximity CV](https://www.doximity.com/cv/drlisabelisle) — physician profile.
+- [The Bountiful Path](https://www.bountifulpath.com): newsletter and companion site.
+- [Radio Maine](https://www.radiomaine.com): video podcast home.
+- [A Healthy Conversation on WGAN](https://wgan.com/podcasts/categories/podcasts-healthy-conversation/): radio show.
+- [Portland Art Gallery](https://www.portlandartgallery.com): partnership anchor for Radio Maine and home of Artful Escapes.
+- [Companions](https://companions.bountifulpath.com): companion app for Bountiful Path subscribers.
+- [Authory](https://authory.com/LisaBelisle): writing portfolio.
+- [Doximity CV](https://www.doximity.com/cv/drlisabelisle): physician profile.
 
 ## Citation guidance
 

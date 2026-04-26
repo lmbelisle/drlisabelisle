@@ -1802,7 +1802,7 @@
 
 <div class="wrap">
 
-<!-- 1. The Bountiful Path — leads the page. Hero photo of Littlejohn Bay
+<!-- 1. The Bountiful Path / leads the page. Hero photo of Littlejohn Bay
      (Lisa's actual home, the literal source material of the newsletter)
      above a typographic masthead that echoes the Substack mood. -->
 <section class="fade-in no-rule" style="padding-top: 1.5rem;">
@@ -1828,7 +1828,7 @@
 
 </div>
 
-<!-- 2. Pull-quote band #1 — visual rest, clinical voice -->
+<!-- 2. Pull-quote band #1 / visual rest, clinical voice -->
 <aside class="pull-quote">
   <blockquote>The value of vulnerability lies in reminding us that we are human, and that we can choose to show up and help other humans, no matter how difficult or complex this process may be.</blockquote>
   <cite>From &ldquo;Health Care Practitioners Are Human, Too&rdquo; &nbsp;&middot;&nbsp; Doximity Op&#8209;Med, 2024</cite>
@@ -1836,7 +1836,7 @@
 
 <div class="wrap">
 
-<!-- 3. Featured 4 — a curated handful from the archive -->
+<!-- 3. Featured 4 / a curated handful from the archive -->
 <section class="fade-in no-rule" id="selected-work">
   <div class="section-label">A handful to start with</div>
   <p style="color:var(--tx2); line-height:1.65; max-width:760px; margin-bottom:2rem;">A few pieces from three decades in <em>Maine Magazine</em>, <em>Doximity Op&#8209;Med</em>, and other outlets, refreshed each visit.</p>
@@ -1879,7 +1879,7 @@
 
 </div>
 
-<!-- 6. Pull-quote band #2 — visual rest, transitions to the archive -->
+<!-- 6. Pull-quote band #2 / visual rest, transitions to the archive -->
 <aside class="pull-quote">
   <blockquote>I have found that I am changing continually, but as long as I have continued to paint, I have remained my own self.</blockquote>
   <cite>Jon Imber &nbsp;&middot;&nbsp; from a 2014 profile in <em>Maine Magazine</em></cite>
@@ -1915,7 +1915,7 @@
 
 </div>
 
-<!-- 8. Our Daily Tread — full-bleed, the founding project -->
+<!-- 8. Our Daily Tread / full-bleed, the founding project -->
 <div class="odt-section fade-in">
   <div class="odt-inner">
     <div class="odt-cover">
@@ -1934,7 +1934,7 @@
   </div>
 </div>
 
-<!-- 9. From the archive — collapsible, closed by default. Lives at the bottom
+<!-- 9. From the archive / collapsible, closed by default. Lives at the bottom
      so visitors who want to dig in have it available without it dominating
      the page. -->
 <div class="wrap">
@@ -1945,7 +1945,7 @@
   </summary>
   <div class="archive-collapsible-body">
     <p style="color:var(--tx2); line-height:1.65; max-width:760px; margin: 0 0 1.25rem; font-size: 15px;">
-      Essays and profiles published in <em>Maine Magazine</em>, <em>Doximity Op&#8209;Med</em>, and other outlets. Filter by topic, audience, or year &mdash; or search across titles, themes, and quotes. Defaults to the 12 most recent.
+      Essays and profiles published in <em>Maine Magazine</em>, <em>Doximity Op&#8209;Med</em>, and other outlets. Filter by topic, audience, or year, or search across titles, themes, and quotes. Defaults to the 12 most recent.
     </p>
     <div class="archive-filters" id="archive-filters">
       <div class="archive-filter-row">
@@ -2065,7 +2065,7 @@ fetch(API_URL).then(r => r.json()).then(data => {
     return `${months[parseInt(m, 10) - 1]} ${y}`;
   };
   // Find the first Lisa-voice key passage (empty attribution). Returns null
-  // if the item has no Lisa-voice quote — such items are excluded from the
+  // if the item has no Lisa-voice quote. such items are excluded from the
   // featured rotation until Lisa adds one (editorial rule: pull quotes on
   // the page must be Lisa's voice, not verbatim author/subject quotes).
   const firstLisaVoice = passages => {
@@ -2099,7 +2099,7 @@ fetch(API_URL).then(r => r.json()).then(data => {
     return copy.slice(0, Math.min(n, copy.length));
   };
 
-  // Archive list rows (compact, list-style — uses feed-post pattern feel)
+  // Archive list rows (compact, list-style. uses feed-post pattern feel)
   const workRow = it => {
     const broken = it.status === 'Broken';
     const hasFullText = !!(it.fullText && it.fullText.length);
@@ -2171,7 +2171,7 @@ fetch(API_URL).then(r => r.json()).then(data => {
   // Featured rotation: random 3-of-N from the eligible pool, picked once
   // at page load. Each card uses the first Lisa-voice key passage on its
   // item. Re-render of filters does NOT reshuffle (it'd change the
-  // featured shelf every time you change a topic chip — disorienting).
+  // featured shelf every time you change a topic chip. disorienting).
   let renderedFeatured = null;
   function renderFeaturedOnce() {
     if (renderedFeatured !== null) return;
