@@ -8,6 +8,7 @@
 
 import { fetchCopy } from './fetch-copy.js';
 import { fetchSelectedWorks } from './fetch-selected-works.js';
+import { fetchFeaturedEssays } from './fetch-featured-essays.js';
 import { writeFile } from 'node:fs/promises';
 
 const AIRTABLE_KEY = process.env.AIRTABLE_API_KEY;
@@ -35,12 +36,23 @@ async function buildSelectedWorks() {
   }
 }
 
+async function buildFeaturedEssays() {
+  try {
+    const essays = await fetchFeaturedEssays(AIRTABLE_KEY);
+    await writeFile('featured-essays.json', JSON.stringify(essays, null, 2) + '\n', 'utf8');
+    console.log(`featured-essays.json: ${essays.length} Reflections rotation entries.`);
+  } catch (err) {
+    console.warn('build-data: featured-essays fetch failed; keeping existing featured-essays.json.');
+    console.warn(err.message);
+  }
+}
+
 async function main() {
   if (!AIRTABLE_KEY) {
     console.warn('build-data: AIRTABLE_API_KEY not set; skipping Airtable fetches.');
     return;
   }
-  await Promise.all([buildCopy(), buildSelectedWorks()]);
+  await Promise.all([buildCopy(), buildSelectedWorks(), buildFeaturedEssays()]);
 }
 
 main();
