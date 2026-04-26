@@ -1811,7 +1811,7 @@
       <img src="littlejohn-dock-summer.jpg" alt="Summer evening view from the Littlejohn Island dock, looking out across Casco Bay at sunset"
            style="width: 100%; height: 100%; object-fit: cover; object-position: center 65%; display: block; filter: saturate(0.92); transform: rotate(-0.8deg) scale(1.025); transform-origin: center;">
     </div>
-    <figcaption style="font-family: var(--serif); font-style: italic; font-size: 13px; color: var(--tx3); line-height: 1.55; margin-top: 0.75rem; text-align: center;">Summer evening from the Littlejohn Island dock, Casco Bay &mdash; where the writing begins.</figcaption>
+    <figcaption style="font-family: var(--serif); font-style: italic; font-size: 13px; color: var(--tx3); line-height: 1.55; margin-top: 0.75rem; text-align: center;">Summer morning from the Littlejohn Island dock, Casco Bay. Where the writing begins.</figcaption>
   </figure>
   <div style="text-align: center;">
     <div style="font-family: var(--sans); font-size: 11px; letter-spacing: 0.22em; text-transform: uppercase; color: var(--gold); margin-bottom: 1.25rem;">Newsletter on Substack</div>
@@ -1839,7 +1839,7 @@
 <!-- 3. Featured 4 — a curated handful from the archive -->
 <section class="fade-in no-rule" id="selected-work">
   <div class="section-label">A handful to start with</div>
-  <p style="color:var(--tx2); line-height:1.65; max-width:760px; margin-bottom:2rem;">Four pieces &mdash; one each from clinical voice, signature profile, integrative practice, and the intersection of art and mortality &mdash; that show the range of three decades in <em>Maine Magazine</em>, <em>Doximity Op&#8209;Med</em>, and other outlets.</p>
+  <p style="color:var(--tx2); line-height:1.65; max-width:760px; margin-bottom:2rem;">A few pieces from three decades in <em>Maine Magazine</em>, <em>Doximity Op&#8209;Med</em>, and other outlets, refreshed each visit.</p>
   <div class="featured-work-grid" id="featured-grid">
     <div style="font-size:13px;color:var(--tx3);padding:1rem 0;">Loading featured pieces&hellip;</div>
   </div>
@@ -2064,21 +2064,40 @@ fetch(API_URL).then(r => r.json()).then(data => {
     const months = ['Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec'];
     return `${months[parseInt(m, 10) - 1]} ${y}`;
   };
-  const pullQuoteHTML = (passages, big) => {
-    if (!passages || !passages.length) return '';
-    const q = passages[0];
-    const attr = q.attribution ? `<cite>&mdash; ${escapeHTML(q.attribution)}</cite>` : '';
-    return `<blockquote class="${big ? 'work-quote work-quote--big' : 'work-quote'}">&ldquo;${escapeHTML(q.text)}&rdquo;${attr}</blockquote>`;
+  // Find the first Lisa-voice key passage (empty attribution). Returns null
+  // if the item has no Lisa-voice quote — such items are excluded from the
+  // featured rotation until Lisa adds one (editorial rule: pull quotes on
+  // the page must be Lisa's voice, not verbatim author/subject quotes).
+  const firstLisaVoice = passages => {
+    if (!Array.isArray(passages)) return null;
+    return passages.find(p => p && !p.attribution) || null;
   };
 
-  // Featured cards (large, with full pull quote treatment)
-  const featuredCard = it => `
+  // Render a pull quote inside a featured card (always uses an explicitly
+  // chosen Lisa-voice passage, not just keyPassages[0]).
+  const pullQuoteHTML = (quote, big) => {
+    if (!quote) return '';
+    return `<blockquote class="${big ? 'work-quote work-quote--big' : 'work-quote'}">&ldquo;${escapeHTML(quote.text)}&rdquo;</blockquote>`;
+  };
+
+  // Featured cards. Caller passes the chosen Lisa-voice quote.
+  const featuredCard = (it, quote) => `
     <article class="featured-work">
       <div class="featured-work-cat">${escapeHTML(it.outlet)} &nbsp;&middot;&nbsp; ${fmtDate(it.date)}</div>
       <h3 class="featured-work-title">${escapeHTML(it.title)}</h3>
-      ${pullQuoteHTML(it.keyPassages, true)}
+      ${pullQuoteHTML(quote, true)}
       <a class="featured-work-link" href="${escapeHTML(it.url)}" target="_blank" rel="noopener">Read at ${escapeHTML(it.outlet)} &rarr;</a>
     </article>`;
+
+  // Fisher-Yates shuffle then take first n.
+  const pickRandom = (arr, n) => {
+    const copy = arr.slice();
+    for (let i = copy.length - 1; i > 0; i--) {
+      const j = Math.floor(Math.random() * (i + 1));
+      [copy[i], copy[j]] = [copy[j], copy[i]];
+    }
+    return copy.slice(0, Math.min(n, copy.length));
+  };
 
   // Archive list rows (compact, list-style — uses feed-post pattern feel)
   const workRow = it => {
@@ -2149,12 +2168,30 @@ fetch(API_URL).then(r => r.json()).then(data => {
 
   function hasActiveFilter() { return !!(state.topic || state.audience || state.year || state.q); }
 
-  function render() {
-    // Featured shelf
-    const featured = ITEMS.filter(i => i.featured);
+  // Featured rotation: random 3-of-N from the eligible pool, picked once
+  // at page load. Each card uses the first Lisa-voice key passage on its
+  // item. Re-render of filters does NOT reshuffle (it'd change the
+  // featured shelf every time you change a topic chip — disorienting).
+  let renderedFeatured = null;
+  function renderFeaturedOnce() {
+    if (renderedFeatured !== null) return;
+    // Pool = items Lisa has flagged Show on Site AND that have a
+    // Lisa-voice key passage (empty attribution). Items where every
+    // key passage is attributed to someone else are excluded until
+    // Lisa adds her own line.
+    const pool = ITEMS
+      .filter(i => i.showOnSite)
+      .map(i => ({ item: i, quote: firstLisaVoice(i.keyPassages) }))
+      .filter(x => x.quote);
+    const picks = pickRandom(pool, 3);
     document.getElementById('featured-grid').innerHTML =
-      featured.length ? featured.map(featuredCard).join('')
+      picks.length ? picks.map(({ item, quote }) => featuredCard(item, quote)).join('')
       : '<div style="font-size:13px;color:var(--tx3);">No featured pieces yet.</div>';
+    renderedFeatured = picks;
+  }
+
+  function render() {
+    renderFeaturedOnce();
 
     // Archive (excludes featured to avoid duplication)
     const filtered = archive.filter(i => {
