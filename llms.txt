@@ -5,7 +5,7 @@
 ## Site map
 
 - [Home](https://drlisabelisle.com/): front door, who Lisa is in two sentences, four doors out.
-- [Writing](https://drlisabelisle.com/writing.html): The Bountiful Path on Substack, books in progress, companions and tools, *Our Daily Tread*, and a curated archive of essays and profiles published in Maine Magazine, Doximity Op-Med, and other outlets across three decades.
+- [Writing](https://drlisabelisle.com/writing.html): The Bountiful Path on Substack, books in progress, companions and tools, *Our Daily Tread*, and an archive of essays and profiles published in Maine Magazine, Doximity Op-Med, and other outlets across three decades.
 - [Podcast](https://drlisabelisle.com/podcast.html): Radio Maine (video podcast) and A Healthy Conversation on Newsradio WGAN.
 - [Speaking](https://drlisabelisle.com/speaking.html): speaking topics: signature talks, past venues, formats, and how to inquire.
 - [Events](https://drlisabelisle.com/events.html): Radio Maine Live panels and the Artful Escapes conversation series at the Portland Art Gallery, plus virtual book circles.
@@ -18,7 +18,7 @@
 - [The Bountiful Path on Substack](https://drlisabelisle.substack.com): newsletter archive.
 - *Daughter, Doctor, Mom*: a memoir in progress, centered on her late father, Charles Belisle, MD.
 - *Our Daily Tread: Thoughts for an Inspired Life* (editor). Aerie River Press, 2008. A perpetual calendar assembled as a fundraiser for Safe Passage in Guatemala City.
-- [Writing archive on this site](https://drlisabelisle.com/writing.html): curated archive of 83 essays and profiles from three decades, with featured selections, filterable by topic and year, and full-text fallback when external links break.
+- [Writing archive on this site](https://drlisabelisle.com/writing.html): archive of 83 essays and profiles from three decades, with featured selections, filterable by topic and year, and full-text fallback when external links break.
 - [Writing archive on Authory](https://authory.com/LisaBelisle): third-party portfolio mirror.
 
 ### Selected published writing (2014–2024)
