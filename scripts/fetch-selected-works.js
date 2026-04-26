@@ -55,6 +55,41 @@ function parseKeyPassages(text) {
   return out;
 }
 
+// Parse the multilineText "Memoriam Links" cell into structured links.
+// Format per line: `Label | URL`. Lines prefixed with `LMR:` are tagged
+// kind=lmr (Love Maine Radio episode); the prefix is stripped from the label.
+// Other entries are kind=external. Used by the Remembering page entries.
+function parseMemoriamLinks(text) {
+  if (!text) return [];
+  const out = [];
+  for (const line of text.split('\n')) {
+    const trimmed = line.trim();
+    if (!trimmed || !trimmed.includes('|')) continue;
+    const idx = trimmed.indexOf('|');
+    let label = trimmed.slice(0, idx).trim();
+    const url = trimmed.slice(idx + 1).trim();
+    if (!url) continue;
+    let kind = 'external';
+    if (/^lmr:/i.test(label)) {
+      kind = 'lmr';
+      label = label.replace(/^lmr:\s*/i, '').trim();
+    }
+    out.push({ label, url, kind });
+  }
+  return out;
+}
+
+// Parse the multilineText "Main People" cell into a clean array of names.
+// One name per line. The literal sentinel `—` (lone em dash) means
+// "no profile subjects" and is stripped out.
+function parseMainPeople(text) {
+  if (!text) return [];
+  return text
+    .split('\n')
+    .map(n => n.trim())
+    .filter(n => n && n !== '\u2014');
+}
+
 export async function fetchSelectedWorks(apiKey) {
   const recs = await airtableList(apiKey, WORKS_TABLE, { pageSize: '100' });
   const items = [];
@@ -79,6 +114,12 @@ export async function fetchSelectedWorks(apiKey) {
       showOnSite: f['Show on Site'] === true,
       keyPassages: parseKeyPassages(f['Key Passages'] || ''),
       fullText: f['Full Text'] || '',
+      mainPeople: parseMainPeople(f['Main People'] || ''),
+      memoriam: f['Memoriam'] === true,
+      memoriamNote: f['Memoriam Note'] || '',
+      memoriamPullQuote: f['Memoriam Pull Quote'] || '',
+      memoriamPullQuoteAttribution: f['Memoriam Pull Quote Attribution'] || '',
+      memoriamLinks: parseMemoriamLinks(f['Memoriam Links'] || ''),
     });
   }
   // Sort newest first
