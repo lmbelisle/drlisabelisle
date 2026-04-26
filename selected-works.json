@@ -21,7 +21,7 @@
       "status": "Redirected",
       "length": 1231,
       "featured": false,
-      "showOnSite": false,
+      "showOnSite": true,
       "keyPassages": [
         {
           "text": "Physicians don't always make the best team members. As subject matter experts who have invested much in our training, some of us have a tendency to rest on our educational laurels and positional power.",
@@ -58,7 +58,7 @@
       "status": "Active",
       "length": 1545,
       "featured": false,
-      "showOnSite": false,
+      "showOnSite": true,
       "keyPassages": [
         {
           "text": "I wanted a better understanding of everything integral, but tangential, to medicine: finances, marketing, communication, leadership.",
@@ -127,7 +127,7 @@
       "status": "Active",
       "length": 1495,
       "featured": false,
-      "showOnSite": false,
+      "showOnSite": true,
       "keyPassages": [
         {
           "text": "It is crucial that clinicians not only practice, but lead — so that we can build the health care ecosystems we want to see.",
@@ -162,7 +162,7 @@
       "status": "Active",
       "length": 1735,
       "featured": false,
-      "showOnSite": false,
+      "showOnSite": true,
       "keyPassages": [
         {
           "text": "The food at Walkers Maine is also a reflection of the life that Danielle and Justin are carefully cultivating. Whenever possible they use ingredients farmed, foraged, or fished by local purveyors — who are, more often than not, their friends and neighbors.",
@@ -198,7 +198,7 @@
       "status": "Active",
       "length": 1597,
       "featured": false,
-      "showOnSite": false,
+      "showOnSite": true,
       "keyPassages": [
         {
           "text": "The earth has a soul. Everything does.",
@@ -233,7 +233,7 @@
       "status": "Active",
       "length": 1176,
       "featured": false,
-      "showOnSite": false,
+      "showOnSite": true,
       "keyPassages": [
         {
           "text": "I was just tall enough to see out the window of my family's station wagon, and I pressed my face to the glass, hoping for a glimpse of our new town.",
@@ -267,7 +267,7 @@
       "status": "Active",
       "length": 1906,
       "featured": false,
-      "showOnSite": false,
+      "showOnSite": true,
       "keyPassages": [
         {
           "text": "A joyous cacophony of voices intermingles with the steely clink of cutlery and the sneakered footfalls of waitstaff. The scent of sun-warmed evergreens drifts in through an open door.",
@@ -303,7 +303,7 @@
       "status": "Active",
       "length": 935,
       "featured": false,
-      "showOnSite": false,
+      "showOnSite": true,
       "keyPassages": [
         {
           "text": "'Is that a smart watch?' inquires my patient, looking at the pink band around my wrist. As if on cue, the previously dark face of the timepiece comes to life, suggesting that I should get up and take a few steps.",
@@ -340,7 +340,7 @@
       "status": "Active",
       "length": 1946,
       "featured": false,
-      "showOnSite": false,
+      "showOnSite": true,
       "keyPassages": [
         {
           "text": "The fields are green and gold, unfurling from beneath a modern timber-frame barn toward the shores of the Fox Islands Thorofare. An iconic New England stone wall climbs and dips across the land, where Native Americans lived more than 6,000 years ago.",
@@ -375,7 +375,7 @@
       "status": "Active",
       "length": 1432,
       "featured": false,
-      "showOnSite": false,
+      "showOnSite": true,
       "keyPassages": [
         {
           "text": "If you're from Maine, there's always something that draws you back. For people that are out of state, this is their opportunity to experience their childhood winter as an adult.",
@@ -410,7 +410,7 @@
       "status": "Active",
       "length": 988,
       "featured": false,
-      "showOnSite": false,
+      "showOnSite": true,
       "keyPassages": [
         {
           "text": "The last rays of sun filter through the partially drawn curtains, sending shadows across the gleaming tiled floor. The laboring woman gathers her strength, her face flushed with exertion.",
@@ -447,7 +447,7 @@
       "status": "Active",
       "length": 1367,
       "featured": false,
-      "showOnSite": false,
+      "showOnSite": true,
       "keyPassages": [
         {
           "text": "Our state's farmers, producers, and merchants offer a variety of sustainably harvested plant-based and natural products to help you ward off winter woes, from immune-boosting Chaga Mountain tea to sweet elderberry syrup from Maine Medicinals.",
@@ -484,7 +484,7 @@
       "status": "Active",
       "length": 2025,
       "featured": false,
-      "showOnSite": false,
+      "showOnSite": true,
       "keyPassages": [
         {
           "text": "With my lungs and the calls of birds as a soundtrack, I connect to the world before I head to the office to see patients. Keeping my body and soul in tune helps me to encourage others to do the same.",
@@ -520,7 +520,7 @@
       "status": "Active",
       "length": 1662,
       "featured": false,
-      "showOnSite": false,
+      "showOnSite": true,
       "keyPassages": [
         {
           "text": "As the fans shuffle their feet and rub their hands together to stay warm, a small figure, dressed in a form-fitting racing suit and helmet, hurtles over the headwall. The edges of her skis bite into the turns with a sharp, rapid shuuush.",
@@ -557,7 +557,7 @@
       "status": "Active",
       "length": 1309,
       "featured": false,
-      "showOnSite": false,
+      "showOnSite": true,
       "keyPassages": [
         {
           "text": "It is easy to take our bodies' abilities for granted — until we realize that other people face limitations that make these experiences less accessible.",
@@ -595,7 +595,7 @@
       "status": "Active",
       "length": 1534,
       "featured": false,
-      "showOnSite": false,
+      "showOnSite": true,
       "keyPassages": [
         {
           "text": "A broad swath of lawn edges up against a carefully laid garden, featuring hay-cushioned rows of beans and zucchini. The wind rustles the tall grass next to a red barn and carries a bush.",
@@ -631,7 +631,7 @@
       "status": "Active",
       "length": 1215,
       "featured": false,
-      "showOnSite": false,
+      "showOnSite": true,
       "keyPassages": [
         {
           "text": "Two lifeless geese lie on a jagged dune between sparse tufts of vegetation. Three of their brethren have taken to the sepia-toned skies above. Is it possible that a hunter is poised just beyond our view? Is there a deeper meaning to this work?",
@@ -703,7 +703,7 @@
       "status": "Active",
       "length": 1437,
       "featured": false,
-      "showOnSite": false,
+      "showOnSite": true,
       "keyPassages": [
         {
           "text": "There are places in Maine where road signs are few, and travelers must depend upon the kind instructions of strangers — and a bit of intuition.",
@@ -739,7 +739,7 @@
       "status": "Active",
       "length": 2060,
       "featured": false,
-      "showOnSite": false,
+      "showOnSite": true,
       "keyPassages": [
         {
           "text": "As the vessel cuts through the looking-glass ocean, trailed by a wake of glinting sunlight, it is easy to understand why the internationally acclaimed artist and children's book author Ashley Bryan has made a Maine island his home.",
@@ -774,7 +774,7 @@
       "status": "Active",
       "length": 1252,
       "featured": false,
-      "showOnSite": false,
+      "showOnSite": true,
       "keyPassages": [
         {
           "text": "We can feel the buzz of excitement before we see the surf. Down in the gently rolling waves, rows of wetsuited athletes are already on their boards. Sleek and joyful as seals, they glide onto the crescent sliver of shore, guided by the hands of numerous volunteers.",
@@ -806,7 +806,7 @@
       "status": "Active",
       "length": 1326,
       "featured": false,
-      "showOnSite": false,
+      "showOnSite": true,
       "keyPassages": [
         {
           "text": "We are gathered in a forest, within the wooden walls of a converted barn. Rough-hewn beams span the space above us. Soft murmurs of anticipation ripple through the hushed crowd.",
@@ -841,7 +841,7 @@
       "status": "Active",
       "length": 1255,
       "featured": false,
-      "showOnSite": false,
+      "showOnSite": true,
       "keyPassages": [
         {
           "text": "She ducked her head, as if ashamed, and smiled apologetically. I could see the smooth pink lines of her gums behind the hand she was using to hide her mouth. I realized that she had no teeth.",
@@ -875,7 +875,7 @@
       "status": "Active",
       "length": 1431,
       "featured": false,
-      "showOnSite": false,
+      "showOnSite": true,
       "keyPassages": [
         {
           "text": "Entering Royal River Natural Foods is like walking into an artfully arranged still life. Three stand-alone wooden displays are piled high with seasonal crops: large-bottomed butternuts nestle against oblong spaghetti squash.",
@@ -910,7 +910,7 @@
       "status": "Active",
       "length": 1249,
       "featured": false,
-      "showOnSite": false,
+      "showOnSite": true,
       "keyPassages": [
         {
           "text": "Running tends to be a solitary pursuit, while road racing is anything but. When we attach a numbered bib to the fabric of our sweat-wicking shirts, we agree to be counted among our peers. Our legs join a moving forest of limbs circumnavigating a predetermined course.",
@@ -944,7 +944,7 @@
       "status": "Active",
       "length": 1531,
       "featured": false,
-      "showOnSite": false,
+      "showOnSite": true,
       "keyPassages": [
         {
           "text": "At first we do not see their bodies. Two sets of dark eyes watch us through the husks of the October garden.",
@@ -980,7 +980,7 @@
       "status": "Active",
       "length": 1148,
       "featured": false,
-      "showOnSite": false,
+      "showOnSite": true,
       "keyPassages": [
         {
           "text": "My sisters and I spent many January evenings bundled in oversized 80s-style parkas, snowplowing our way down the slopes of Lost Valley in Auburn on rental skis, in the company of our Yarmouth classmates.",
@@ -1018,7 +1018,7 @@
       "status": "Active",
       "length": 1468,
       "featured": false,
-      "showOnSite": false,
+      "showOnSite": true,
       "keyPassages": [
         {
           "text": "The hum of a motor reverberates through air that is thick with the heat of summer, as a boat zips upstream. We turn a corner in time to see a juvenile eagle launching itself from a branch.",
@@ -1052,7 +1052,7 @@
       "status": "Active",
       "length": 1246,
       "featured": false,
-      "showOnSite": false,
+      "showOnSite": true,
       "keyPassages": [
         {
           "text": "With a name worthy of a children's book, the Inn by the Sea lives up to the lyrical promise of its title. The tang of ocean air sifts across a nearby salt marsh.",
@@ -1089,7 +1089,7 @@
       "status": "Active",
       "length": 2393,
       "featured": false,
-      "showOnSite": false,
+      "showOnSite": true,
       "keyPassages": [
         {
           "text": "The fog is a shifting entity, moving across the Isle Au Haut thoroughfare with a seeming sense of purpose. Like children playing peekaboo, we see through its fingers to nearby Kimball Island.",
@@ -1158,7 +1158,7 @@
       "status": "Active",
       "length": 1270,
       "featured": false,
-      "showOnSite": false,
+      "showOnSite": true,
       "keyPassages": [
         {
           "text": "The sky is pale lavender, and the morning has not yet lost its chill. A layer of thin clouds sifts across the horizon, reflected in the crescent of ocean that curves along the shore.",
@@ -1193,7 +1193,7 @@
       "status": "Active",
       "length": 1448,
       "featured": false,
-      "showOnSite": false,
+      "showOnSite": true,
       "keyPassages": [
         {
           "text": "A tenderly crafted mural extends over the entrance to Camp Sunshine depicting children enjoying the shade of a tree in full bloom as they sail their Wish Boats on a nearby pond.",
@@ -1228,7 +1228,7 @@
       "status": "Active",
       "length": 1497,
       "featured": false,
-      "showOnSite": false,
+      "showOnSite": true,
       "keyPassages": [
         {
           "text": "Her smile almost as big as her pregnant belly, Samantha Gregory walks confidently across the art gallery, sporting a pink and black demi-bra by Fantasie, pink-trimmed pajamas by BedHead, and a sign that reads, '40 percent of ten-year-old girls have already been on a diet.'",
@@ -1260,7 +1260,7 @@
       "status": "Active",
       "length": 1397,
       "featured": false,
-      "showOnSite": false,
+      "showOnSite": true,
       "keyPassages": [
         {
           "text": "Most days, I rise well before the sun, and reconnect my sleep-softened self to the solidity of life's elements by the light of a single bulb over the kitchen sink.",
@@ -1330,7 +1330,7 @@
       "status": "Active",
       "length": 2498,
       "featured": false,
-      "showOnSite": false,
+      "showOnSite": true,
       "keyPassages": [
         {
           "text": "A Parisian loft, a cottage by the sea, a mountain yurt. Within each artist exists the imaginings of a space in which one's wildest and most fantastic conceptions might germinate and bloom.",
@@ -1438,7 +1438,7 @@
       "status": "Active",
       "length": 1177,
       "featured": false,
-      "showOnSite": false,
+      "showOnSite": true,
       "keyPassages": [
         {
           "text": "Former fullback Charlie Belisle of Biddeford stood proudly among the group of 70-year-old men, each having donned his football jersey for the occasion. Never one to boast about his accomplishments or live in the past, my father, Dr. Charlie, nonetheless raised ten children and 17 grandchildren with an appreciation for athletics.",
@@ -1474,7 +1474,7 @@
       "status": "Active",
       "length": 1280,
       "featured": false,
-      "showOnSite": false,
+      "showOnSite": true,
       "keyPassages": [
         {
           "text": "All of us have been touched by cancer in one way or another. That's why people have joined on. That, and because it's a quality event. We put our heart and soul into it.",
@@ -1509,7 +1509,7 @@
       "status": "Active",
       "length": 1758,
       "featured": false,
-      "showOnSite": false,
+      "showOnSite": true,
       "keyPassages": [
         {
           "text": "It has been a year since I sat in an Old Port restaurant, surrounded by my sisters and mother, and told my three kids I had breast cancer.",
@@ -1581,7 +1581,7 @@
       "status": "Active",
       "length": 1455,
       "featured": false,
-      "showOnSite": false,
+      "showOnSite": true,
       "keyPassages": [
         {
           "text": "On Halloween night in 1976, Tae Chong sat on the floor of his cousins' house in South Portland in the dark. Chong and his family had just travelled from South Korea to the country that would become their home. Seven-year-old Chong spoke no English; his cousins spoke no Korean.",
@@ -1651,7 +1651,7 @@
       "status": "Active",
       "length": 1633,
       "featured": false,
-      "showOnSite": false,
+      "showOnSite": true,
       "keyPassages": [
         {
           "text": "Our shoes sink into the wet grass as we walk behind the one-hundred-year-old stone barn at Pearson's Town Farm. Farm manager Michial Russell draws my attention to Amal the llama, who is advancing toward our group cautiously from the back field.",
@@ -1686,7 +1686,7 @@
       "status": "Active",
       "length": 1722,
       "featured": false,
-      "showOnSite": false,
+      "showOnSite": true,
       "keyPassages": [
         {
           "text": "'Why is it good to think about our goals?' asks Olympic luge rider Julia Clukey. Sprawled across the floor of the brand new camp director's cabin, 30 young women reflect on Clukey's question.",
@@ -1757,7 +1757,7 @@
       "status": "Active",
       "length": 1330,
       "featured": false,
-      "showOnSite": false,
+      "showOnSite": true,
       "keyPassages": [
         {
           "text": "When I was in junior high school, my friend Beth gave a presentation about artist Andrew Wyeth and his connection to Maine. Then Beth showed us Christina's World. I was unexpectedly moved by Wyeth's depiction of his Cushing neighbor, Christina Olson.",
@@ -1931,7 +1931,7 @@
       "status": "Active",
       "length": 1058,
       "featured": false,
-      "showOnSite": false,
+      "showOnSite": true,
       "keyPassages": [
         {
           "text": "When Jim Godbout was five, his twin brother, John, died of leukemia. His father soon abandoned the family, and his beloved grandfather died. Then, as a teenager, Godbout developed debilitating seizures. These circumstances might have irreparably damaged a lesser man.",
@@ -2070,7 +2070,7 @@
       "status": "Active",
       "length": 1382,
       "featured": false,
-      "showOnSite": false,
+      "showOnSite": true,
       "keyPassages": [
         {
           "text": "'There are 87,000 children in Maine who may not know where their next meal is coming from,' says John Woods.",
@@ -2173,7 +2173,7 @@
       "status": "Active",
       "length": 1571,
       "featured": false,
-      "showOnSite": false,
+      "showOnSite": true,
       "keyPassages": [
         {
           "text": "The sky is an unbroken swath of blue and the shores of Little Sebago seem distant as I float farther away from the family compound. I dangle my legs off the edge of the raft into the bathwater-warm lake, pretending I am a mermaid, sunning herself upon a rock.",
@@ -2210,7 +2210,7 @@
       "status": "Active",
       "length": 1516,
       "featured": false,
-      "showOnSite": false,
+      "showOnSite": true,
       "keyPassages": [
         {
           "text": "It was a quiet, beautiful day, and I heard about a fatality on the hill. I couldn't believe something like that could happen.",
@@ -2315,7 +2315,7 @@
       "status": "Active",
       "length": 1711,
       "featured": false,
-      "showOnSite": false,
+      "showOnSite": true,
       "keyPassages": [
         {
           "text": "'My mother would never talk to me again if she knew I had a tattoo.' Shawn McLaughlin smiles as he says this. 'She's not happy about it somewhere.'",
@@ -2349,7 +2349,7 @@
       "status": "Active",
       "length": 1925,
       "featured": false,
-      "showOnSite": false,
+      "showOnSite": true,
       "keyPassages": [
         {
           "text": "Founded in 1947, CIEE was originally known as the Council on Student Travel. It was part of a post-World War II attempt to foster harmonious relationships between countries.",
@@ -2381,7 +2381,7 @@
       "status": "Active",
       "length": 1554,
       "featured": false,
-      "showOnSite": false,
+      "showOnSite": true,
       "keyPassages": [
         {
           "text": "People take for granted how we get our food. Pollination is a fascinating aspect of the process.",
@@ -2489,7 +2489,7 @@
       "status": "Active",
       "length": 1778,
       "featured": false,
-      "showOnSite": false,
+      "showOnSite": true,
       "keyPassages": [
         {
           "text": "I first learned about the Bigelow Laboratory as an undergraduate at Bowdoin College. A biology major, one of my campus jobs was cleaning test tubes for a professor who performed research in the basement of Searles Hall.",
@@ -2665,7 +2665,7 @@
       "status": "Active",
       "length": 2165,
       "featured": false,
-      "showOnSite": false,
+      "showOnSite": true,
       "keyPassages": [
         {
           "text": "I bought my first stethoscope in 1992: a burgundy model from Littman Cardiology, purchased on the recommendation of my professor at the University of Vermont College of Medicine.",
@@ -2911,7 +2911,7 @@
       "status": "Broken",
       "length": 379,
       "featured": false,
-      "showOnSite": false,
+      "showOnSite": true,
       "keyPassages": [
         {
           "text": "For the past year, the Dr. Lisa Radio Hour & Podcast has been building a 'village' of wellness-minded individuals. Our guests and listeners, joined together through social media, radio and podcast, represent a new generation seeking to better their own health through attention to the health of their families, communities and the global village.",
