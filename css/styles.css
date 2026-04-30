@@ -427,6 +427,22 @@ footer { padding: 2.5rem 0; border-top: 0.5px solid var(--bd); background: var(-
   text-decoration: none;
 }
 .otw-card-pag-link:hover { color: #A88830; border-bottom-color: #A88830; }
+/* Radio Maine listen link sits between the OTW read link (teal) and the
+   PAG profile link (gold). Same teal as the read link to keep the OTW
+   "this is the writing pair" affordance grouped, with the PAG link as
+   the visually distinct gallery hand-off. */
+.otw-card-rm-link {
+  font-family: var(--sans);
+  font-size: 0.7rem;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  color: var(--teal);
+  font-weight: 500;
+  padding-bottom: 0.2rem;
+  border-bottom: 1px solid var(--teal);
+  text-decoration: none;
+}
+.otw-card-rm-link:hover { color: var(--teal-dark); border-bottom-color: var(--teal-dark); }
 .bp-h2-sub {
   font-family: var(--serif);
   font-style: italic;

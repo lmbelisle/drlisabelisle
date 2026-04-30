@@ -1954,6 +1954,9 @@
       const image = p.image
         ? `<a href="${escapeHTML(p.otwUrl)}" target="_blank" rel="noopener" class="bp-essay-card-photo"><img src="${escapeHTML(p.image)}" alt="${escapeHTML(p.otwTitle)}" loading="lazy"></a>`
         : '';
+      const rmLine = p.rmYoutubeUrl
+        ? `<a href="${escapeHTML(p.rmYoutubeUrl)}" target="_blank" rel="noopener" class="otw-card-rm-link">Listen on Radio Maine &rarr;</a>`
+        : '';
       const pagLine = p.pagUrl
         ? `<a href="${escapeHTML(p.pagUrl)}" target="_blank" rel="noopener" class="otw-card-pag-link">View at Portland Art Gallery &rarr;</a>`
         : '';
@@ -1966,6 +1969,7 @@
         ${p.otwPullQuote ? `<blockquote class="bp-essay-card-quote">${escapeHTML(p.otwPullQuote)}</blockquote>` : ''}
         <div class="otw-card-actions">
           <a href="${escapeHTML(p.otwUrl)}" target="_blank" rel="noopener" class="bp-essay-card-cta">Read in Off the Wall &rarr;</a>
+          ${rmLine}
           ${pagLine}
         </div>
       </article>
