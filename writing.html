@@ -1915,6 +1915,65 @@
   </p>
 </section>
 
+<!-- 1c. Off the Wall Art Magazine. Lisa's profiles of Portland Art Gallery
+     artists, paired (where possible) with their Radio Maine episodes. The
+     three cards are picked at random from otw-pieces.json on each page
+     load; refresh = new three. The fetch script (scripts/fetch-otw.js)
+     filters to records authored by Lisa, so PAG-staff republished bios
+     don't appear here even though they share the OTW byline. -->
+<section class="fade-in no-rule" id="off-the-wall">
+  <div class="section-label">Off the Wall</div>
+  <p class="bp-h2-sub">Profiles of Portland Art Gallery artists, written for <em>Off the Wall Art Magazine</em>. Each piece sits alongside the artist&rsquo;s Radio Maine conversation.</p>
+  <div class="bp-essays-grid" id="otw-grid">
+    <div style="font-size:13px;color:var(--tx3);padding:1rem 0;">Loading Off the Wall pieces&hellip;</div>
+  </div>
+  <p style="margin-top:2.8rem; text-align:center; font-family:var(--sans); font-size:11px; letter-spacing:0.2em; text-transform:uppercase; font-weight:500;">
+    <a class="link-plain" href="https://offthewallartmagazine.substack.com" target="_blank" rel="noopener">Read on Off the Wall</a>
+    <span style="color:var(--gold); margin: 0 0.7rem;">&middot;</span>
+    <a class="link-plain" href="https://portlandartgallery.com" target="_blank" rel="noopener">Portland Art Gallery</a>
+  </p>
+</section>
+
+<script>
+  // Render 3 random Off the Wall cards. Re-uses the .bp-essay-card markup
+  // so the visual rhythm matches the Bountiful Path Reflections grid above.
+  (async function renderOtwCards() {
+    const grid = document.getElementById('otw-grid');
+    if (!grid) return;
+    let pieces = [];
+    try {
+      const resp = await fetch('otw-pieces.json', { cache: 'no-cache' });
+      const data = await resp.json();
+      pieces = (data && data.items) || [];
+    } catch (e) { grid.parentElement.style.display = 'none'; return; }
+    if (!pieces.length) { grid.parentElement.style.display = 'none'; return; }
+    const escapeHTML = s => String(s||'').replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+    // Shuffle, take 3
+    const shuffled = [...pieces].sort(() => Math.random() - 0.5).slice(0, 3);
+    grid.innerHTML = shuffled.map(p => {
+      const image = p.image
+        ? `<a href="${escapeHTML(p.otwUrl)}" target="_blank" rel="noopener" class="bp-essay-card-photo"><img src="${escapeHTML(p.image)}" alt="${escapeHTML(p.otwTitle)}" loading="lazy"></a>`
+        : '';
+      const pagLine = p.pagUrl
+        ? `<a href="${escapeHTML(p.pagUrl)}" target="_blank" rel="noopener" class="otw-card-pag-link">View at Portland Art Gallery &rarr;</a>`
+        : '';
+      return `
+      <article class="bp-essay-card">
+        ${image}
+        <p class="bp-essay-card-eyebrow">Off the Wall &middot; PAG Artist</p>
+        <h3 class="bp-essay-card-title"><a href="${escapeHTML(p.otwUrl)}" target="_blank" rel="noopener">${escapeHTML(p.otwTitle)}</a></h3>
+        <p class="bp-essay-card-subtitle"><strong>${escapeHTML(p.artistName)}</strong>${p.otwExcerpt ? ` &mdash; ${escapeHTML(p.otwExcerpt)}` : ''}</p>
+        ${p.otwPullQuote ? `<blockquote class="bp-essay-card-quote">${escapeHTML(p.otwPullQuote)}</blockquote>` : ''}
+        <div class="otw-card-actions">
+          <a href="${escapeHTML(p.otwUrl)}" target="_blank" rel="noopener" class="bp-essay-card-cta">Read in Off the Wall &rarr;</a>
+          ${pagLine}
+        </div>
+      </article>
+    `;
+    }).join('');
+  })();
+</script>
+
 </div>
 
 <!-- 2. Pull-quote band #1 / visual rest, clinical voice -->

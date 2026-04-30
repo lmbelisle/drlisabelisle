@@ -405,6 +405,28 @@ footer { padding: 2.5rem 0; border-top: 0.5px solid var(--bd); background: var(-
   text-decoration: none;
 }
 .bp-essay-card-cta:hover { color: var(--teal-dark); border-bottom-color: var(--teal-dark); }
+/* OTW-card-specific tweaks: pair the OTW CTA with a PAG-profile link in
+   gold so visitors see both "read the piece" and "see the artist's work
+   at the gallery" affordances. */
+.otw-card-actions {
+  margin-top: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  align-items: flex-start;
+}
+.otw-card-pag-link {
+  font-family: var(--sans);
+  font-size: 0.7rem;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  color: #C9A84C;
+  font-weight: 500;
+  padding-bottom: 0.2rem;
+  border-bottom: 1px solid #C9A84C;
+  text-decoration: none;
+}
+.otw-card-pag-link:hover { color: #A88830; border-bottom-color: #A88830; }
 .bp-h2-sub {
   font-family: var(--serif);
   font-style: italic;

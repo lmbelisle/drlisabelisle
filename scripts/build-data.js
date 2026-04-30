@@ -9,6 +9,7 @@
 import { fetchCopy } from './fetch-copy.js';
 import { fetchSelectedWorks } from './fetch-selected-works.js';
 import { fetchFeaturedEssays } from './fetch-featured-essays.js';
+import { fetchOtwPieces } from './fetch-otw.js';
 import { writeFile } from 'node:fs/promises';
 
 const AIRTABLE_KEY = process.env.AIRTABLE_API_KEY;
@@ -47,12 +48,23 @@ async function buildFeaturedEssays() {
   }
 }
 
+async function buildOtwPieces() {
+  try {
+    const data = await fetchOtwPieces(AIRTABLE_KEY);
+    await writeFile('otw-pieces.json', JSON.stringify(data, null, 2) + '\n', 'utf8');
+    console.log(`otw-pieces.json: ${data.count} Lisa-authored Off the Wall pieces.`);
+  } catch (err) {
+    console.warn('build-data: otw fetch failed; keeping existing otw-pieces.json.');
+    console.warn(err.message);
+  }
+}
+
 async function main() {
   if (!AIRTABLE_KEY) {
     console.warn('build-data: AIRTABLE_API_KEY not set; skipping Airtable fetches.');
     return;
   }
-  await Promise.all([buildCopy(), buildSelectedWorks(), buildFeaturedEssays()]);
+  await Promise.all([buildCopy(), buildSelectedWorks(), buildFeaturedEssays(), buildOtwPieces()]);
 }
 
 main();
