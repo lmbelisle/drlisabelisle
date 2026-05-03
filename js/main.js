@@ -6,27 +6,40 @@
 
   document.documentElement.classList.replace('no-js', 'js');
 
+  let cardObs = null;
+
   document.addEventListener('DOMContentLoaded', () => {
     const reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
     const hasIO = 'IntersectionObserver' in window;
 
     // Per-card observer: each .stagger > * card observes its own viewport
     // entry and gets .in-view directly. Works on desktop AND mobile.
-    const cards = document.querySelectorAll('.stagger > *');
-    if (cards.length) {
-      if (!hasIO || reduceMotion) {
-        cards.forEach(el => el.classList.add('in-view'));
-      } else {
-        const cardObs = new IntersectionObserver((entries, obs) => {
-          entries.forEach(entry => {
-            if (entry.isIntersecting) {
-              entry.target.classList.add('in-view');
-              obs.unobserve(entry.target);
-            }
+    if (hasIO && !reduceMotion) {
+      cardObs = new IntersectionObserver((entries, obs) => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add('in-view');
+            obs.unobserve(entry.target);
+          }
+        });
+      }, { threshold: 0.12, rootMargin: '0px 0px -8% 0px' });
+      observeNewCards(document.querySelectorAll('.stagger > *'));
+      // Watch every .stagger parent for hydrated children (writing.html
+      // replaces #reflections-grid and #otw-grid contents from JSON).
+      const mut = new MutationObserver(records => {
+        records.forEach(r => {
+          if (!r.target.classList.contains('stagger')) return;
+          observeNewCards(r.addedNodes);
+          // Re-fade any newly inserted images too.
+          r.addedNodes.forEach(n => {
+            if (!(n instanceof HTMLElement)) return;
+            initImageFade(n.querySelectorAll('img'));
           });
-        }, { threshold: 0.12, rootMargin: '0px 0px -8% 0px' });
-        cards.forEach(el => cardObs.observe(el));
-      }
+        });
+      });
+      document.querySelectorAll('.stagger').forEach(p => mut.observe(p, { childList: true }));
+    } else {
+      document.querySelectorAll('.stagger > *').forEach(el => el.classList.add('in-view'));
     }
 
     // Image fade: every <img> goes from blank to crisp instead of popping.
@@ -37,6 +50,17 @@
       wireReadingProgress();
     }
   });
+
+  function observeNewCards(nodes) {
+    if (!cardObs) return;
+    nodes.forEach(n => {
+      if (!(n instanceof HTMLElement)) return;
+      // Only observe direct children of .stagger; ignore text nodes etc.
+      if (n.parentElement && n.parentElement.classList.contains('stagger')) {
+        cardObs.observe(n);
+      }
+    });
+  }
 
   function initImageFade(imgs) {
     imgs.forEach(img => {
