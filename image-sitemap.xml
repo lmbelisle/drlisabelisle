@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
+  <url>
+    <loc>https://drlisabelisle.com/</loc>
+    <image:image>
+      <image:loc>https://drlisabelisle.com/photo.jpg</image:loc>
+      <image:title>Dr. Lisa Belisle portrait</image:title>
+      <image:caption>Lisa Belisle, MD, PhD, MPH, MBA &mdash; physician, writer, and host of Radio Maine</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://drlisabelisle.com/maine-boat.png</image:loc>
+      <image:title>Lobster boat off Littlejohn Island, Maine, at first light</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://drlisabelisle.com/maine-sunrise.png</image:loc>
+      <image:title>Maine sunrise on the coast</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://drlisabelisle.com/coast-sunset.jpg</image:loc>
+      <image:title>Maine coast at sunset</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://drlisabelisle.com/littlejohn-bay.jpg</image:loc>
+      <image:title>Littlejohn Bay, Maine</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://drlisabelisle.com/littlejohn-dock-summer.jpg</image:loc>
+      <image:title>Littlejohn Island dock in summer</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://drlisabelisle.com/lisa-mic.jpg</image:loc>
+      <image:title>Lisa Belisle hosting Radio Maine</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://drlisabelisle.com/speaking.jpg</image:loc>
+      <image:title>Lisa Belisle speaking at a public engagement</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://drlisabelisle.com/studio-group.jpg</image:loc>
+      <image:title>Lisa Belisle in studio with conversation guests</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://drlisabelisle.com/gathering.jpg</image:loc>
+      <image:title>A Bountiful Path gathering on the Maine coast</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://drlisabelisle.com/three-generations.jpg</image:loc>
+      <image:title>Three generations of physicians in the Belisle family</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://drlisabelisle.com/our-daily-tread.jpg</image:loc>
+      <image:title>Our daily walk on Littlejohn Island</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://drlisabelisle.com/pag-painting.jpg</image:loc>
+      <image:title>Painting from the Portland Art Gallery</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://drlisabelisle.com/ahc-mills.jpg</image:loc>
+      <image:title>A Healthy Conversation with Maine Governor Janet Mills</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://drlisabelisle.com/rm-live-event.jpg</image:loc>
+      <image:title>Radio Maine Live event at Portland Art Gallery</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://drlisabelisle.com/rm-logo.png</image:loc>
+      <image:title>Radio Maine logo</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://drlisabelisle.com/bp-logo.png</image:loc>
+      <image:title>The Bountiful Path logo</image:title>
+    </image:image>
+  </url>
+</urlset>
