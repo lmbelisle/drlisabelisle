@@ -167,6 +167,15 @@ section.no-rule { border-bottom: none; padding-bottom: 1rem; }
 .contact-card-title { font-family: var(--serif); font-style: italic; font-size: 22px; font-weight: 400; margin-bottom: 0.6rem; color: #FEFCF9; }
 .contact-card-desc { font-size: 13px; color: rgba(254,252,249,0.7); line-height: 1.7; margin-bottom: 1.5rem; }
 
+/* === Page Footer (existing pages) === */
+footer { padding: 2.5rem 0; border-top: 0.5px solid var(--bd); background: var(--bg); }
+.footer-inner { display: flex; justify-content: space-between; align-items: center; max-width: var(--max); margin: 0 auto; padding: 0 var(--pad); flex-wrap: wrap; gap: 1rem; }
+.footer-name { font-family: var(--serif); font-size: 13px; color: var(--tx2); }
+.footer-copy { font-size: 11px; color: var(--tx3); letter-spacing: 0.03em; }
+.footer-links { display: flex; gap: 1.75rem; list-style: none; flex-wrap: wrap; }
+.footer-links a { font-size: 11px; color: var(--tx3); text-decoration: none; letter-spacing: 0.06em; transition: color 0.2s ease-out; }
+.footer-links a:hover { color: var(--tx2); }
+
 /* === Ecosystem Footer ===
    Shared across radiomaine.com, bountifulpath.com, drlisabelisle.com.
    Cream background, three columns at >=960px, stacks at 800px.
