@@ -1,0 +1,64 @@
+# .github/workflows/daily-sync.yml
+#
+# Self-healing scheduled sync. Pings the Netlify Build Hook every six hours
+# to trigger a Netlify rebuild. The build runs build_selected_works.py which
+# pulls from the Selected Works Airtable and writes selected-works.json.
+# Net effect: any new Selected Works content shows up on writing.html within
+# six hours, with no manual deploy.
+#
+# Self-healing properties:
+#   - Cron runs every 6 hours.
+#   - The curl call retries up to 3 times.
+#   - On hard failure, a GitHub issue is opened automatically.
+#   - workflow_dispatch lets anyone with repo access trigger an immediate run.
+
+name: Scheduled site sync
+
+on:
+  schedule:
+    - cron: '0 */6 * * *'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  issues: write
+
+jobs:
+  trigger-netlify-build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Trigger Netlify build hook (with retry)
+        run: |
+          if [ -z "${{ secrets.NETLIFY_BUILD_HOOK }}" ]; then
+            echo "::error::NETLIFY_BUILD_HOOK secret is not set."
+            exit 1
+          fi
+          for attempt in 1 2 3; do
+            echo "Attempt $attempt of 3..."
+            if curl --fail --silent --show-error --max-time 30 \
+                    -X POST -d {} \
+                    "${{ secrets.NETLIFY_BUILD_HOOK }}"; then
+              echo "Build hook triggered successfully on attempt $attempt."
+              exit 0
+            fi
+            echo "Attempt $attempt failed."
+            if [ "$attempt" -lt 3 ]; then
+              sleep $((attempt * 10))
+            fi
+          done
+          echo "::error::Build hook failed after 3 attempts."
+          exit 1
+
+      - name: Open issue on failure
+        if: failure()
+        uses: actions/github-script@v7
+        with:
+          script: |
+            const runUrl = `https://github.com/${context.repo.owner}/${context.repo.repo}/actions/runs/${context.runId}`;
+            github.rest.issues.create({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              title: `[auto] Daily site sync failed on ${new Date().toISOString().slice(0, 10)}`,
+              body: 'The scheduled site sync workflow failed. Run: ' + runUrl + '. Most common cause: NETLIFY_BUILD_HOOK secret is missing or revoked. The next scheduled run will try again automatically.',
+              labels: ['automation', 'site-sync'],
+            });
