@@ -1,5 +1,9 @@
 [build]
   publish = "."
+  command = "node scripts/build-data.js"
+
+[build.environment]
+  NODE_VERSION = "20"
 
 [[headers]]
   for = "/*"
@@ -7,3 +11,57 @@
     X-Frame-Options = "SAMEORIGIN"
     X-Content-Type-Options = "nosniff"
     Referrer-Policy = "strict-origin-when-cross-origin"
+
+# === Permanent redirects from old page names to new ===
+# Nav rename April 2026: Read/Listen/Invite/Join/Connect → Writing/Podcast/Speaking/Events/Contact.
+# These keep external links and search-engine indexes working through the transition.
+
+[[redirects]]
+  from = "/read.html"
+  to = "/writing.html"
+  status = 301
+
+[[redirects]]
+  from = "/read"
+  to = "/writing.html"
+  status = 301
+
+[[redirects]]
+  from = "/listen.html"
+  to = "/podcast.html"
+  status = 301
+
+[[redirects]]
+  from = "/listen"
+  to = "/podcast.html"
+  status = 301
+
+[[redirects]]
+  from = "/invite.html"
+  to = "/speaking.html"
+  status = 301
+
+[[redirects]]
+  from = "/invite"
+  to = "/speaking.html"
+  status = 301
+
+[[redirects]]
+  from = "/join.html"
+  to = "/events.html"
+  status = 301
+
+[[redirects]]
+  from = "/join"
+  to = "/events.html"
+  status = 301
+
+[[redirects]]
+  from = "/connect.html"
+  to = "/contact.html"
+  status = 301
+
+[[redirects]]
+  from = "/connect"
+  to = "/contact.html"
+  status = 301
