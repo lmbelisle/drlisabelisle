@@ -1,10 +1,11 @@
 # .github/workflows/daily-sync.yml
 #
 # Self-healing scheduled sync. Pings the Netlify Build Hook every six hours
-# to trigger a Netlify rebuild. The build runs build_selected_works.py which
-# pulls from the Selected Works Airtable and writes selected-works.json.
-# Net effect: any new Selected Works content shows up on writing.html within
-# six hours, with no manual deploy.
+# to trigger a Netlify rebuild. The build runs scripts/build-data.js which
+# pulls from Airtable and regenerates selected-works.json, copy.json,
+# featured-essays.json, and otw-pieces.json.
+# Net effect: any new Airtable content shows up on the site within six hours,
+# with no manual deploy.
 #
 # Self-healing properties:
 #   - Cron runs every 6 hours.
