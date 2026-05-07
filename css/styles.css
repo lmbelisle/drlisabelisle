@@ -991,3 +991,41 @@ html[data-reading-progress] body::before {
     word-spacing: 0.05em;
   }
 }
+
+/* ===== CROSS-SITE ECOSYSTEM BANNER (shared across drlisa, BP, RM) ===== */
+.cross-site-banner {
+  background: #F7F4EE;
+  border-top: 1px solid #F0EDE7;
+  padding: 1.1rem 2rem;
+  text-align: center;
+}
+.cross-site-banner p {
+  font-family: 'Inter', sans-serif;
+  font-size: 0.82rem;
+  color: #9A9690;
+  font-weight: 300;
+  letter-spacing: 0.03em;
+  margin: 0;
+  line-height: 1.6;
+}
+.cross-site-banner-label { margin-right: 0.5rem; }
+.cross-site-banner a {
+  color: #5A5854;
+  font-weight: 500;
+  margin: 0 0.15rem;
+  text-decoration: none;
+}
+.cross-site-banner a:hover { color: #1B7383; }
+.cross-site-banner .sep {
+  color: #C4BFB5;
+  margin: 0 0.35rem;
+  font-weight: 300;
+  user-select: none;
+}
+@media (max-width: 600px) {
+  .cross-site-banner p { font-size: 0.78rem; }
+  .cross-site-banner .sep { display: block; visibility: hidden; height: 0.2rem; }
+  .cross-site-banner a { display: inline-block; margin: 0.15rem 0.4rem; }
+  .cross-site-banner-label { display: block; margin-bottom: 0.3rem; }
+}
+/* ===== END CROSS-SITE ECOSYSTEM BANNER ===== */
