@@ -2347,17 +2347,29 @@ document.querySelectorAll('.fade-in').forEach(el => observer.observe(el));
     return copy.slice(0, Math.min(n, copy.length));
   };
 
+  // Slugify a title for the local mirror page URL (must match the slugify
+  // logic in scripts/generate-selected-works-pages.js).
+  const slugify = s => String(s)
+    .toLowerCase()
+    .replace(/['']/g, '')
+    .replace(/[^a-z0-9]+/g, '-')
+    .replace(/^-+|-+$/g, '')
+    .replace(/-+/g, '-');
+
   // Archive list rows (compact, list-style. uses feed-post pattern feel)
   const workRow = it => {
     const broken = it.status === 'Broken';
     const hasFullText = !!(it.fullText && it.fullText.length);
     let linkHTML;
-    if (!broken) {
+    // Prefer the BP-ecosystem mirror page when full text is available — the
+    // page is generated for every item with fullText, so it always resolves.
+    if (hasFullText) {
+      const slug = slugify(it.title);
+      linkHTML = `<a class="work-row-link" href="writing/${slug}.html">Read here &rarr;</a>`;
+    } else if (!broken) {
       linkHTML = `<a class="work-row-link" href="${escapeHTML(it.url)}" target="_blank" rel="noopener">Read at ${escapeHTML(it.outlet)} &rarr;</a>`;
     } else if (it.backupUrl) {
       linkHTML = `<a class="work-row-link" href="${escapeHTML(it.backupUrl)}" target="_blank" rel="noopener">Read on Wayback &rarr;</a>`;
-    } else if (hasFullText) {
-      linkHTML = `<a class="work-row-link" href="#" data-fulltext-url="${escapeHTML(it.url)}">Read here &rarr;</a>`;
     } else {
       linkHTML = `<span class="work-row-link work-row-link--disabled">Link unavailable</span>`;
     }

@@ -59,12 +59,34 @@ async function buildOtwPieces() {
   }
 }
 
+// After selected-works.json is refreshed, regenerate the per-piece mirror
+// pages at writing/[slug].html so the BP-ecosystem-controlled landings stay
+// in sync with the catalog.
+async function regenerateSelectedWorksPages() {
+  try {
+    const { spawn } = await import('node:child_process');
+    await new Promise((resolve, reject) => {
+      const proc = spawn('node', ['scripts/generate-selected-works-pages.js'], {
+        stdio: 'inherit',
+      });
+      proc.on('close', code => code === 0 ? resolve() : reject(new Error(`generator exited ${code}`)));
+      proc.on('error', reject);
+    });
+  } catch (err) {
+    console.warn('build-data: selected-works pages regen failed; existing writing/ pages remain.');
+    console.warn(err.message);
+  }
+}
+
 async function main() {
   if (!AIRTABLE_KEY) {
     console.warn('build-data: AIRTABLE_API_KEY not set; skipping Airtable fetches.');
     return;
   }
+  // Fetch JSON first.
   await Promise.all([buildCopy(), buildSelectedWorks(), buildFeaturedEssays(), buildOtwPieces()]);
+  // Then regenerate the static mirror pages from the freshly-fetched JSON.
+  await regenerateSelectedWorksPages();
 }
 
 main();

@@ -650,3 +650,344 @@ html[data-reading-progress] body::before {
 @media (max-width: 768px) {
   .bp-essays-grid { grid-template-columns: 1fr; gap: 2.4rem; }
 }
+
+/* Selected Works mirror pages — drlisabelisle.com/writing/[slug].html */
+.work-page {
+  padding: 4rem 0 5rem;
+  background:
+    linear-gradient(180deg, rgba(246, 193, 40, 0.025) 0%, rgba(246, 193, 40, 0) 360px),
+    var(--bg);
+}
+.work-article { max-width: 720px; margin: 0 auto; position: relative; }
+.work-header { margin-bottom: 2.5rem; }
+.work-eyebrow {
+  font-family: var(--sans);
+  font-size: 11px;
+  font-weight: 400;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--tx3);
+  margin-bottom: 1.25rem;
+}
+.work-eyebrow a {
+  color: var(--teal);
+  text-decoration: none;
+  border-bottom: 1px solid transparent;
+}
+.work-eyebrow a:hover {
+  border-bottom-color: var(--teal);
+}
+.work-title {
+  font-family: var(--serif);
+  font-size: clamp(38px, 6vw, 60px);
+  font-weight: 300;
+  line-height: 1.1;
+  letter-spacing: -0.01em;
+  color: var(--tx);
+  margin: 0;
+}
+.work-subtitle {
+  font-family: var(--serif);
+  font-style: italic;
+  font-size: clamp(19px, 2.4vw, 23px);
+  line-height: 1.45;
+  color: var(--tx2);
+  font-weight: 300;
+  max-width: 640px;
+  margin: 1.25rem 0 0;
+}
+.work-rule {
+  width: 56px;
+  height: 1.5px;
+  background: var(--gold);
+  margin-top: 1.75rem;
+}
+.work-memoriam {
+  background: var(--bg2);
+  border-left: 2px solid var(--gold);
+  padding: 1.5rem 1.75rem;
+  margin: 0 0 2.5rem;
+  border-radius: 2px;
+}
+.work-memoriam-label {
+  font-family: var(--sans);
+  font-size: 11px;
+  font-weight: 500;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--tx3);
+  margin-bottom: 0.6rem;
+}
+.work-memoriam p {
+  font-family: var(--serif);
+  font-size: 18px;
+  font-style: italic;
+  line-height: 1.6;
+  color: var(--tx2);
+  margin: 0 0 1.1rem;
+}
+.work-memoriam p:last-child { margin-bottom: 0; }
+.work-body {
+  font-family: var(--serif);
+  font-size: 19px;
+  line-height: 1.75;
+  color: var(--tx);
+  font-weight: 400;
+}
+.work-body p {
+  margin: 0 0 1.5rem;
+}
+.work-body p:last-child {
+  margin-bottom: 0;
+}
+/* Drop-cap treatment on the first paragraph for a magazine feel.
+   Uses native `initial-letter` where supported (Safari/Chrome 110+),
+   which auto-aligns the cap to the body's baseline. Falls back to a
+   carefully-tuned manual float drop cap on browsers without support. */
+.work-body .work-body-first::first-letter {
+  font-family: var(--serif);
+  color: var(--teal);
+  font-weight: 400;
+  font-style: normal;
+  margin-right: 0.06em;
+  /* Native initial-letter (preferred): 3 lines tall, 3-line sink. */
+  -webkit-initial-letter: 3 3;
+  initial-letter: 3 3;
+  /* Manual float fallback for browsers without initial-letter support.
+     The @supports block below overrides these where native is available. */
+  float: left;
+  font-size: 4.6em;
+  line-height: 0.88;
+  margin-top: 0;
+  margin-left: 0;
+  padding: 0;
+}
+@supports (initial-letter: 3) or (-webkit-initial-letter: 3) {
+  .work-body .work-body-first::first-letter {
+    /* Browser handles sizing/alignment; clear the manual float setup. */
+    float: none;
+    font-size: inherit;
+    line-height: inherit;
+    margin-top: 0;
+    margin-left: 0;
+  }
+}
+.work-body .work-body-first {
+  font-size: 21px;
+  color: var(--tx);
+}
+/* Small-caps treatment for the first few words after the drop cap. */
+.work-body-leadin {
+  font-variant: small-caps;
+  letter-spacing: 0.06em;
+  color: var(--tx);
+  font-weight: 500;
+}
+.work-pullquote {
+  font-family: var(--serif);
+  font-style: italic;
+  font-size: clamp(22px, 2.6vw, 26px);
+  line-height: 1.4;
+  color: var(--teal-dark);
+  font-weight: 400;
+  text-align: center;
+  border: 0;
+  border-top: 1px solid var(--gold);
+  border-bottom: 1px solid var(--gold);
+  padding: 1.75rem 1rem 1.5rem;
+  margin: 2.75rem auto;
+  max-width: 620px;
+}
+.work-pullquote cite {
+  display: block;
+  font-style: normal;
+  font-family: var(--sans);
+  font-size: 12px;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--tx3);
+  margin-top: 1rem;
+}
+.work-attribution {
+  margin-top: 3.5rem;
+  padding-top: 1.75rem;
+  border-top: 1px solid var(--bd, #E6E2DA);
+  font-family: var(--sans);
+  font-size: 14px;
+  color: var(--tx2);
+  line-height: 1.6;
+}
+.work-attribution p { margin: 0 0 0.4rem; }
+.work-attribution a {
+  color: var(--teal);
+  text-decoration: none;
+  border-bottom: 1px solid var(--teal);
+  padding-bottom: 1px;
+}
+.work-attribution a:hover {
+  color: var(--teal-dark);
+  border-bottom-color: var(--teal-dark);
+}
+.work-attribution-fallback {
+  font-size: 13px;
+  color: var(--tx3);
+}
+/* Three-dot ornamental divider used between major paragraph groups
+   on longer articles. */
+.work-section-divider {
+  display: block;
+  text-align: center;
+  margin: 2.75rem auto;
+  color: var(--gold);
+  font-family: var(--serif);
+  font-size: 22px;
+  letter-spacing: 0.85em;
+  /* Compensate for the right side of the last dot's letter-spacing so the
+     three dots stay visually centered. */
+  padding-left: 0.85em;
+  font-style: normal;
+  user-select: none;
+}
+
+/* Theme/tag chips below the title. */
+.work-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-top: 1.25rem;
+}
+.work-tag {
+  display: inline-block;
+  font-family: var(--sans);
+  font-size: 11px;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--teal);
+  background: rgba(27, 115, 131, 0.06);
+  border: 1px solid rgba(27, 115, 131, 0.18);
+  padding: 0.32rem 0.7rem;
+  border-radius: 999px;
+  font-weight: 500;
+}
+
+/* Pull quote share affordance. The button is hidden until hover or focus. */
+.work-pullquote {
+  position: relative;
+}
+.work-pullquote-share {
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  width: 26px;
+  height: 26px;
+  border: 1px solid var(--gold);
+  border-radius: 50%;
+  background: transparent;
+  color: var(--teal);
+  cursor: pointer;
+  opacity: 0;
+  transition: opacity 0.18s ease;
+  font-family: var(--sans);
+  font-size: 11px;
+  font-weight: 500;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+}
+.work-pullquote:hover .work-pullquote-share,
+.work-pullquote-share:focus {
+  opacity: 1;
+}
+.work-pullquote-share[aria-pressed="true"] {
+  background: var(--gold);
+  color: var(--bg);
+  opacity: 1;
+}
+
+/* Related-pieces rail under the attribution. */
+.work-related {
+  margin-top: 4rem;
+  padding-top: 2rem;
+  border-top: 1px solid var(--bd, #E6E2DA);
+}
+.work-related-label {
+  font-family: var(--sans);
+  font-size: 11px;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--tx3);
+  margin-bottom: 1.25rem;
+}
+.work-related-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.5rem;
+}
+.work-related-item {
+  display: block;
+  text-decoration: none;
+  color: var(--tx);
+  padding: 1rem 0;
+  border-top: 1px solid rgba(27, 115, 131, 0.18);
+}
+.work-related-item:hover .work-related-item-title { color: var(--teal-dark); }
+.work-related-item-meta {
+  font-family: var(--sans);
+  font-size: 10px;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: var(--tx3);
+  margin-bottom: 0.4rem;
+}
+.work-related-item-title {
+  font-family: var(--serif);
+  font-size: 18px;
+  line-height: 1.25;
+  font-weight: 400;
+  color: var(--tx);
+  transition: color 0.15s ease;
+}
+@media (max-width: 700px) {
+  .work-related-grid { grid-template-columns: 1fr; gap: 0; }
+  .work-related-item { padding: 1.1rem 0; }
+}
+
+@media (max-width: 640px) {
+  .work-page { padding: 2.5rem 0 3.5rem; }
+  .work-header { margin-bottom: 2rem; }
+  .work-body { font-size: 17px; line-height: 1.7; }
+  .work-body p { margin: 0 0 1.25rem; }
+  .work-body .work-body-first { font-size: 18px; }
+  .work-body .work-body-first::first-letter {
+    font-size: 4.2em;
+    line-height: 0.88;
+    margin: -0.02em 0 0 -0.02em;
+  }
+  .work-pullquote {
+    font-size: 19px;
+    padding: 1.4rem 0.8rem 1.2rem;
+    margin: 2rem auto;
+  }
+  .work-pullquote-share { width: 22px; height: 22px; font-size: 10px; top: 8px; right: 8px; }
+  .work-eyebrow {
+    font-size: 10px;
+    letter-spacing: 0.14em;
+    line-height: 1.7;
+  }
+  .work-title { font-size: clamp(32px, 9vw, 44px); }
+  .work-subtitle { font-size: 17px; }
+  .work-memoriam { padding: 1.2rem 1.25rem; }
+  .work-memoriam p { font-size: 16px; }
+  .work-tags { gap: 0.4rem; margin-top: 1rem; }
+  .work-tag { font-size: 10px; padding: 0.28rem 0.6rem; }
+  .work-related { margin-top: 3rem; padding-top: 1.5rem; }
+  .work-section-divider { margin: 2rem auto; font-size: 18px; }
+  .work-attribution { margin-top: 2.5rem; font-size: 13px; }
+}
+@media (max-width: 420px) {
+  .work-eyebrow {
+    /* Stack the eyebrow segments on very narrow screens so it wraps neatly. */
+    word-spacing: 0.05em;
+  }
+}
