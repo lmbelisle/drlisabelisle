@@ -35,7 +35,8 @@ function escapeHTML(s) {
 function slugify(title) {
   return String(title)
     .toLowerCase()
-    .replace(/['']/g, '')
+    // Strip apostrophe variants (straight, curly left/right, low-9, prime)
+    .replace(/['‘’‚‛′]/g, '')
     .replace(/[^a-z0-9]+/g, '-')
     .replace(/^-+|-+$/g, '')
     .replace(/-+/g, '-');

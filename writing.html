@@ -2351,7 +2351,7 @@ document.querySelectorAll('.fade-in').forEach(el => observer.observe(el));
   // logic in scripts/generate-selected-works-pages.js).
   const slugify = s => String(s)
     .toLowerCase()
-    .replace(/['']/g, '')
+    .replace(/['‘’‚‛′]/g, '')
     .replace(/[^a-z0-9]+/g, '-')
     .replace(/^-+|-+$/g, '')
     .replace(/-+/g, '-');
