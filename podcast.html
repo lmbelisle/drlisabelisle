@@ -308,7 +308,11 @@ document.querySelectorAll('.fade-in').forEach(el => observer.observe(el));
 // rest of the page reads fine without it.
 (async () => {
   try {
-    const r = await fetch('https://www.radiomaine.com/episodes.json', { cache: 'no-cache' });
+    // Use the apex (non-www) host — www.radiomaine.com 301-redirects to
+    // radiomaine.com but the 301 carries no CORS header, so browsers block
+    // the redirect before reaching the JSON. Fetching the canonical apex
+    // directly skips that.
+    const r = await fetch('https://radiomaine.com/episodes.json', { cache: 'no-cache' });
     if (!r.ok) return;
     const eps = await r.json();
     if (!Array.isArray(eps) || !eps.length) return;
