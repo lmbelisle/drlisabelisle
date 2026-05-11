@@ -37,10 +37,27 @@ async function airtableList(apiKey, tableId, params = {}) {
   return all;
 }
 
+// Decode the small set of HTML entities Substack emits in og:* meta tags
+// (apostrophe, quote, ampersand, lt, gt, plus numeric forms). Without this,
+// the JSON gets entity-encoded strings, the front-end re-escapes them, and
+// visitors see literal `&#x27;` text. Restricted to a known whitelist so we
+// don't accidentally decode anything that could carry markup.
+function decodeEntities(s) {
+  if (!s) return s;
+  return s
+    .replace(/&#x([0-9a-fA-F]+);/g, (_, h) => String.fromCharCode(parseInt(h, 16)))
+    .replace(/&#(\d+);/g, (_, d) => String.fromCharCode(parseInt(d, 10)))
+    .replace(/&quot;/g, '"')
+    .replace(/&apos;/g, "'")
+    .replace(/&lt;/g, '<')
+    .replace(/&gt;/g, '>')
+    .replace(/&amp;/g, '&');
+}
+
 function matchMeta(html, prop) {
   const re = new RegExp(`<meta[^>]+property=["']${prop}["'][^>]+content=["']([^"']+)["']`, 'i');
   const m = html.match(re);
-  return m ? m[1] : '';
+  return m ? decodeEntities(m[1]) : '';
 }
 
 async function fetchSubstackMeta(url) {
