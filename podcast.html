@@ -141,9 +141,27 @@
   </div>
 </section>
 
+<!-- Latest from Radio Maine. Fetches radiomaine.com/episodes.json
+     (CORS-enabled by netlify.toml on the radiomaine repo) and renders
+     the most recent episode card. Falls back silently if the fetch
+     fails — the page reads fine without it. -->
+<section class="fade-in no-rule" id="rm-latest-section" hidden>
+  <div class="section-label">Latest from Radio Maine</div>
+  <a id="rm-latest" class="rm-latest" href="https://www.radiomaine.com" target="_blank" rel="noopener" aria-label="Latest Radio Maine episode">
+    <div class="rm-latest-thumb"><img id="rm-latest-img" alt=""></div>
+    <div class="rm-latest-body">
+      <div class="rm-latest-eyebrow">Most recent conversation</div>
+      <h3 id="rm-latest-title" class="rm-latest-title"></h3>
+      <p id="rm-latest-date" class="rm-latest-date"></p>
+      <p id="rm-latest-desc" class="rm-latest-desc"></p>
+      <span class="rm-latest-cta">Watch on Radio Maine &rarr;</span>
+    </div>
+  </a>
+</section>
+
 <section class="fade-in no-rule">
   <div class="section-label">Where to find Radio Maine</div>
-  <div class="brief-list">
+  <div class="brief-list stagger">
     <div>
       <div class="brief-item-cat">Radio Maine</div>
       <div class="brief-item-title">radiomaine.com</div>
@@ -195,6 +213,75 @@
   </div>
 </footer>
 
+<style>
+  /* Latest-from-Radio-Maine card — wired up by the script below.
+     Stays hidden until the fetch resolves so the page doesn't show
+     a half-card on slow networks or when radiomaine.com is down. */
+  .rm-latest {
+    display: grid;
+    grid-template-columns: minmax(220px, 320px) 1fr;
+    gap: 1.5rem;
+    align-items: start;
+    text-decoration: none;
+    color: inherit;
+    margin: 1rem 0 0;
+    padding: 1rem;
+    border: 0.5px solid var(--bd);
+    background: var(--bg);
+    transition: transform 0.3s cubic-bezier(0.22, 0.61, 0.36, 1), box-shadow 0.3s ease-out, border-color 0.3s ease-out;
+  }
+  .rm-latest:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 14px 32px -14px rgba(20, 95, 110, 0.18);
+    border-color: var(--gold);
+  }
+  .rm-latest-thumb {
+    aspect-ratio: 16 / 9;
+    overflow: hidden;
+    background: var(--bg2);
+  }
+  .rm-latest-thumb img { width: 100%; height: 100%; object-fit: cover; display: block; }
+  .rm-latest-body { padding: 0.2rem 0; }
+  .rm-latest-eyebrow {
+    font-size: 10px;
+    letter-spacing: 0.22em;
+    text-transform: uppercase;
+    color: var(--teal);
+    margin-bottom: 0.55rem;
+    font-weight: 500;
+  }
+  .rm-latest-title {
+    font-family: var(--serif);
+    font-style: italic;
+    font-size: 1.6rem;
+    font-weight: 400;
+    line-height: 1.2;
+    margin: 0 0 0.5rem;
+    color: var(--tx);
+  }
+  .rm-latest-date {
+    font-size: 11px;
+    letter-spacing: 0.06em;
+    color: var(--tx3);
+    margin: 0 0 0.7rem;
+  }
+  .rm-latest-desc {
+    font-size: 14px;
+    color: var(--tx2);
+    line-height: 1.6;
+    margin: 0 0 0.9rem;
+  }
+  .rm-latest-cta {
+    font-size: 11px;
+    letter-spacing: 0.06em;
+    color: var(--teal);
+    display: inline-block;
+  }
+  @media (max-width: 720px) {
+    .rm-latest { grid-template-columns: 1fr; }
+  }
+</style>
+
 <script src="js/copy.js"></script>
 <script>
 document.getElementById('nav-toggle').addEventListener('click', function() {
@@ -206,6 +293,41 @@ const observer = new IntersectionObserver((entries) => {
   });
 }, { threshold: 0.06 });
 document.querySelectorAll('.fade-in').forEach(el => observer.observe(el));
+
+// Latest from Radio Maine — fetch episodes.json (CORS-enabled), pick
+// the most-recently-published episode, render the card, then unhide
+// the section. If the fetch fails, leave the section hidden — the
+// rest of the page reads fine without it.
+(async () => {
+  try {
+    const r = await fetch('https://www.radiomaine.com/episodes.json', { cache: 'no-cache' });
+    if (!r.ok) return;
+    const eps = await r.json();
+    if (!Array.isArray(eps) || !eps.length) return;
+    const latest = eps.slice().sort((a, b) =>
+      new Date(b.publishedAt || 0) - new Date(a.publishedAt || 0)
+    )[0];
+    if (!latest) return;
+    const img = document.getElementById('rm-latest-img');
+    const t = document.getElementById('rm-latest-title');
+    const d = document.getElementById('rm-latest-date');
+    const desc = document.getElementById('rm-latest-desc');
+    const card = document.getElementById('rm-latest');
+    const sec = document.getElementById('rm-latest-section');
+    if (latest.thumbnail) { img.src = latest.thumbnail; img.alt = latest.title || 'Radio Maine episode'; }
+    t.textContent = latest.title || 'New episode';
+    d.textContent = latest.publishedAt
+      ? new Date(latest.publishedAt).toLocaleDateString('en-US', { month: 'long', day: 'numeric', year: 'numeric' })
+      : '';
+    const description = (latest.description || '').slice(0, 200);
+    desc.textContent = description ? description + (latest.description && latest.description.length > 200 ? '…' : '') : '';
+    if (latest.slug) card.href = 'https://www.radiomaine.com/episodes/' + latest.slug + '.html';
+    else if (latest.videoId) card.href = 'https://www.youtube.com/watch?v=' + latest.videoId;
+    sec.hidden = false;
+    // Re-observe so the just-unhidden section gets its fade-in
+    observer.observe(sec);
+  } catch (_) { /* silent */ }
+})();
 </script>
 
 </body>
