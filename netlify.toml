@@ -5,12 +5,26 @@
 [build.environment]
   NODE_VERSION = "20"
 
+# Security headers applied to every page on the site.
 [[headers]]
   for = "/*"
   [headers.values]
+    # Refuse to be embedded inside another website (anti-clickjacking).
     X-Frame-Options = "SAMEORIGIN"
+    # Don't let browsers guess a file's type — stops disguised-file attacks.
     X-Content-Type-Options = "nosniff"
+    # Limit how much address info is shared when visitors click away.
     Referrer-Policy = "strict-origin-when-cross-origin"
+    # Force every visit to use a secure (HTTPS) connection for a year.
+    Strict-Transport-Security = "max-age=31536000; includeSubDomains"
+    # Turn off browser features the site never uses.
+    Permissions-Policy = "camera=(), microphone=(), geolocation=(), payment=(), usb=()"
+    # Isolate the site from other tabs/windows it opens.
+    Cross-Origin-Opener-Policy = "same-origin"
+    # Content Security Policy: allow normal HTTPS resources (fonts, embeds,
+    # analytics) but block plugin objects, off-site form posts, page-embedding
+    # by other sites, and any insecure (http) content.
+    Content-Security-Policy = "default-src 'self' https:; script-src 'self' 'unsafe-inline' https:; style-src 'self' 'unsafe-inline' https:; img-src 'self' data: https:; font-src 'self' data: https:; connect-src 'self' https:; frame-src https:; object-src 'none'; base-uri 'self'; form-action 'self'; frame-ancestors 'self'; upgrade-insecure-requests"
 
 # === Permanent redirects from old page names to new ===
 # Nav rename April 2026: Read/Listen/Invite/Join/Connect → Writing/Podcast/Speaking/Events/Contact.
