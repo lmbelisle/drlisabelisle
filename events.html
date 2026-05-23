@@ -180,6 +180,7 @@
       <div class="feature-piece-cat">Portland Art Gallery &middot; Monthly Openings</div>
       <div class="feature-piece-title">First Thursday gallery openings, all year long.</div>
       <div class="feature-piece-desc">On the first Thursday of each month, Portland Art Gallery hosts an opening reception for new work by its represented artists. An evening of conversation with the artists, light hors d&rsquo;oeuvres, and a chance to see the new show before it goes on view. Free and open to all.</div>
+      <div id="pag-openings-next" class="feature-piece-desc" style="margin-top:1rem; font-weight:600;" hidden></div>
       <a class="feature-piece-link" href="https://www.eventbrite.com/o/portland-art-gallery-95497935733" target="_blank" rel="noopener">RSVP through Eventbrite &rarr;</a>
     </div>
     <figure style="margin:0;">
@@ -228,6 +229,24 @@ const observer = new IntersectionObserver((entries) => {
   });
 }, { threshold: 0.06 });
 document.querySelectorAll('.fade-in').forEach(el => observer.observe(el));
+
+// Next PAG monthly opening — pulled from radiomaine.com/events.json (cross-origin
+// CORS allowed; same data the Radio Maine site uses for its own events page).
+fetch('https://radiomaine.com/events.json')
+  .then(r => r.ok ? r.json() : Promise.reject())
+  .then(events => {
+    const next = events
+      .filter(e => !e.isPast && /^Portland Art Gallery.*Opening/i.test(e.name || ''))
+      .sort((a, b) => new Date(a.startDate) - new Date(b.startDate))[0];
+    const slot = document.getElementById('pag-openings-next');
+    if (slot && next) {
+      const d = new Date(next.startDate);
+      const label = d.toLocaleDateString('en-US', { weekday: 'long', month: 'long', day: 'numeric' });
+      slot.textContent = 'Next: ' + label + '.';
+      slot.hidden = false;
+    }
+  })
+  .catch(() => {});
 </script>
 
 </body>
