@@ -167,9 +167,9 @@
     <div>
       <div class="feature-piece-cat">Bountiful Path Book Circles &middot; Online</div>
       <div class="feature-piece-title">Virtual gatherings, when the season calls for them.</div>
-      <div class="feature-piece-desc">Periodic virtual book circles open to Bountiful Path readers: free, online, with no required reading. The conversation moves with the season and the questions the week is asking.</div>
-      <div class="feature-piece-desc" style="margin-top:1rem;"><strong>Currently open: Summer Edition.</strong> Wednesday, June 24, 5:30 to 7:00 p.m. ET. Theme: Summer Connections.</div>
-      <a class="feature-piece-link" href="https://www.eventbrite.com/e/bountiful-path-summer-virtual-book-circle-tickets-1990186175425" target="_blank">Register on Eventbrite &rarr;</a>
+      <div class="feature-piece-desc">Periodic virtual book circles open to Bountiful Path readers: free, online, with no required reading. The conversation moves with the season and the questions the week is asking. Future circles are announced on The Bountiful Path.</div>
+      <div id="book-circle-next" class="feature-piece-desc" style="margin-top:1rem; font-weight:600;" hidden></div>
+      <a id="book-circle-cta" class="feature-piece-link" href="#" target="_blank" rel="noopener" hidden>RSVP through Eventbrite &rarr;</a>
     </div>
   </div>
 </section>
@@ -230,20 +230,35 @@ const observer = new IntersectionObserver((entries) => {
 }, { threshold: 0.06 });
 document.querySelectorAll('.fade-in').forEach(el => observer.observe(el));
 
-// Next PAG monthly opening — pulled from radiomaine.com/events.json (cross-origin
-// CORS allowed; same data the Radio Maine site uses for its own events page).
+// Ecosystem event cards: hydrate the "Next: <date>" lines and dynamic
+// RSVP-through-Eventbrite CTAs from radiomaine.com/events.json. Cross-origin
+// CORS allowed (mirrors what runs on radiomaine.com/events.html). Single
+// source of truth — when events.json refreshes, this site updates too.
+// Format / language are aligned with the other two ecosystem sites
+// (radiomaine.com and bountifulpath.com).
 fetch('https://radiomaine.com/events.json')
   .then(r => r.ok ? r.json() : Promise.reject())
   .then(events => {
-    const next = events
-      .filter(e => !e.isPast && /^Portland Art Gallery.*Opening/i.test(e.name || ''))
+    const fmt = (iso) => new Date(iso).toLocaleDateString('en-US', { weekday: 'long', month: 'long', day: 'numeric' });
+    const pickNext = (re) => events
+      .filter(e => !e.isPast && re.test(e.name || ''))
       .sort((a, b) => new Date(a.startDate) - new Date(b.startDate))[0];
-    const slot = document.getElementById('pag-openings-next');
-    if (slot && next) {
-      const d = new Date(next.startDate);
-      const label = d.toLocaleDateString('en-US', { weekday: 'long', month: 'long', day: 'numeric' });
-      slot.textContent = 'Next: ' + label + '.';
-      slot.hidden = false;
+
+    // PAG Monthly Openings card
+    const nextPag = pickNext(/^Portland Art Gallery.*Opening/i);
+    const pagSlot = document.getElementById('pag-openings-next');
+    if (pagSlot && nextPag) {
+      pagSlot.textContent = 'Next: ' + fmt(nextPag.startDate);
+      pagSlot.hidden = false;
+    }
+
+    // BP Virtual Book Circle card
+    const nextBC = pickNext(/Book Circle/i);
+    const bcSlot = document.getElementById('book-circle-next');
+    const bcCta = document.getElementById('book-circle-cta');
+    if (nextBC) {
+      if (bcSlot) { bcSlot.textContent = 'Next: ' + fmt(nextBC.startDate); bcSlot.hidden = false; }
+      if (bcCta) { bcCta.href = nextBC.url; bcCta.hidden = false; }
     }
   })
   .catch(() => {});
