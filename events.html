@@ -158,7 +158,7 @@
     <div>
       <div class="feature-piece-cat">Radio Maine Live &middot; Portland Art Gallery</div>
       <div class="feature-piece-title">On-stage panels in the Radio Maine tradition.</div>
-      <div class="feature-piece-desc">Seasonal live panel conversations hosted at the Portland Art Gallery in Portland, Maine. Each evening brings together a small group of Maine&rsquo;s artists, healers, writers, and community leaders for an open, unhurried conversation. Free to attend, with limited seating. A reception follows.</div>
+      <div class="feature-piece-desc">Live panel conversations hosted at the Portland Art Gallery in Portland, Maine. Each evening brings together a small group of Maine&rsquo;s artists, healers, writers, and community leaders for an open, unhurried conversation. Free to attend, with limited seating. A reception follows.</div>
       <a class="feature-piece-link" href="https://www.portlandartgallery.com/events" target="_blank">Upcoming dates at PAG &rarr;</a>
     </div>
   </div>
@@ -169,8 +169,9 @@
     <div>
       <div class="feature-piece-cat">Artful Escapes &middot; Portland Art Gallery</div>
       <div class="feature-piece-title">A conversation series on intentional travel.</div>
-      <div class="feature-piece-desc">A seasonal conversation series presented by Radio Maine host Lisa Belisle and a special guest each evening. The series invites a global view of travel shaped by intention and an eye for meaning, with memorable experiences from the Arctic Circle to the South Pacific.</div>
-      <a class="feature-piece-link" href="https://www.portlandartgallery.com/events" target="_blank">See the series at PAG &rarr;</a>
+      <div class="feature-piece-desc">A conversation series presented by Radio Maine host Lisa Belisle and a special guest each evening. The series invites a global view of travel shaped by intention and an eye for meaning, with memorable experiences from the Arctic Circle to the South Pacific.</div>
+      <div id="artful-escapes-next" class="feature-piece-desc" style="margin-top:1rem; font-weight:600;" hidden></div>
+      <a id="artful-escapes-cta" class="feature-piece-link" href="https://www.portlandartgallery.com/events" target="_blank" rel="noopener">See the series at PAG &rarr;</a>
     </div>
     <figure style="margin:0;">
       <img class="wide-feature-img" src="maine-boat.png" alt="A lobster boat off the coast of Littlejohn Island, at first light" style="aspect-ratio:4/3; object-position:center 55%;">
@@ -187,7 +188,7 @@
       <div class="feature-piece-title">Virtual gatherings, when the season calls for them.</div>
       <div class="feature-piece-desc">Periodic virtual book circles open to Bountiful Path readers: free, online, with no required reading. The conversation moves with the season and the questions the week is asking. Future circles are announced on The Bountiful Path.</div>
       <div id="book-circle-next" class="feature-piece-desc" style="margin-top:1rem; font-weight:600;" hidden></div>
-      <a id="book-circle-cta" class="feature-piece-link" href="#" target="_blank" rel="noopener" hidden>RSVP through Eventbrite &rarr;</a>
+      <a id="book-circle-cta" class="feature-piece-link" href="https://www.bountifulpath.com" target="_blank" rel="noopener">The Bountiful Path &rarr;</a>
     </div>
   </div>
 </section>
@@ -232,35 +233,35 @@ const observer = new IntersectionObserver((entries) => {
 }, { threshold: 0.06 });
 document.querySelectorAll('.fade-in').forEach(el => observer.observe(el));
 
-// Ecosystem event cards: hydrate the "Next: <date>" lines and dynamic
-// RSVP-through-Eventbrite CTAs from radiomaine.com/events.json. Cross-origin
-// CORS allowed (mirrors what runs on radiomaine.com/events.html). Single
-// source of truth — when events.json refreshes, this site updates too.
-// Format / language are aligned with the other two ecosystem sites
-// (radiomaine.com and bountifulpath.com).
+// Ecosystem event cards: hydrate "Next: <date>" lines and dynamic CTAs
+// from radiomaine.com/events.json (CORS-allowed; same source the RM site
+// uses). Single source of truth — when events.json refreshes, this site
+// updates too.
+//
+// Pattern per card: id="<key>-next" placeholder line, hidden by default;
+// id="<key>-cta" button that's always visible with a sensible default text
+// and discovery-page href. When an upcoming event exists, the date line
+// appears and the CTA flips to "RSVP through Eventbrite" + the event URL.
+// Format / language are aligned across all three ecosystem sites.
 fetch('https://radiomaine.com/events.json')
   .then(r => r.ok ? r.json() : Promise.reject())
   .then(events => {
     const fmt = (iso) => new Date(iso).toLocaleDateString('en-US', { weekday: 'long', month: 'long', day: 'numeric' });
-    const pickNext = (re) => events
-      .filter(e => !e.isPast && re.test(e.name || ''))
-      .sort((a, b) => new Date(a.startDate) - new Date(b.startDate))[0];
-
-    // PAG Monthly Openings card
-    const nextPag = pickNext(/^Portland Art Gallery.*Opening/i);
-    const pagSlot = document.getElementById('pag-openings-next');
-    if (pagSlot && nextPag) {
-      pagSlot.textContent = 'Next: ' + fmt(nextPag.startDate);
-      pagSlot.hidden = false;
-    }
-
-    // BP Virtual Book Circle card
-    const nextBC = pickNext(/Book Circle/i);
-    const bcSlot = document.getElementById('book-circle-next');
-    const bcCta = document.getElementById('book-circle-cta');
-    if (nextBC) {
-      if (bcSlot) { bcSlot.textContent = 'Next: ' + fmt(nextBC.startDate); bcSlot.hidden = false; }
-      if (bcCta) { bcCta.href = nextBC.url; bcCta.hidden = false; }
+    const SERIES = [
+      { key: 'pag-openings', regex: /^Portland Art Gallery.*Opening/i },
+      { key: 'book-circle', regex: /Book Circle/i },
+      { key: 'artful-escapes', regex: /Artful Escapes/i },
+    ];
+    for (const { key, regex } of SERIES) {
+      const next = events
+        .filter(e => !e.isPast && regex.test(e.name || ''))
+        .sort((a, b) => new Date(a.startDate) - new Date(b.startDate))[0];
+      const slot = document.getElementById(key + '-next');
+      const cta = document.getElementById(key + '-cta');
+      if (next) {
+        if (slot) { slot.textContent = 'Next: ' + fmt(next.startDate); slot.hidden = false; }
+        if (cta) { cta.href = next.url; cta.innerHTML = 'RSVP through Eventbrite &rarr;'; }
+      }
     }
   })
   .catch(() => {});
