@@ -1,0 +1,60 @@
+/* Love Maine Radio archive pages
+   Drop alongside the generated HTML in /love-maine-radio/ */
+
+:root {
+  --brand-teal: #1B7383;
+  --brand-gold: #F6C128;
+  --brand-cream: #FEFCF9;
+  --text-primary: #2C2C2A;
+  --text-secondary: #5F5E5A;
+  --border-quiet: #D3D1C7;
+  --serif: 'Cormorant Garamond', Georgia, serif;
+  --sans: 'Inter', system-ui, sans-serif;
+}
+
+body { font-family: var(--sans); background: var(--brand-cream); color: var(--text-primary); line-height: 1.7; margin: 0; }
+
+.lmr-page { max-width: 720px; margin: 0 auto; padding: 3rem 1.5rem; }
+
+.lmr-eyebrow { font-size: 11px; letter-spacing: 0.14em; color: var(--brand-teal); margin: 0 0 0.5rem; }
+.lmr-subhead { font-size: 13px; color: var(--text-secondary); margin: 0 0 0.5rem; font-style: italic; }
+.lmr-header h1 { font-family: var(--serif); font-size: 40px; font-weight: 500; line-height: 1.1; margin: 0 0 1rem; }
+
+.lmr-memorial { font-size: 14px; color: var(--text-secondary); border-left: 3px solid var(--brand-teal); padding: 0.25rem 0 0.25rem 1rem; margin: 1rem 0 2rem; }
+.lmr-memorial a { color: var(--brand-teal); }
+
+.lmr-pull-quote { border-left: 3px solid var(--brand-gold); padding: 0.5rem 0 0.5rem 1.25rem; margin: 2rem 0; }
+.lmr-pull-quote blockquote { font-family: var(--serif); font-size: 22px; font-style: italic; line-height: 1.4; margin: 0; }
+
+audio { display: block; width: 100%; margin: 2rem 0; }
+
+.lmr-summary h2, .lmr-transcript h2, .lmr-mentioned h2 { font-family: var(--serif); font-size: 22px; font-weight: 500; color: var(--brand-teal); margin: 2rem 0 1rem; }
+
+.lmr-transcript-body { font-size: 15px; line-height: 1.75; }
+.lmr-turn { margin: 0 0 1.25rem; }
+.lmr-turn-speaker { font-weight: 500; color: var(--brand-teal); margin: 0 0 0.25rem; }
+.lmr-turn p:last-child { margin: 0; }
+
+.lmr-mentioned { border-top: 0.5px solid var(--border-quiet); padding-top: 1rem; margin-top: 2rem; }
+.lmr-mention-card { background: #fff; border: 0.5px solid var(--border-quiet); border-radius: 8px; padding: 1rem 1.25rem; margin: 0 0 1rem; }
+.lmr-mention-name { font-weight: 500; font-size: 15px; margin: 0 0 0.25rem; }
+.lmr-mention-note { font-size: 13px; color: var(--text-secondary); margin: 0 0 0.75rem; }
+.lmr-mention-link { color: var(--brand-teal); text-decoration: underline; text-decoration-color: rgba(27,115,131,0.4); text-underline-offset: 3px; font-size: 14px; }
+.lmr-mention-row { font-size: 14px; margin: 0 0 0.75rem; }
+.lmr-mention-row-label { color: var(--text-secondary); }
+.lmr-mention-sep { color: var(--border-quiet); margin: 0 4px; }
+
+.lmr-archive-footer { margin-top: 3rem; padding-top: 1.5rem; border-top: 0.5px solid var(--border-quiet); font-size: 14px; color: var(--text-secondary); font-style: italic; }
+.lmr-archive-footer a { color: var(--text-secondary); }
+
+/* Index page */
+.lmr-index-page { max-width: 800px; margin: 0 auto; padding: 3rem 1.5rem; }
+.lmr-index-page h1 { font-family: var(--serif); font-size: 48px; font-weight: 500; }
+.lmr-index-intro { font-size: 16px; color: var(--text-secondary); margin: 0 0 3rem; max-width: 600px; }
+.lmr-index-list { list-style: none; padding: 0; margin: 0; }
+.lmr-index-item { border-bottom: 0.5px solid var(--border-quiet); }
+.lmr-index-item a { display: grid; grid-template-columns: 60px 1fr auto; gap: 1rem; padding: 1rem 0; text-decoration: none; color: var(--text-primary); align-items: baseline; }
+.lmr-index-epn { color: var(--brand-teal); font-size: 13px; font-variant-numeric: tabular-nums; }
+.lmr-index-title { font-family: var(--serif); font-size: 18px; }
+.lmr-index-date { font-size: 12px; color: var(--text-secondary); white-space: nowrap; }
+.lmr-index-guests { grid-column: 2; font-size: 13px; color: var(--text-secondary); }
