@@ -31,7 +31,7 @@ const OUTPUT_DIR = process.env.LMR_OUT_DIR || './love-maine-radio';
 const SITE_URL = 'https://drlisabelisle.com';
 const CROSSLINKS_PATH = process.env.LMR_CROSSLINKS || './data/lmr-mentioned-block.json';
 
-const REBRAND_DATE = '2015-02-01';
+const REBRAND_DATE = '2014-11-01';
 
 function escapeHTML(s) {
   return String(s ?? '')
