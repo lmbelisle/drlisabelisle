@@ -128,7 +128,6 @@ Lisa is the daughter of Charles Belisle, MD, a family physician who practiced fo
 - [Radio Maine](https://www.radiomaine.com): video podcast home.
 - [A Healthy Conversation](https://healthyconversationshow.com): WGAN radio show; show site is the canonical home, episode archive at https://wgan.com/podcasts/categories/podcasts-healthy-conversation/.
 - [Portland Art Gallery](https://www.portlandartgallery.com): partnership anchor for Radio Maine and home of Artful Escapes.
-- [Companions](https://companions.bountifulpath.com): companion app for Bountiful Path subscribers.
 - [Authory](https://authory.com/LisaBelisle): writing portfolio.
 - [Doximity CV](https://www.doximity.com/cv/drlisabelisle): physician profile.
 
