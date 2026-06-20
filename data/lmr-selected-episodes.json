@@ -1,8 +1,8 @@
 {
   "_comment": "Curated public-facing LMR archive at drlisabelisle.com/love-maine-radio/. Source of truth for which episodes have public HTML pages. Episodes are identified by Airtable record ID (preferred) or by title (for late episodes without Episode #).",
   "_lastUpdated": "2026-06-17",
-  "_total": 43,
-  "byEpisodeNumber": [1, 8, 38, 49, 55, 60, 63, 68, 74, 75, 79, 81, 100, 101, 111, 112, 117, 137, 165, 171, 175, 199, 209, 234, 253, 292, 306],
+  "_total": 45,
+  "byEpisodeNumber": [1, 8, 38, 49, 55, 60, 63, 68, 74, 75, 79, 81, 100, 101, 111, 112, 117, 137, 165, 171, 175, 199, 209, 229, 234, 237, 253, 292, 306],
   "byTitle": [
     "David Driskell, artist",
     "Marshall Taylor",
