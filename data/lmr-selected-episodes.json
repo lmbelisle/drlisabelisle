@@ -1,0 +1,24 @@
+{
+  "_comment": "Curated public-facing LMR archive at drlisabelisle.com/love-maine-radio/. Source of truth for which episodes have public HTML pages. Episodes are identified by Airtable record ID (preferred) or by title (for late episodes without Episode #).",
+  "_lastUpdated": "2026-06-17",
+  "_total": 43,
+  "byEpisodeNumber": [1, 8, 38, 49, 55, 60, 63, 68, 74, 75, 79, 81, 100, 101, 111, 112, 117, 137, 165, 171, 175, 199, 209, 234, 253, 292, 306],
+  "byTitle": [
+    "David Driskell, artist",
+    "Marshall Taylor",
+    "Suzette McAvoy, executive director at the CMCA",
+    "John Paul Caponigro, visual artist",
+    "Gary Lawless, Gulf of Maine Books",
+    "Shay Stewart-Bouley, Black Girl in Maine Media",
+    "Nat May",
+    "Dr. Betsy Johnson, MaineHealth ACO",
+    "Jud Knox, CEO of York Hospital",
+    "Shane Diamond, Speak About It",
+    "Judy Camuso, Maine Department of Inland Fisheries and Wildlife",
+    "Fletcher Kittredge, founder and CEO of GWI",
+    "Raymond Brunyanszki, Camden Harbour Inn",
+    "Vanessa Seder, Food Stylist & Recipe Developer",
+    "Tracy Guerrette",
+    "Lori Parham"
+  ]
+}

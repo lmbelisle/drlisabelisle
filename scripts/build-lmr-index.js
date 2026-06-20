@@ -98,8 +98,8 @@ ${items}
 <html lang="en">
 <head>
 <meta charset="utf-8">
-<title>Love Maine Radio archive (2011–2018)</title>
-<meta name="description" content="The complete archive of Love Maine Radio, the show that aired from 2011 to 2018, hosted by Dr. Lisa Belisle. Originally The Dr. Lisa Radio Hour &amp; Podcast.">
+<title>Love Maine Radio: Selected Episodes</title>
+<meta name="description" content="Selected episodes from Love Maine Radio (2011–2018), hosted by Dr. Lisa Belisle. Originally The Dr. Lisa Radio Hour &amp; Podcast. The current show is Radio Maine, which began in 2021.">
 <link rel="canonical" href="https://drlisabelisle.com/love-maine-radio/">
 <link rel="stylesheet" href="/love-maine-radio/lmr.css">
 </head>
@@ -107,8 +107,8 @@ ${items}
 <main class="lmr-index-page">
 <header class="lmr-index-header">
 <img src="/love-maine-radio/img/lmr-logo.png" alt="Love Maine Radio" class="lmr-index-logo" width="180" height="178">
-<h1 class="lmr-index-h1-visually-hidden">Love Maine Radio</h1>
-<p class="lmr-index-intro">Love Maine Radio (2011–2018), originally The Dr. Lisa Radio Hour &amp; Podcast. The current show is <a href="https://radiomaine.com">Radio Maine</a>, which began in 2021.</p>
+<h1 class="lmr-index-h1-visually-hidden">Love Maine Radio: Selected Episodes</h1>
+<p class="lmr-index-intro">A curated selection from Love Maine Radio (2011–2018), originally The Dr. Lisa Radio Hour &amp; Podcast. The current show is <a href="https://radiomaine.com">Radio Maine</a>, which began in 2021.</p>
 </header>
 <nav class="lmr-year-nav" aria-label="Jump to year">
 ${yearNav}
