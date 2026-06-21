@@ -210,6 +210,18 @@
 <section class="no-rule">
   <div class="section-label fade-in">Find what brought you here</div>
 
+  <!-- Quiet entry point into the Writing archive's full-text search. A native
+       GET form: submitting sends the reader to writing.html?q=…, which the
+       archive search reads on load. Works with or without JavaScript. -->
+  <form class="home-search fade-in" action="writing.html" method="get" role="search"
+        style="display:flex; gap:8px; max-width:520px; margin:0 auto 2.4rem; align-items:stretch;">
+    <input type="search" name="q" aria-label="Search the writing"
+           placeholder="Search the writing&hellip;"
+           style="flex:1; padding:0.7rem 0.95rem; font-size:15px; font-family:var(--serif,Georgia,serif); color:var(--tx1,#1d1d1d); background:var(--cream,#FEFCF9); border:1px solid rgba(27,115,131,0.35); border-radius:2px; outline:none;">
+    <button type="submit"
+            style="padding:0.7rem 1.2rem; font-size:13px; letter-spacing:0.04em; text-transform:uppercase; color:#fff; background:#1B7383; border:1px solid #1B7383; border-radius:2px; cursor:pointer;">Search</button>
+  </form>
+
   <div class="doors stagger">
 
     <a class="door" href="writing.html">
@@ -259,6 +271,7 @@
 </footer>
 
 <script src="js/copy.js"></script>
+<script src="js/newsletter-slidein.js" defer></script>
 <script>
 document.getElementById('nav-toggle').addEventListener('click', function() {
   document.getElementById('nav-links').classList.toggle('open');
