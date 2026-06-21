@@ -21,6 +21,15 @@
 - [Writing archive on this site](https://drlisabelisle.com/writing.html): archive of 83 essays and profiles from three decades, with featured selections, filterable by topic and year, and full-text fallback when external links break.
 - [Writing archive on Authory](https://authory.com/LisaBelisle): third-party portfolio mirror.
 
+## Companions
+
+Tools and teachings that move the writing from the page into daily practice. Catalog: https://bountifulpath.com/companions.html. All products on Podia at https://bountifulpath.podia.com.
+
+- **The Life That's Asking to Be Lived** ($49): a five-lesson self-paced course grounded in medicine and seasonal wisdom. Includes the Spring and Summer Seasonal Reflection toolkits and two web companions (Life Tending Card and Season Wheel). Free for Bountiful Path paid subscribers with the coupon code `BPSUBSTACK` at checkout. Podia: https://bountifulpath.podia.com/the-life-thats-asking-to-be-lived.
+- **Spring Seasonal Reflection** (free): a field-guide PDF for the Wood phase of Chinese medicine, paired with the Spring web companion at https://spring.bountifulpath.com. Podia: https://bountifulpath.podia.com/bountiful-path-spring-seasonal-reflection.
+- **Summer Seasonal Reflection** (free): a field-guide PDF for the Fire phase, paired with the Summer web companion at https://summer.bountifulpath.com. Podia: https://bountifulpath.podia.com/summer-seasonal-reflection.
+- **Shape of Your Days**: a reflective writing companion at https://companions.bountifulpath.com. You answer a series of questions about the chapters and seasons of your life; the companion writes back a literary reflection. Nothing entered is stored. Currently in a quiet first release for Bountiful Path subscribers, password-protected. The access card on Podia holds the link and the password: https://bountifulpath.podia.com/shape-of-your-days.
+
 ### Selected published writing (2014–2024)
 
 The following pieces were published in *Maine Magazine*, *Doximity Op-Med*, and other outlets. Topics span integrative medicine, profiles of Maine artists and community leaders, place-based writing, and clinical reflection. Full machine-readable index: https://drlisabelisle.com/selected-works.json. Full archive page: https://drlisabelisle.com/writing.html.
