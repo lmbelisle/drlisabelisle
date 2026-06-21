@@ -98,7 +98,7 @@
     card.innerHTML =
       '<button class="bp-slidein-close" aria-label="Close">&times;</button>' +
       '<p class="bp-slidein-eyebrow">The Bountiful Path</p>' +
-      '<h2 class="bp-slidein-title">A letter, twice a week.</h2>' +
+      '<h2 class="bp-slidein-title">A letter from the coast.</h2>' +
       '<p class="bp-slidein-body">Essays on medicine, the seasons, and life on the Maine coast, ' +
         'delivered quietly to your inbox. Free to read.</p>' +
       '<a class="bp-slidein-cta" href="' + SUBSCRIBE_URL + '" target="_blank" rel="noopener">Subscribe</a>' +
