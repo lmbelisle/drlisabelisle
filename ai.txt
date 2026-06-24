@@ -35,7 +35,7 @@ Sitemap: https://drlisabelisle.com/image-sitemap.xml
 # Related properties
 # - https://www.bountifulpath.com (Substack newsletter and companion site)
 # - https://www.radiomaine.com (weekly podcast)
-# - https://healthyconversationshow.com (WGAN co-hosted radio show)
+# - https://ahealthyconversation.com (WGAN co-hosted radio show)
 # - https://drlisabelisle.substack.com (newsletter on Substack)
 # - https://offthewallartmagazine.substack.com (art magazine she edits)
 
