@@ -182,6 +182,12 @@
     <priority>0.7</priority>
   </url>
   <url>
+    <loc>https://drlisabelisle.com/writing/boothbay-wiscasset-damariscotta.html</loc>
+    <lastmod>2017-07-06</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
     <loc>https://drlisabelisle.com/writing/special-surfers.html</loc>
     <lastmod>2017-05-01</lastmod>
     <changefreq>yearly</changefreq>
@@ -202,6 +208,12 @@
   <url>
     <loc>https://drlisabelisle.com/writing/royal-river-natural-foods.html</loc>
     <lastmod>2017-02-28</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://drlisabelisle.com/writing/eric-hopkins.html</loc>
+    <lastmod>2017-02-09</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.7</priority>
   </url>
@@ -238,6 +250,12 @@
   <url>
     <loc>https://drlisabelisle.com/writing/no-man-is-an-island-the-sunbeam-v-and-the-maine-seacoast-mission.html</loc>
     <lastmod>2016-08-26</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://drlisabelisle.com/writing/ogunquit.html</loc>
+    <lastmod>2016-07-27</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.7</priority>
   </url>
