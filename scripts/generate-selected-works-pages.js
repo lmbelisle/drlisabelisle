@@ -522,11 +522,11 @@ document.querySelectorAll('.work-pullquote-share').forEach(function(btn) {
 
 async function main() {
   const json = JSON.parse(await readFile(join(REPO_ROOT, 'selected-works.json'), 'utf8'));
-  // Generate a mirror page for every item with fullText, regardless of the
-  // showOnSite flag. The catalog (writing.html) still respects showOnSite, so
-  // hidden pieces don't surface in the public list — but their mirror pages
-  // exist at stable URLs so artifact reading lists can link to them.
-  const items = (json.items || []).filter(it => it.fullText && it.fullText.trim().length > 0);
+  // Generate a mirror page only for items with fullText that are also
+  // marked showOnSite. selected-works.json no longer contains hidden
+  // records at all (fetch-selected-works.js excludes them), so this
+  // check is belt-and-suspenders in case the JSON is ever hand-edited.
+  const items = (json.items || []).filter(it => it.fullText && it.fullText.trim().length > 0 && it.showOnSite);
 
   if (!existsSync(OUT_DIR)) {
     await mkdir(OUT_DIR, { recursive: true });

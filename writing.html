@@ -2528,7 +2528,7 @@ document.querySelectorAll('.fade-in').forEach(el => observer.observe(el));
   };
 
   // Build filter chips
-  const archive = ITEMS.filter(i => !i.featured);
+  const archive = ITEMS.filter(i => !i.featured && i.showOnSite);
   const topics = [...new Set(archive.map(i => i.topic).filter(Boolean))].sort();
   const years = [...new Set(archive.map(i => i.year).filter(Boolean))].sort();
   document.getElementById('topic-filters').innerHTML =

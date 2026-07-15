@@ -95,6 +95,11 @@ export async function fetchSelectedWorks(apiKey) {
   const items = [];
   for (const r of recs) {
     const f = r.fields || {};
+    // Records not marked "Show on Site" never leave this build step. The
+    // public JSON is fetched directly by the browser at page load, so
+    // excluding hidden pieces here (not just in the page-rendering filters)
+    // is what actually keeps their full text off the public site.
+    if (f['Show on Site'] !== true) continue;
     const date = f['Publication Date'] || '';
     items.push({
       title: f['Title'] || '',

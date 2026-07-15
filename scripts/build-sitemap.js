@@ -68,7 +68,7 @@ async function main() {
   // evergreen, so changefreq yearly, priority 0.7.
   const sw = JSON.parse(await readFile(join(REPO_ROOT, 'selected-works.json'), 'utf8'));
   const essays = (sw.items || [])
-    .filter(it => it.fullText && it.fullText.trim().length > 0)
+    .filter(it => it.fullText && it.fullText.trim().length > 0 && it.showOnSite)
     .map(it => ({ slug: slugify(it.title), date: it.date }))
     .sort((a, b) => (b.date || '').localeCompare(a.date || ''));
   for (const e of essays) {
@@ -116,7 +116,7 @@ async function updateWritingCrawlLinks(sw) {
     return;
   }
   const items = (sw.items || [])
-    .filter(it => it.fullText && it.fullText.trim().length > 0)
+    .filter(it => it.fullText && it.fullText.trim().length > 0 && it.showOnSite)
     .map(it => ({ slug: slugify(it.title), title: it.title }))
     .sort((a, b) => a.title.localeCompare(b.title));
   const links = items
