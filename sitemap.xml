@@ -260,12 +260,6 @@
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://drlisabelisle.com/writing/hypnosis-healing.html</loc>
-    <lastmod>2016-07-01</lastmod>
-    <changefreq>yearly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
     <loc>https://drlisabelisle.com/writing/sun-sand-sweat-sky.html</loc>
     <lastmod>2016-06-15</lastmod>
     <changefreq>yearly</changefreq>
@@ -290,26 +284,8 @@
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://drlisabelisle.com/writing/jonathan-edwards.html</loc>
-    <lastmod>2016-02-01</lastmod>
-    <changefreq>yearly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
     <loc>https://drlisabelisle.com/writing/room-to-write.html</loc>
     <lastmod>2016-01-27</lastmod>
-    <changefreq>yearly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://drlisabelisle.com/writing/dr-lincoln-avery.html</loc>
-    <lastmod>2016-01-06</lastmod>
-    <changefreq>yearly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://drlisabelisle.com/writing/brian-corcoran.html</loc>
-    <lastmod>2015-12-22</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.7</priority>
   </url>
@@ -332,20 +308,8 @@
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://drlisabelisle.com/writing/share-the-inspiration-virginia-dearani.html</loc>
-    <lastmod>2015-11-25</lastmod>
-    <changefreq>yearly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
     <loc>https://drlisabelisle.com/writing/tae-chong-helping-new-mainers.html</loc>
     <lastmod>2015-11-25</lastmod>
-    <changefreq>yearly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://drlisabelisle.com/writing/roxi-suger.html</loc>
-    <lastmod>2015-10-07</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.7</priority>
   </url>
@@ -362,38 +326,8 @@
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://drlisabelisle.com/writing/chris-thompson.html</loc>
-    <lastmod>2015-09-01</lastmod>
-    <changefreq>yearly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
     <loc>https://drlisabelisle.com/writing/beauty-and-the-brain.html</loc>
     <lastmod>2015-08-05</lastmod>
-    <changefreq>yearly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://drlisabelisle.com/writing/zoe-weil.html</loc>
-    <lastmod>2015-08-01</lastmod>
-    <changefreq>yearly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://drlisabelisle.com/writing/bill-green.html</loc>
-    <lastmod>2015-07-18</lastmod>
-    <changefreq>yearly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://drlisabelisle.com/writing/tom-shannon-collaborating-in-the-zapoteca-kitchen-and-at-home.html</loc>
-    <lastmod>2015-07-01</lastmod>
-    <changefreq>yearly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://drlisabelisle.com/writing/sam-chase.html</loc>
-    <lastmod>2015-06-08</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.7</priority>
   </url>
@@ -404,38 +338,8 @@
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://drlisabelisle.com/writing/outer-space-inner-impact.html</loc>
-    <lastmod>2015-05-05</lastmod>
-    <changefreq>yearly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://drlisabelisle.com/writing/hunter-kent.html</loc>
-    <lastmod>2015-03-31</lastmod>
-    <changefreq>yearly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://drlisabelisle.com/writing/woody-hughes.html</loc>
-    <lastmod>2015-03-31</lastmod>
-    <changefreq>yearly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
     <loc>https://drlisabelisle.com/writing/full-plates-full-potential.html</loc>
     <lastmod>2015-02-01</lastmod>
-    <changefreq>yearly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://drlisabelisle.com/writing/dr-lisa-ryan.html</loc>
-    <lastmod>2015-01-08</lastmod>
-    <changefreq>yearly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://drlisabelisle.com/writing/a-heart-restarted.html</loc>
-    <lastmod>2015-01-07</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.7</priority>
   </url>
@@ -448,18 +352,6 @@
   <url>
     <loc>https://drlisabelisle.com/writing/sugarloaf-ski-patrol.html</loc>
     <lastmod>2014-12-09</lastmod>
-    <changefreq>yearly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://drlisabelisle.com/writing/christian-townsend.html</loc>
-    <lastmod>2014-12-01</lastmod>
-    <changefreq>yearly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://drlisabelisle.com/writing/mark-swann.html</loc>
-    <lastmod>2014-11-06</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.7</priority>
   </url>
@@ -482,44 +374,8 @@
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://drlisabelisle.com/writing/christina-baker-kline.html</loc>
-    <lastmod>2014-10-01</lastmod>
-    <changefreq>yearly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://drlisabelisle.com/writing/genevieve-morgan.html</loc>
-    <lastmod>2014-09-15</lastmod>
-    <changefreq>yearly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
     <loc>https://drlisabelisle.com/writing/bigelow-laboratory.html</loc>
     <lastmod>2014-09-03</lastmod>
-    <changefreq>yearly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://drlisabelisle.com/writing/pop-the-cause-and-pop-for-change-cellardoor-winery-celebrates-those-who-care.html</loc>
-    <lastmod>2014-07-30</lastmod>
-    <changefreq>yearly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://drlisabelisle.com/writing/sara-corbett.html</loc>
-    <lastmod>2014-07-24</lastmod>
-    <changefreq>yearly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://drlisabelisle.com/writing/michael-paterniti.html</loc>
-    <lastmod>2014-07-23</lastmod>
-    <changefreq>yearly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://drlisabelisle.com/writing/matt-barton.html</loc>
-    <lastmod>2014-07-01</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.7</priority>
   </url>
@@ -530,68 +386,14 @@
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://drlisabelisle.com/writing/garth-altenburg.html</loc>
-    <lastmod>2014-06-28</lastmod>
-    <changefreq>yearly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://drlisabelisle.com/writing/lifeflight-taking-to-the-skies-to-save-lives.html</loc>
-    <lastmod>2014-05-29</lastmod>
-    <changefreq>yearly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
     <loc>https://drlisabelisle.com/writing/jon-imber-creating-art-with-als.html</loc>
     <lastmod>2014-04-25</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://drlisabelisle.com/writing/the-dempsey-center-in-lewiston.html</loc>
-    <lastmod>2014-04-02</lastmod>
-    <changefreq>yearly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://drlisabelisle.com/writing/kate-northrup.html</loc>
-    <lastmod>2014-01-14</lastmod>
-    <changefreq>yearly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://drlisabelisle.com/writing/dr-stephen-aronson.html</loc>
-    <lastmod>2013-10-09</lastmod>
-    <changefreq>yearly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
     <loc>https://drlisabelisle.com/writing/global-villages-51.html</loc>
     <lastmod>2012-09-02</lastmod>
-    <changefreq>yearly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://drlisabelisle.com/writing/amazing-healing-foods.html</loc>
-    <lastmod>2011-01-01</lastmod>
-    <changefreq>yearly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://drlisabelisle.com/writing/garden-healing.html</loc>
-    <lastmod>2009-01-01</lastmod>
-    <changefreq>yearly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://drlisabelisle.com/writing/create-a-year-of-wellness.html</loc>
-    <lastmod>2008-01-01</lastmod>
-    <changefreq>yearly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://drlisabelisle.com/writing/farewell-to-the-queen-and-thanks-to-mom.html</loc>
-    <lastmod>2006-05-04</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.7</priority>
   </url>
