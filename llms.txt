@@ -8,6 +8,7 @@
 - [Writing](https://drlisabelisle.com/writing.html): The Bountiful Path on Substack, books in progress, companions and tools, *Our Daily Tread*, and an archive of essays and profiles published in Maine Magazine, Doximity Op-Med, and other outlets across three decades.
 - [Podcast](https://drlisabelisle.com/podcast.html): Radio Maine (video podcast) and A Healthy Conversation on Newsradio WGAN.
 - [Speaking](https://drlisabelisle.com/speaking.html): speaking topics: signature talks, past venues, formats, and how to inquire.
+- [Consulting](https://drlisabelisle.com/consulting.html): coaching and consulting for physician leaders and health systems: physician leadership coaching, executive-team facilitation and dyad alignment, AI governance in clinical settings, and virtual-care strategy.
 - [Events](https://drlisabelisle.com/events.html): Radio Maine Live panels and the Artful Escapes conversation series at the Portland Art Gallery, plus virtual book circles.
 - [About](https://drlisabelisle.com/about.html): full biography, credentials, training, family lineage.
 - [Contact](https://drlisabelisle.com/contact.html): speaking inquiries, press, general contact, and the Bountiful Path ecosystem of partner sites.
@@ -83,6 +84,14 @@ Formats: keynote (45–60 min), fireside conversation, workshop, multi-day retre
 
 Inquiries: lbelisle@littlejohnisland.me. Speaking page: https://drlisabelisle.com/speaking.html.
 
+## Consulting & Coaching
+
+Lisa Belisle works with physicians and health systems as a physician leadership coach and consultant. Her primary clients are physicians moving into and holding leadership roles, and the health systems, medical groups, executive teams, and boards they work within.
+
+How she works: physician leadership coaching (one-to-one, for the move from clinician to leader); team facilitation and physician-administrator dyad alignment; AI and clinical leadership (governance and leadership for AI in clinical settings, from a physician who builds AI tools herself); and virtual-care strategy (built on having led a virtual-first care company across roughly twenty states).
+
+Engagements are scoped individually. The first step is a short conversation. Inquiries: lbelisle@littlejohnisland.me. Consulting page: https://drlisabelisle.com/consulting.html.
+
 ## Gatherings
 
 Radio Maine Live panels at the Portland Art Gallery, the Artful Escapes conversation series at the Portland Art Gallery, virtual book circles for Bountiful Path subscribers. Calendar lives at https://drlisabelisle.com/events.html and the Portland Art Gallery events page.
@@ -90,7 +99,7 @@ Radio Maine Live panels at the Portland Art Gallery, the Artful Escapes conversa
 ## Credentials
 
 - Doctor of Medicine (MD)
-- PhD in Community Leadership, University of Central Arkansas
+- PhD in Leadership Studies, University of Central Arkansas
 - Master of Public Health (MPH)
 - Master of Business Administration (MBA)
 - Board-certified, Family Medicine
