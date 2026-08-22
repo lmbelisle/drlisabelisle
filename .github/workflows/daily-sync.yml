@@ -1,14 +1,25 @@
 # .github/workflows/daily-sync.yml
 #
-# Self-healing scheduled sync. Pings the Netlify Build Hook every six hours
+# Self-healing scheduled sync. Pings the Netlify Build Hook once a day (06:15 ET)
 # to trigger a Netlify rebuild. The build runs scripts/build-data.js which
 # pulls from Airtable and regenerates selected-works.json, copy.json,
 # featured-essays.json, and otw-pieces.json.
-# Net effect: any new Airtable content shows up on the site within six hours,
+# Net effect: any new Airtable content shows up on the site within a day,
 # with no manual deploy.
 #
+# CADENCE, and why it is not more often (2026-08-22): this hook fires
+# UNCONDITIONALLY. It does not check whether anything actually changed, so every
+# run is a full paid Netlify rebuild of a site that is usually identical to the
+# one already deployed. At every six hours that was 4 rebuilds a day per site,
+# 12 a day across the three sites, and it was driving repeated $10 credit
+# top-ups. Lisa's own pushes already trigger their own build through Netlify's
+# git integration, so this cron only exists to catch content that changes
+# OUTSIDE the repo. Do not raise this frequency without a reason; the real
+# upgrade is to make the hook conditional on a content change, not to run it
+# more often.
+#
 # Self-healing properties:
-#   - Cron runs every 6 hours.
+#   - Cron runs once a day.
 #   - The curl call retries up to 3 times.
 #   - On hard failure, a GitHub issue is opened automatically.
 #   - workflow_dispatch lets anyone with repo access trigger an immediate run.
@@ -17,7 +28,7 @@ name: Scheduled site sync
 
 on:
   schedule:
-    - cron: '0 */6 * * *'
+    - cron: '15 10 * * *'
   workflow_dispatch:
 
 permissions:
