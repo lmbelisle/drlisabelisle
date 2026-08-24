@@ -98,6 +98,8 @@ section.no-rule { border-bottom: none; padding-bottom: 1rem; }
 .brief-item-title { font-family: var(--serif); font-style: italic; font-size: 21px; font-weight: 400; line-height: 1.3; margin-bottom: 0.5rem; }
 .brief-item-desc { font-size: 14px; color: var(--tx2); line-height: 1.65; margin-bottom: 0.6rem; }
 .brief-item-link { font-size: 12px; color: var(--teal); text-decoration: none; letter-spacing: 0.04em; }
+.brief-item-alt { display: inline-block; font-size: 11.5px; color: var(--tx3); text-decoration: none; letter-spacing: 0.02em; margin-left: 0.9rem; transition: color 0.2s; }
+.brief-item-alt:hover { color: var(--tx2); text-decoration: underline; text-underline-offset: 3px; }
 .brief-item-link:hover { text-decoration: underline; }
 
 /* === Speaking page (signature talks grid) === */
@@ -1029,3 +1031,41 @@ html[data-reading-progress] body::before {
   .cross-site-banner-label { display: block; margin-bottom: 0.3rem; }
 }
 /* ===== END CROSS-SITE ECOSYSTEM BANNER ===== */
+
+/* ===== INQUIRY FORM =====
+   Used on inquiry.html. Built from the existing tokens so the form reads as
+   part of the site rather than a bolted-on widget. */
+.inq-form { max-width: 720px; }
+.inq-fieldset { border: none; padding: 0; margin: 0 0 2.25rem; }
+.inq-legend { font-size: 10px; letter-spacing: 0.2em; text-transform: uppercase; color: var(--teal); margin-bottom: 1.25rem; padding: 0; font-weight: 400; }
+.inq-field { margin-bottom: 1.4rem; }
+.inq-row { display: flex; gap: 1.25rem; flex-wrap: wrap; }
+.inq-row > .inq-field { flex: 1; min-width: 240px; }
+.inq-label { display: block; font-size: 13px; letter-spacing: 0.02em; color: var(--tx); margin-bottom: 0.4rem; font-weight: 400; }
+.inq-label .req { color: var(--gold); margin-left: 0.15rem; }
+.inq-hint { display: block; font-size: 12.5px; color: var(--tx3); line-height: 1.55; margin-bottom: 0.5rem; }
+.inq-form input[type="text"],
+.inq-form input[type="email"],
+.inq-form select,
+.inq-form textarea {
+  width: 100%; padding: 0.6rem 0.8rem; font-family: var(--sans); font-size: 15px;
+  font-weight: 300; line-height: 1.6; color: var(--tx); background: var(--bg);
+  border: 0.5px solid var(--bd2); border-radius: 2px; transition: border-color 0.2s;
+}
+.inq-form textarea { resize: vertical; min-height: 120px; }
+.inq-form select { appearance: none; background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='10' height='6'%3E%3Cpath fill='%235A5854' d='M0 0h10L5 6z'/%3E%3C/svg%3E"); background-repeat: no-repeat; background-position: right 0.85rem center; padding-right: 2.2rem; }
+.inq-form input:focus, .inq-form select:focus, .inq-form textarea:focus { outline: none; border-color: var(--teal); box-shadow: 0 0 0 2px rgba(27,115,131,0.12); }
+.inq-form input::placeholder, .inq-form textarea::placeholder { color: var(--tx3); font-weight: 300; }
+.inq-checks { display: flex; flex-wrap: wrap; gap: 0.6rem 1.5rem; margin-top: 0.2rem; }
+.inq-check { display: flex; align-items: center; gap: 0.5rem; font-size: 14px; color: var(--tx2); cursor: pointer; }
+.inq-check input { accent-color: var(--teal); width: 15px; height: 15px; }
+.inq-submit { font-family: var(--sans); font-size: 11px; font-weight: 400; letter-spacing: 0.1em; text-transform: uppercase; padding: 13px 30px; border: 0.5px solid var(--bd2); background: var(--bg); color: var(--tx); cursor: pointer; transition: background 0.2s, border-color 0.2s; }
+.inq-submit:hover { background: var(--bg2); border-color: var(--teal); }
+.inq-foot { display: flex; gap: 1.5rem; align-items: center; flex-wrap: wrap; margin-top: 0.5rem; }
+.inq-note { font-size: 14px; color: var(--tx2); line-height: 1.8; max-width: 720px; }
+.inq-note a { color: var(--teal); text-decoration: underline; text-decoration-color: rgba(27,115,131,0.3); text-underline-offset: 3px; }
+.inq-note a:hover { text-decoration-color: var(--teal); }
+@media (max-width: 680px) {
+  .inq-row { display: block; }
+  .inq-foot { flex-direction: column; align-items: flex-start; gap: 1rem; }
+}

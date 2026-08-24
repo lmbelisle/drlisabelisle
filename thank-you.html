@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+<head>
+<meta charset="UTF-8">
+<script>document.documentElement.classList.replace("no-js","js");</script>
+<script src="js/main.js" defer></script>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Thank you | Lisa Belisle, MD</title>
+<meta name="description" content="Your inquiry has been received.">
+<meta name="robots" content="noindex, follow">
+<link rel="canonical" href="https://drlisabelisle.com/thank-you.html">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300;1,400;1,500&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/styles.css">
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-0CX87S0E34"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-0CX87S0E34');
+  </script>
+</head>
+<body>
+
+<nav>
+  <div class="nav-inner">
+    <a href="/" class="nav-name">Lisa Belisle</a>
+    <ul class="nav-links" id="nav-links">
+      <li><a href="writing.html">Writing</a></li>
+      <li><a href="podcast.html">Podcast</a></li>
+      <li><a href="speaking.html">Speaking</a></li>
+      <li><a href="consulting.html">Consulting</a></li>
+      <li><a href="events.html">Events</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="contact.html" class="active">Contact</a></li>
+    </ul>
+    <button class="nav-toggle" id="nav-toggle" aria-label="Menu"><span></span><span></span><span></span></button>
+  </div>
+</nav>
+
+<header class="page-header">
+  <div class="page-header-inner">
+    <div class="page-header-eyebrow">Thank you</div>
+    <h1 class="page-header-title">Your note<br>arrived.</h1>
+    <p class="page-header-lede">Lisa reads every inquiry herself. A response typically comes within a week.</p>
+  </div>
+</header>
+
+<div class="wrap">
+
+<section class="fade-in no-rule">
+  <div class="section-label">While you wait</div>
+  <p class="inq-note">If your plans change, or you remember something that would help &mdash; a date that firmed up, a link, a program draft &mdash; write to <a href="mailto:lbelisle@littlejohnisland.me">lbelisle@littlejohnisland.me</a> and it will be added to your inquiry.</p>
+  <div class="speaking-actions">
+    <a href="speaking.html" class="btn">Speaking &rarr;</a>
+    <a href="consulting.html" class="link-plain">Consulting &rarr;</a>
+    <a href="writing.html" class="link-plain">Read the writing &rarr;</a>
+  </div>
+</section>
+
+</div>
+
+<footer>
+  <div class="footer-inner">
+    <span class="footer-name">Lisa Belisle, MD, PhD, MPH, MBA &nbsp;&middot;&nbsp; Littlejohn Island, Maine</span>
+    <span class="footer-copy">&copy; 2026 Dr. Lisa Belisle. All rights reserved.</span>
+    <ul class="footer-links">
+      <li><a href="https://www.bountifulpath.com" target="_blank">The Bountiful Path</a></li>
+      <li><a href="https://www.radiomaine.com" target="_blank">Radio Maine</a></li>
+      <li><a href="https://ahealthyconversation.com/" target="_blank">A Healthy Conversation</a></li>
+      <li><a href="https://portlandartgallery.com" target="_blank">Portland Art Gallery</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </div>
+</footer>
+
+<script>
+document.getElementById('nav-toggle').addEventListener('click', function() {
+  document.getElementById('nav-links').classList.toggle('open');
+});
+const observer = new IntersectionObserver((entries) => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) { entry.target.classList.add('visible'); observer.unobserve(entry.target); }
+  });
+}, { threshold: 0.06 });
+document.querySelectorAll('.fade-in').forEach(el => observer.observe(el));
+</script>
+
+</body>
+</html>
