@@ -261,7 +261,7 @@
     <!-- ============ STEP GATE: email + referral ============ -->
     <div class="li-step" id="step-gate" hidden>
       <div class="section-label">Your result is ready</div>
-      <p style="font-size:17px; color:var(--tx1); line-height:1.9; max-width:620px;">Add your email and your profile appears on the next screen. Your answers come to Lisa, and nowhere else.</p>
+      <p style="font-size:17px; color:var(--tx1); line-height:1.9; max-width:620px;">Add your email. Your profile appears on the next screen, and a copy lands in your inbox. Your answers come to Lisa, and nowhere else.</p>
       <div class="li-open" style="margin-top:1.75rem;">
         <div class="inq-field">
           <label class="inq-label" for="li-name">Your name</label>
@@ -656,6 +656,18 @@ document.querySelectorAll('.fade-in').forEach(el => observer.observe(el));
     } catch (e) { /* no-op */ }
   }
 
+  // Email the reader a copy of their result (Netlify function -> Resend).
+  // Fire-and-forget: if the email can't send, the on-page result still shows.
+  function submitResultEmail(payload) {
+    try {
+      fetch("/.netlify/functions/send-result", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(payload)
+      }).catch(function () { /* silent */ });
+    } catch (e) { /* no-op */ }
+  }
+
   // ============================================================
   // WIRE UP
   // ============================================================
@@ -712,6 +724,22 @@ document.querySelectorAll('.fade-in').forEach(el => observer.observe(el));
       archetype: archLabel,
       strength_band: bandInfo.band + " (avg " + bandInfo.avg.toFixed(1) + ")",
       section_a_answers: aReadout,
+      effective_leaders: c.effective,
+      ineffective_leaders: c.ineffective,
+      engaged_experience: c.experience,
+      role_models: c.roleModels
+    });
+
+    // Email the reader their result. The function renders the message from its
+    // own canonical copy, so it only needs the scoring outputs, not HTML.
+    submitResultEmail({
+      email: email,
+      name: name,
+      primary: arch.primary,
+      secondary: arch.blended ? arch.secondary : "",
+      blended: !!arch.blended,
+      band: bandInfo.band,
+      avg: bandInfo.avg.toFixed(1),
       effective_leaders: c.effective,
       ineffective_leaders: c.ineffective,
       engaged_experience: c.experience,
