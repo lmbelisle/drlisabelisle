@@ -5,6 +5,14 @@
 [build.environment]
   NODE_VERSION = "20"
 
+# Serverless functions. Netlify excludes this directory from the published
+# static files, so the source is never served even though publish = ".".
+# send-result.js emails a reader their Leader Identity result via Resend; it
+# reads RESEND_API_KEY (and optional RESULT_FROM / RESULT_REPLY_TO) from the
+# site's environment variables and needs a Resend-verified FROM domain.
+[functions]
+  directory = "netlify/functions"
+
 # Security headers applied to every page on the site.
 [[headers]]
   for = "/*"
