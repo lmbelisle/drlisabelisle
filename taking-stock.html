@@ -1,0 +1,774 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+<head>
+<meta charset="UTF-8">
+<script>document.documentElement.classList.replace("no-js","js");</script>
+<script src="js/main.js" defer></script>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Taking Stock Assessment | Lisa Belisle, MD, PhD</title>
+<meta name="description" content="A short, research-grounded self-assessment for mid-career physicians taking stock: questioning whether clinical medicine still fits, or building a nonclinical, consulting, or independent path. Get your profile, the research behind it, and one next step. About five minutes.">
+<meta name="author" content="Lisa Belisle, MD">
+<link rel="canonical" href="https://drlisabelisle.com/taking-stock.html">
+
+<meta property="og:site_name" content="Lisa Belisle, MD">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="en_US">
+<meta property="og:url" content="https://drlisabelisle.com/taking-stock.html">
+<meta property="og:title" content="Taking Stock Assessment | Lisa Belisle, MD, PhD">
+<meta property="og:description" content="An honest read on where your medical career is, and what kind of move fits. A short assessment for physicians taking stock, grounded in the research on career change.">
+<meta property="og:image" content="https://drlisabelisle.com/speaking.jpg">
+<meta property="og:image:alt" content="Lisa Belisle, MD, PhD, physician executive">
+
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Taking Stock Assessment | Lisa Belisle, MD, PhD">
+<meta name="twitter:description" content="An honest read on where your medical career is, and what kind of move fits. About five minutes.">
+<meta name="twitter:image" content="https://drlisabelisle.com/speaking.jpg">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300;1,400;1,500&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/styles.css">
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "WebPage",
+      "@id": "https://drlisabelisle.com/taking-stock.html#webpage",
+      "url": "https://drlisabelisle.com/taking-stock.html",
+      "name": "Taking Stock Assessment | Lisa Belisle, MD, PhD",
+      "description": "A short, research-grounded self-assessment for mid-career physicians taking stock of their career, from a physician executive and career coach.",
+      "inLanguage": "en-US",
+      "isPartOf": { "@id": "https://drlisabelisle.com/#website" },
+      "author": { "@id": "https://drlisabelisle.com/#person" },
+      "breadcrumb": { "@id": "https://drlisabelisle.com/taking-stock.html#breadcrumb" }
+    },
+    {
+      "@type": "BreadcrumbList",
+      "@id": "https://drlisabelisle.com/taking-stock.html#breadcrumb",
+      "itemListElement": [
+        { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://drlisabelisle.com/" },
+        { "@type": "ListItem", "position": 2, "name": "Coaching", "item": "https://drlisabelisle.com/coaching.html" },
+        { "@type": "ListItem", "position": 3, "name": "Taking Stock Assessment", "item": "https://drlisabelisle.com/taking-stock.html" }
+      ]
+    }
+  ]
+}
+</script>
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-0CX87S0E34"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-0CX87S0E34');
+  </script>
+
+<style>
+/* Taking Stock assessment — interactive widget styles, built on the site's
+   own tokens (var(--teal), var(--gold), var(--tx*), serif/sans) so the app
+   reads as part of drlisabelisle.com, not a bolt-on. Global classes (nav,
+   page-header, wrap, section, btn, inq-*, footer) do the rest. Shared with the
+   Leader Identity assessment; kept as .li-* so both pages use the same look. */
+.li-app { max-width: 760px; }
+
+/* Progress */
+.li-prog { margin-bottom: 2rem; }
+.li-prog-row { display: flex; justify-content: space-between; font-size: 11px; letter-spacing: 0.14em; text-transform: uppercase; color: var(--tx3); margin-bottom: 0.5rem; }
+.li-prog-bar { height: 2px; background: var(--bd); }
+.li-prog-fill { height: 100%; background: var(--gold); transition: width 0.4s ease; }
+
+/* A single question */
+.li-q { margin-bottom: 2.25rem; }
+.li-q-num { font-size: 10px; letter-spacing: 0.2em; text-transform: uppercase; color: var(--teal); margin-bottom: 0.6rem; }
+.li-q-text { font-family: var(--serif); font-size: 23px; font-weight: 400; line-height: 1.35; color: var(--tx); margin-bottom: 1.1rem; }
+
+/* Forced-choice option cards (radios styled as cards) */
+.li-opts { display: grid; gap: 0.6rem; }
+.li-opt { position: relative; display: block; cursor: pointer; }
+.li-opt input { position: absolute; opacity: 0; width: 1px; height: 1px; }
+.li-opt-card { display: block; padding: 0.95rem 1.15rem 0.95rem 2.7rem; border: 0.5px solid var(--bd2); background: var(--bg); font-size: 15.5px; line-height: 1.6; color: var(--tx2); transition: border-color 0.18s, background 0.18s, color 0.18s; position: relative; }
+.li-opt-card::before { content: ""; position: absolute; left: 1.15rem; top: 1.15rem; width: 14px; height: 14px; border-radius: 50%; border: 1.5px solid var(--bd2); transition: border-color 0.18s, background 0.18s, box-shadow 0.18s; }
+.li-opt:hover .li-opt-card { border-color: var(--teal); }
+.li-opt.is-checked .li-opt-card,
+.li-opt:has(input:checked) .li-opt-card { border-color: var(--teal); background: var(--bg2); color: var(--tx); }
+.li-opt.is-checked .li-opt-card::before,
+.li-opt:has(input:checked) .li-opt-card::before { border-color: var(--teal); background: var(--teal); box-shadow: inset 0 0 0 2.5px var(--bg2); }
+.li-opt input:focus-visible + .li-opt-card { outline: 2px solid var(--teal); outline-offset: 2px; }
+
+/* Rating scale (1–5) */
+.li-rate-intro { font-size: 15px; color: var(--tx2); line-height: 1.8; margin-bottom: 0.4rem; }
+.li-rate-note { font-size: 13px; color: var(--tx3); line-height: 1.65; margin-bottom: 1.75rem; font-style: italic; font-family: var(--serif); }
+.li-rate { margin-bottom: 1.9rem; }
+.li-rate-stmt { font-size: 16px; color: var(--tx); line-height: 1.55; margin-bottom: 0.7rem; }
+.li-scale { display: flex; gap: 0.4rem; align-items: stretch; }
+.li-scale label { flex: 1; position: relative; cursor: pointer; }
+.li-scale input { position: absolute; opacity: 0; width: 1px; height: 1px; }
+.li-scale-box { display: flex; align-items: center; justify-content: center; padding: 0.7rem 0; border: 0.5px solid var(--bd2); background: var(--bg); font-size: 15px; color: var(--tx2); transition: border-color 0.18s, background 0.18s, color 0.18s; }
+.li-scale label:hover .li-scale-box { border-color: var(--teal); }
+.li-scale label.is-checked .li-scale-box,
+.li-scale label:has(input:checked) .li-scale-box { border-color: var(--teal); background: var(--teal); color: #FEFCF9; }
+.li-scale input:focus-visible + .li-scale-box { outline: 2px solid var(--teal); outline-offset: 2px; }
+.li-scale-ends { display: flex; justify-content: space-between; font-size: 11.5px; color: var(--tx3); margin-top: 0.4rem; letter-spacing: 0.02em; }
+
+/* Open-reflection fields reuse the .inq-form field styles; wrapped so they get them */
+.li-open .inq-field { margin-bottom: 1.5rem; }
+
+/* Step footers */
+.li-foot { display: flex; gap: 1.25rem; align-items: center; flex-wrap: wrap; margin-top: 2.25rem; padding-top: 1.75rem; border-top: 0.5px solid var(--bd); }
+.li-back { font-size: 12px; letter-spacing: 0.06em; color: var(--tx2); text-decoration: none; background: none; border: none; cursor: pointer; font-family: var(--sans); }
+.li-back:hover { color: var(--tx); }
+.li-err { color: #A6402E; font-size: 13.5px; line-height: 1.6; margin-top: 1rem; }
+
+/* Result */
+.li-result-card { border: 0.5px solid var(--bd2); border-top: 2px solid var(--gold); padding: 2.25rem 2rem; margin-bottom: 2rem; background: var(--bg); }
+.li-result-eyebrow { font-size: 10px; letter-spacing: 0.2em; text-transform: uppercase; color: var(--teal); margin-bottom: 0.85rem; }
+.li-result-name { font-family: var(--serif); font-size: clamp(32px, 5vw, 44px); font-weight: 300; line-height: 1.05; letter-spacing: -0.01em; color: var(--tx); margin-bottom: 1.1rem; }
+.li-result-desc { font-size: 17px; color: var(--tx2); line-height: 1.85; }
+.li-blend-note { font-size: 14px; color: var(--tx3); font-style: italic; font-family: var(--serif); line-height: 1.6; margin-bottom: 1.5rem; }
+.li-research { font-size: 14px; color: var(--tx2); line-height: 1.75; margin-top: 1.4rem; padding-top: 1.25rem; border-top: 0.5px solid var(--bd); }
+.li-research-lab { display: block; font-size: 10px; letter-spacing: 0.16em; text-transform: uppercase; color: var(--tx3); margin-bottom: 0.5rem; }
+
+.li-band { border: 0.5px solid var(--bd); padding: 1.75rem 2rem; margin-bottom: 2rem; background: var(--bg2); }
+.li-band-head { display: flex; align-items: baseline; gap: 0.9rem; flex-wrap: wrap; margin-bottom: 0.85rem; }
+.li-band-lab { font-size: 10px; letter-spacing: 0.16em; text-transform: uppercase; color: var(--teal); }
+.li-band-name { font-family: var(--serif); font-style: italic; font-size: 24px; font-weight: 400; color: var(--tx); }
+.li-band-avg { font-size: 12.5px; color: var(--tx3); letter-spacing: 0.02em; }
+.li-band-desc { font-size: 15.5px; color: var(--tx2); line-height: 1.8; margin-bottom: 1.1rem; }
+.li-band-cite { font-size: 12.5px; color: var(--tx3); line-height: 1.65; }
+.li-band-cite a { color: var(--teal); text-decoration: underline; text-decoration-color: rgba(27,115,131,0.3); text-underline-offset: 3px; }
+
+.li-recap { margin-bottom: 2rem; }
+.li-recap dt { font-size: 12.5px; color: var(--tx); font-weight: 400; margin-top: 1.1rem; }
+.li-recap dd { font-size: 15px; color: var(--tx2); line-height: 1.7; margin: 0.25rem 0 0; }
+
+.li-close { font-family: var(--serif); font-size: 19px; font-weight: 300; line-height: 1.65; color: var(--tx2); max-width: 640px; margin-bottom: 1.75rem; }
+
+@media (max-width: 640px) {
+  .li-result-card { padding: 1.75rem 1.35rem; }
+  .li-band { padding: 1.5rem 1.35rem; }
+  .li-scale { gap: 0.3rem; }
+  .li-q-text { font-size: 21px; }
+}
+</style>
+</head>
+<body>
+
+<nav>
+  <div class="nav-inner">
+    <a href="/" class="nav-name">Lisa Belisle</a>
+    <ul class="nav-links" id="nav-links">
+      <li><a href="writing.html">Writing</a></li>
+      <li><a href="podcast.html">Podcast</a></li>
+      <li><a href="speaking.html">Speaking</a></li>
+      <li><a href="consulting.html">Consulting</a></li>
+      <li><a href="coaching.html" class="active">Coaching</a></li>
+      <li><a href="events.html">Events</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+    <button class="nav-toggle" id="nav-toggle" aria-label="Menu"><span></span><span></span><span></span></button>
+  </div>
+</nav>
+
+<header class="page-header">
+  <div class="page-header-inner">
+    <div class="page-header-eyebrow">Taking Stock Assessment</div>
+    <h1 class="page-header-title">Is this still<br>the work, and<br>what&rsquo;s next?</h1>
+    <p class="page-header-lede">You trained for one version of a medical career. Years in, many physicians ask a harder question: is this still the work I want, and if not, what would I build instead?</p>
+  </div>
+</header>
+
+<div class="wrap">
+
+<section class="fade-in no-rule">
+  <div style="max-width:760px;">
+    <p style="font-size:17px; color:var(--tx1); line-height:1.9;">Taking stock is not burning out or walking away. It is the ordinary, periodic work of checking whether your career still fits the person you have become, and deciding your next move. Most physicians never make the time, and drift instead.</p>
+    <p style="font-size:17px; color:var(--tx1); line-height:1.9; margin-top:1.1rem;">Answer the questions below and you&rsquo;ll get an honest read: your current profile, the research behind it and one concrete next step. It takes about five minutes.</p>
+  </div>
+</section>
+
+<!-- Hidden static form so Netlify detects the fields at deploy time. The live
+     widget submits these same names by AJAX (see submitCapture()), matching the
+     data-netlify / hidden form-name / honeypot pattern used on inquiry.html. -->
+<form name="taking-stock" data-netlify="true" netlify-honeypot="bot-field" hidden>
+  <input type="hidden" name="form-name" value="taking-stock">
+  <input name="bot-field">
+  <input type="text" name="name">
+  <input type="email" name="email">
+  <input type="text" name="referral_source">
+  <input type="text" name="archetype">
+  <input type="text" name="strength_band">
+  <input type="text" name="section_a_answers">
+  <textarea name="energy_gives"></textarea>
+  <textarea name="costs_most"></textarea>
+  <textarea name="off_white_coat"></textarea>
+  <textarea name="next_chapter"></textarea>
+</form>
+
+<section class="fade-in no-rule">
+  <div class="li-app" id="li-app">
+
+    <div class="li-prog" id="li-prog">
+      <div class="li-prog-row"><span id="li-step-label">Part 1 of 3</span><span id="li-step-name">Quick take</span></div>
+      <div class="li-prog-bar"><div class="li-prog-fill" id="li-prog-fill" style="width:33%"></div></div>
+    </div>
+
+    <!-- ============ STEP A: forced choice ============ -->
+    <div class="li-step" id="step-a">
+      <div class="section-label">Quick take</div>
+      <div id="li-a-questions"></div>
+      <div class="li-err" id="li-a-err" hidden>Please answer every question to continue.</div>
+      <div class="li-foot">
+        <button type="button" class="btn" id="li-a-next">Continue &rarr;</button>
+      </div>
+    </div>
+
+    <!-- ============ STEP B: ratings + open reflection ============ -->
+    <div class="li-step" id="step-b" hidden>
+      <div class="section-label">Where you stand</div>
+      <p class="li-rate-intro">Rate how true each feels right now, from 1 (not at all) to 5 (completely).</p>
+      <p class="li-rate-note">These four items measure the four validated dimensions of the Career Adapt-Abilities Scale (Savickas &amp; Porfeli, 2012).</p>
+      <div id="li-b-ratings"></div>
+
+      <div class="li-open" style="margin-top:2.5rem;">
+        <div class="section-label">In your own words</div>
+        <div class="inq-field">
+          <label class="inq-label" for="li-c11">Name the part of your work that still gives you energy.</label>
+          <input type="text" id="li-c11">
+        </div>
+        <div class="inq-field">
+          <label class="inq-label" for="li-c12">Name the part that costs you the most.</label>
+          <input type="text" id="li-c12">
+        </div>
+        <div class="inq-field">
+          <label class="inq-label" for="li-c13">Who are you when you take off the white coat?</label>
+          <textarea id="li-c13" rows="4"></textarea>
+        </div>
+        <div class="inq-field">
+          <label class="inq-label" for="li-c14">If you could design your next chapter, what would it include?</label>
+          <textarea id="li-c14" rows="4"></textarea>
+        </div>
+      </div>
+
+      <div class="li-err" id="li-b-err" hidden>Please rate all four statements to continue.</div>
+      <div class="li-foot">
+        <button type="button" class="btn" id="li-b-next">Continue &rarr;</button>
+        <button type="button" class="li-back" id="li-b-back">&larr; Back</button>
+      </div>
+    </div>
+
+    <!-- ============ STEP GATE: email + referral ============ -->
+    <div class="li-step" id="step-gate" hidden>
+      <div class="section-label">Your result is ready</div>
+      <p style="font-size:17px; color:var(--tx1); line-height:1.9; max-width:620px;">Add your email. Your profile appears on the next screen, and a copy lands in your inbox. Your answers come to Lisa, and nowhere else.</p>
+      <div class="li-open" style="margin-top:1.75rem;">
+        <div class="inq-field">
+          <label class="inq-label" for="li-name">Your name</label>
+          <input type="text" id="li-name" autocomplete="name">
+        </div>
+        <div class="inq-field">
+          <label class="inq-label" for="li-email">Email <span class="req" aria-hidden="true">*</span></label>
+          <input type="email" id="li-email" autocomplete="email" required>
+        </div>
+        <div class="inq-field">
+          <label class="inq-label" for="li-referral">How did you hear about me?</label>
+          <span class="inq-hint">Optional, but it helps Lisa know what is working.</span>
+          <select id="li-referral">
+            <option value="">Please choose&hellip;</option>
+            <option value="Radio Maine">Radio Maine</option>
+            <option value="A Healthy Conversation">A Healthy Conversation</option>
+            <option value="The Bountiful Path or Substack">The Bountiful Path or Substack</option>
+            <option value="LinkedIn">LinkedIn</option>
+            <option value="Referral or colleague">A referral or a colleague</option>
+            <option value="Talk or event">A talk or an event</option>
+            <option value="Web search">Web search</option>
+            <option value="Other">Other</option>
+          </select>
+        </div>
+      </div>
+      <div class="li-err" id="li-gate-err" hidden>Please enter a valid email address.</div>
+      <div class="li-foot">
+        <button type="button" class="btn" id="li-gate-next">See my result &rarr;</button>
+        <button type="button" class="li-back" id="li-gate-back">&larr; Back</button>
+      </div>
+    </div>
+
+    <!-- ============ STEP RESULT ============ -->
+    <div class="li-step" id="step-result" hidden>
+      <div class="section-label">Your taking-stock profile</div>
+      <div id="li-result-body"></div>
+
+      <div class="speaking-actions" style="margin-top:0.5rem;">
+        <a href="inquiry.html?type=coaching" class="btn">Start a conversation &rarr;</a>
+        <button type="button" class="li-back" id="li-restart">Take it again</button>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+</div>
+
+<footer>
+  <div class="footer-inner">
+    <span class="footer-name">Lisa Belisle, MD, PhD, MPH, MBA &nbsp;&middot;&nbsp; Littlejohn Island, Maine</span>
+    <span class="footer-copy">&copy; 2026 Dr. Lisa Belisle. All rights reserved.</span>
+    <ul class="footer-links">
+      <li><a href="https://www.bountifulpath.com" target="_blank">The Bountiful Path</a></li>
+      <li><a href="https://www.radiomaine.com" target="_blank">Radio Maine</a></li>
+      <li><a href="https://ahealthyconversation.com/" target="_blank">A Healthy Conversation</a></li>
+      <li><a href="https://portlandartgallery.com" target="_blank">Portland Art Gallery</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </div>
+</footer>
+
+<script>
+document.getElementById('nav-toggle').addEventListener('click', function() {
+  document.getElementById('nav-links').classList.toggle('open');
+});
+const observer = new IntersectionObserver((entries) => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) { entry.target.classList.add('visible'); observer.unobserve(entry.target); }
+  });
+}, { threshold: 0.06 });
+document.querySelectorAll('.fade-in').forEach(el => observer.observe(el));
+</script>
+
+<script>
+// ============================================================
+// TAKING STOCK ASSESSMENT
+// ------------------------------------------------------------
+// Same engine as the Leader Identity assessment (itself forked from
+// pag-art-dna): inputs -> weighted tally -> archetype-result -> recommendation.
+// Six forced-choice questions tally to one of four career-move archetypes; a
+// four-item validated scale (career adaptability, worded from the CAAS
+// dimensions) yields a readiness band; the recommendation is the coaching CTA.
+// ============================================================
+(function () {
+  "use strict";
+
+  // ---- SECTION A: forced choice. Option order is A,B,C,D and maps to
+  //      A=The Reshaper, B=The Explorer, C=The Realigner, D=The Builder.
+  var QUESTIONS = [
+    { q: "When you picture your work five years from now, what feels right?", o: [
+      "Still practicing, but with the job rebuilt around real medicine instead of the in-basket",
+      "Something nonclinical or new, once I figure out what fits",
+      "Work that finally lines up with why I went into medicine",
+      "Something of my own, built on my expertise" ] },
+    { q: "What’s pulling you to take stock right now?", o: [
+      "The clicks, the RVUs and the in-basket are wearing me down, and I want to change the mix",
+      "A pull toward something outside clinical practice I can’t yet name",
+      "A widening gap between why I went into medicine and how I actually spend my days",
+      "A side project or idea I can’t shake" ] },
+    { q: "What would help you most right now?", o: [
+      "A way to rebuild the job I have, with the standing to do it",
+      "A low-risk way to test options before I commit",
+      "Getting clear on what I actually want from work",
+      "A plan to build it and reach the people who’d pay for it" ] },
+    { q: "Where are you on leaving clinical practice?", o: [
+      "I’m not leaving; I want it to work better",
+      "Open to it, nonclinical included, if I find the right fit",
+      "I’ll decide once I know what I’m choosing for",
+      "I’m already building toward something beyond it" ] },
+    { q: "Your relationship to risk and money here?", o: [
+      "I’d rather reshape what I have than gamble",
+      "I’ll take small, reversible bets to learn",
+      "Any risk has to be worth it against what I value",
+      "I’ve got the footing to bet on myself" ] },
+    { q: "Which sentence sounds most like you?", o: [
+      "“I love medicine. I just hate what the job has become.”",
+      "“I don’t know what’s next, but I know it’s something.”",
+      "“I’ve lost the thread of why I do this, and I want it back.”",
+      "“I want to build something that’s mine.”" ] }
+  ];
+  var LETTERS = ["A", "B", "C", "D"];
+
+  // ---- SECTION B: the four validated career-adaptability dimensions
+  //      (Concern, Control, Curiosity, Confidence), worded for this assessment.
+  var RATINGS = [
+    "I think clearly about what I want my future in medicine to look like.",
+    "The decisions about my career are mine to make, and I make them.",
+    "I explore options for what comes next.",
+    "I trust myself to carry out a change once I decide on it."
+  ];
+
+  // ---- The four archetype result cards (reader-facing copy, verbatim).
+  var ARCHETYPES = {
+    A: {
+      name: "The Reshaper",
+      desc: "You do not need to leave medicine. You need to change the shape of the work you already do. You can feel which parts of your week give you energy and which drain it, and you are ready to shift the balance. The risk is waiting for permission, or treating the job as fixed. It is not. Redraw it: take on more of the work that fits you, hand off or restructure what does not, then change what the role means to you without changing the title.",
+      research: "People reshape the tasks, relationships and focus of a job to change what it means to them. Wrzesniewski and Dutton call this job crafting (2001)."
+    },
+    B: {
+      name: "The Explorer",
+      desc: "You sense there is another version of your working life, but you cannot yet see it clearly. That is normal, and thinking harder will not resolve it. You find your way to a new direction by trying things, one small move at a time. The pull is to stay in analysis, waiting for certainty before you move. Test instead: run small, low-cost experiments, a project, a conversation, a short course, and let what you learn from doing narrow the field.",
+      research: "You find a new career direction by trying out possible selves in small experiments rather than planning your way to one. Ibarra calls this working identity (2003); the underlying idea of possible selves is Markus and Nurius (1986)."
+    },
+    C: {
+      name: "The Realigner",
+      desc: "You have done well by medicine, and you are no longer sure it gives you what you most need from work. Before you change anything, name that need. Everyone carries a core they will not trade away: for some it is autonomy, for others mastery, security, service or the freedom to build. The mistake is reshuffling roles without knowing your own, and landing somewhere that looks better and fits no better. Find your anchor first, then judge every option against it.",
+      research: "You went into medicine for a reason. Most days now, you can’t get to it. Talbot and Dean call that moral injury, and the fault is the system’s, not yours (2018). Schein’s answer is older: name the one thing you will not give up, your career anchor, and choose by it (Career Dynamics, 1978; Career Anchors, 1985)."
+    },
+    D: {
+      name: "The Builder",
+      desc: "You have already started to picture a path of your own, outside the system or alongside it: consulting, advising, a company, a body of work with your name on it. Your instinct is sound. The expertise you built in medicine transfers further than most physicians believe. The danger is romanticizing the leap, or making it before you have tested demand and named what you are actually selling. Build deliberately: keep your footing while you prove the new work, get specific about who needs it, and go when you can point to real demand rather than restlessness.",
+      research: "People now build careers around self-direction and values more than around one employer’s ladder, what researchers call protean and boundaryless orientations (Briscoe, Hall and Frautschy DeMuth, 2006)."
+    }
+  };
+
+  // ---- Readiness bands (reader-facing copy, verbatim).
+  var BANDS = {
+    Stirring: "You can feel that something needs to change, and you have not yet built the footing to act on it well: a clear read on your future, ownership of the decision, curiosity about real options and confidence you can carry it out. That is a normal place to start, and you can build every part of it.",
+    Building: "You have started to gather what a good move takes. You are looking ahead, taking ownership and exploring your options. The next step is steadiness: doing it consistently enough that the direction holds when the first plan meets reality.",
+    Ready: "You bring real adaptability to this: looking ahead, owning the call, exploring widely and backing yourself. What remains is aim, pointing that readiness at the specific move that fits rather than staying ready in general."
+  };
+
+  var CLOSE = "Whichever profile you land in, the move is the same: to take your own career as seriously as you take your patients’ health, and to decide on purpose instead of drifting. That is the work I do with physicians one on one, getting honest about what you want and building the path to it. If you want to talk about yours, start a conversation.";
+
+  // ---- Escape helper.
+  function esc(s) {
+    return String(s == null ? "" : s)
+      .replace(/&/g, "&amp;").replace(/</g, "&lt;")
+      .replace(/>/g, "&gt;").replace(/"/g, "&quot;");
+  }
+
+  // ============================================================
+  // BUILD THE QUESTION MARKUP
+  // ============================================================
+  function buildQuestions() {
+    var html = QUESTIONS.map(function (item, qi) {
+      var n = qi + 1;
+      var opts = item.o.map(function (text, oi) {
+        var letter = LETTERS[oi];
+        var id = "a" + n + "-" + letter;
+        return '<label class="li-opt">'
+          + '<input type="radio" name="a' + n + '" value="' + letter + '" id="' + id + '">'
+          + '<span class="li-opt-card">' + esc(text) + '</span>'
+          + '</label>';
+      }).join("");
+      return '<div class="li-q">'
+        + '<div class="li-q-num">Question ' + n + ' of 6</div>'
+        + '<div class="li-q-text">' + esc(item.q) + '</div>'
+        + '<div class="li-opts">' + opts + '</div>'
+        + '</div>';
+    }).join("");
+    document.getElementById("li-a-questions").innerHTML = html;
+
+    var ratings = RATINGS.map(function (stmt, ri) {
+      var n = ri + 7; // B items are 7..10
+      var scale = [1, 2, 3, 4, 5].map(function (v) {
+        return '<label>'
+          + '<input type="radio" name="b' + n + '" value="' + v + '">'
+          + '<span class="li-scale-box">' + v + '</span>'
+          + '</label>';
+      }).join("");
+      return '<div class="li-rate">'
+        + '<div class="li-rate-stmt">' + esc(stmt) + '</div>'
+        + '<div class="li-scale">' + scale + '</div>'
+        + '<div class="li-scale-ends"><span>Not at all</span><span>Completely</span></div>'
+        + '</div>';
+    }).join("");
+    document.getElementById("li-b-ratings").innerHTML = ratings;
+
+    // Belt-and-suspenders selected state for browsers without :has().
+    document.querySelectorAll('.li-opt input, .li-scale input').forEach(function (input) {
+      input.addEventListener("change", function () {
+        var name = input.name;
+        document.querySelectorAll('input[name="' + name + '"]').forEach(function (sib) {
+          var wrap = sib.closest(".li-opt") || sib.closest("label");
+          if (wrap) wrap.classList.toggle("is-checked", sib.checked);
+        });
+      });
+    });
+  }
+
+  // ============================================================
+  // NAVIGATION BETWEEN STEPS
+  // ============================================================
+  var STEPS = ["step-a", "step-b", "step-gate", "step-result"];
+  var META = [
+    { label: "Part 1 of 3", name: "Quick take", pct: 33 },
+    { label: "Part 2 of 3", name: "Self-rating", pct: 66 },
+    { label: "Part 3 of 3", name: "Your result", pct: 100 },
+    { label: "Complete", name: "Your profile", pct: 100 }
+  ];
+
+  function show(stepId) {
+    STEPS.forEach(function (id) {
+      document.getElementById(id).hidden = (id !== stepId);
+    });
+    var i = STEPS.indexOf(stepId);
+    var m = META[i];
+    document.getElementById("li-step-label").textContent = m.label;
+    document.getElementById("li-step-name").textContent = m.name;
+    document.getElementById("li-prog-fill").style.width = m.pct + "%";
+    document.getElementById("li-prog").hidden = (stepId === "step-result");
+    // Scroll the app back into view on each step change.
+    var app = document.getElementById("li-app");
+    var top = app.getBoundingClientRect().top + window.pageYOffset - 90;
+    window.scrollTo({ top: top, behavior: "smooth" });
+  }
+
+  // ============================================================
+  // SCORING
+  // ============================================================
+  // Archetype = most-frequent letter across A1..A6. Ties resolve toward A6
+  // (self-identification) then A1 (future vision); a true split returns a
+  // blended two-archetype result.
+  function scoreArchetype(answers) {
+    var counts = { A: 0, B: 0, C: 0, D: 0 };
+    answers.forEach(function (l) { counts[l]++; });
+    var max = Math.max(counts.A, counts.B, counts.C, counts.D);
+    var leaders = LETTERS.filter(function (l) { return counts[l] === max; });
+
+    if (leaders.length === 1) {
+      return { blended: false, primary: leaders[0], counts: counts };
+    }
+    // Tiebreak 1: the letter chosen on Q6 (self-identification), if it is tied.
+    var q6 = answers[5];
+    if (leaders.indexOf(q6) > -1) {
+      return { blended: false, primary: q6, counts: counts };
+    }
+    // Tiebreak 2: the letter chosen on Q1 (future vision), if it is tied.
+    var q1 = answers[0];
+    if (leaders.indexOf(q1) > -1) {
+      return { blended: false, primary: q1, counts: counts };
+    }
+    // True split: blend the two front-runners (canonical A,B,C,D order).
+    return { blended: true, primary: leaders[0], secondary: leaders[1], counts: counts };
+  }
+
+  // Career-adaptability band = average of B7..B10.
+  function scoreBand(ratings) {
+    var sum = ratings.reduce(function (a, b) { return a + b; }, 0);
+    var avg = sum / ratings.length;
+    var band;
+    if (avg <= 2.4) band = "Stirring";
+    else if (avg <= 3.7) band = "Building";
+    else band = "Ready";
+    return { band: band, avg: avg };
+  }
+
+  // ============================================================
+  // GATHER ANSWERS
+  // ============================================================
+  function gatherA() {
+    var out = [];
+    for (var n = 1; n <= 6; n++) {
+      var sel = document.querySelector('input[name="a' + n + '"]:checked');
+      out.push(sel ? sel.value : null);
+    }
+    return out;
+  }
+  function gatherB() {
+    var out = [];
+    for (var n = 7; n <= 10; n++) {
+      var sel = document.querySelector('input[name="b' + n + '"]:checked');
+      out.push(sel ? parseInt(sel.value, 10) : null);
+    }
+    return out;
+  }
+  function gatherC() {
+    return {
+      energy: document.getElementById("li-c11").value.trim(),
+      costs: document.getElementById("li-c12").value.trim(),
+      offcoat: document.getElementById("li-c13").value.trim(),
+      nextchapter: document.getElementById("li-c14").value.trim()
+    };
+  }
+
+  // ============================================================
+  // RENDER THE RESULT
+  // ============================================================
+  function renderResult(arch, bandInfo, c, firstName) {
+    var primary = ARCHETYPES[arch.primary];
+    var greeting = firstName
+      ? '<p class="li-blend-note" style="font-style:normal;font-family:var(--sans);color:var(--tx2);font-size:15px;margin-bottom:0.9rem;">Here is your read, ' + esc(firstName) + '.</p>'
+      : '';
+
+    // Archetype card (single, or blended two-archetype for a true split).
+    var card;
+    if (arch.blended) {
+      var secondary = ARCHETYPES[arch.secondary];
+      card = '<div class="li-result-card">'
+        + '<div class="li-result-eyebrow">A blend of two profiles</div>'
+        + '<div class="li-result-name">' + esc(primary.name) + '<br><span style="font-family:var(--serif);font-style:italic;font-size:0.7em;color:var(--tx3);">and</span><br>' + esc(secondary.name) + '</div>'
+        + '<p class="li-blend-note">Your answers split evenly between two profiles. Both are live in where you are right now. Read them together.</p>'
+        + '<p class="li-result-desc">' + primary.desc + '</p>'
+        + '<p class="li-result-desc" style="margin-top:1.1rem;">' + secondary.desc + '</p>'
+        + '<div class="li-research"><span class="li-research-lab">The research behind this</span>' + primary.research + ' ' + secondary.research + '</div>'
+        + '</div>';
+    } else {
+      card = '<div class="li-result-card">'
+        + '<div class="li-result-eyebrow">Your profile</div>'
+        + '<div class="li-result-name">' + esc(primary.name) + '</div>'
+        + '<p class="li-result-desc">' + primary.desc + '</p>'
+        + '<div class="li-research"><span class="li-research-lab">The research behind this</span>' + primary.research + '</div>'
+        + '</div>';
+    }
+
+    // Career-adaptability band, with the CAAS citation (the one validated measure).
+    var band = '<div class="li-band">'
+      + '<div class="li-band-head">'
+      +   '<span class="li-band-lab">Career adaptability</span>'
+      +   '<span class="li-band-name">' + esc(bandInfo.band) + '</span>'
+      +   '<span class="li-band-avg">Self-rating average ' + bandInfo.avg.toFixed(1) + ' of 5</span>'
+      + '</div>'
+      + '<p class="li-band-desc">' + BANDS[bandInfo.band] + '</p>'
+      + '<p class="li-band-cite">This second dimension measures the four validated dimensions of career adaptability, concern, control, curiosity and confidence: Savickas, M. L., &amp; Porfeli, E. J. (2012). Career Adapt-Abilities Scale: Construction, reliability, and measurement equivalence across 13 countries. <em>Journal of Vocational Behavior, 80</em>(3), 661&ndash;673.</p>'
+      + '</div>';
+
+    // Section C reflected back, when the reader offered any of it.
+    var recapRows = "";
+    if (c.energy)      recapRows += "<dt>What still gives you energy</dt><dd>" + esc(c.energy) + "</dd>";
+    if (c.costs)       recapRows += "<dt>What costs you the most</dt><dd>" + esc(c.costs) + "</dd>";
+    if (c.offcoat)     recapRows += "<dt>Who you are outside the white coat</dt><dd>" + esc(c.offcoat) + "</dd>";
+    if (c.nextchapter) recapRows += "<dt>Your next chapter</dt><dd>" + esc(c.nextchapter) + "</dd>";
+    var recap = recapRows
+      ? '<div class="li-recap"><div class="section-label">In your own words</div><dl style="margin:0;">' + recapRows + "</dl></div>"
+      : "";
+
+    var close = '<p class="li-close">' + esc(CLOSE) + "</p>";
+
+    document.getElementById("li-result-body").innerHTML =
+      greeting + card + band + recap + close;
+  }
+
+  // ============================================================
+  // CAPTURE (Netlify Forms, AJAX). Fire-and-forget so a network
+  // hiccup never stands between the reader and their result.
+  // ============================================================
+  function encode(data) {
+    return Object.keys(data).map(function (k) {
+      return encodeURIComponent(k) + "=" + encodeURIComponent(data[k]);
+    }).join("&");
+  }
+
+  function submitCapture(payload) {
+    try {
+      fetch("/", {
+        method: "POST",
+        headers: { "Content-Type": "application/x-www-form-urlencoded" },
+        body: encode(payload)
+      }).catch(function () { /* silent: the reader still gets their result */ });
+    } catch (e) { /* no-op */ }
+  }
+
+  // Email the reader a copy of their result (Netlify function -> Resend).
+  // Fire-and-forget: if the email can't send, the on-page result still shows.
+  function submitResultEmail(payload) {
+    try {
+      fetch("/.netlify/functions/send-result", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(payload)
+      }).catch(function () { /* silent */ });
+    } catch (e) { /* no-op */ }
+  }
+
+  // ============================================================
+  // WIRE UP
+  // ============================================================
+  function allAnswered(vals) { return vals.every(function (v) { return v !== null; }); }
+
+  document.getElementById("li-a-next").addEventListener("click", function () {
+    var a = gatherA();
+    if (!allAnswered(a)) { document.getElementById("li-a-err").hidden = false; return; }
+    document.getElementById("li-a-err").hidden = true;
+    show("step-b");
+  });
+
+  document.getElementById("li-b-back").addEventListener("click", function () { show("step-a"); });
+
+  document.getElementById("li-b-next").addEventListener("click", function () {
+    var b = gatherB();
+    if (!allAnswered(b)) { document.getElementById("li-b-err").hidden = false; return; }
+    document.getElementById("li-b-err").hidden = true;
+    show("step-gate");
+  });
+
+  document.getElementById("li-gate-back").addEventListener("click", function () { show("step-b"); });
+
+  document.getElementById("li-gate-next").addEventListener("click", function () {
+    var email = document.getElementById("li-email").value.trim();
+    var ok = /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email);
+    if (!ok) { document.getElementById("li-gate-err").hidden = false; return; }
+    document.getElementById("li-gate-err").hidden = true;
+
+    var a = gatherA();
+    var b = gatherB();
+    var c = gatherC();
+    var arch = scoreArchetype(a);
+    var bandInfo = scoreBand(b);
+
+    var name = document.getElementById("li-name").value.trim();
+    var firstName = name ? name.split(/\s+/)[0] : "";
+    var referral = document.getElementById("li-referral").value;
+
+    var archLabel = arch.blended
+      ? ARCHETYPES[arch.primary].name + " + " + ARCHETYPES[arch.secondary].name + " (blend)"
+      : ARCHETYPES[arch.primary].name;
+
+    // Section A readout, e.g. "1:A 2:D 3:C ..." plus the raw tally.
+    var aReadout = a.map(function (l, i) { return (i + 1) + ":" + l; }).join(" ")
+      + "  |  tally A" + arch.counts.A + " B" + arch.counts.B + " C" + arch.counts.C + " D" + arch.counts.D;
+
+    submitCapture({
+      "form-name": "taking-stock",
+      "bot-field": "",
+      name: name,
+      email: email,
+      referral_source: referral,
+      archetype: archLabel,
+      strength_band: bandInfo.band + " (avg " + bandInfo.avg.toFixed(1) + ")",
+      section_a_answers: aReadout,
+      energy_gives: c.energy,
+      costs_most: c.costs,
+      off_white_coat: c.offcoat,
+      next_chapter: c.nextchapter
+    });
+
+    // Email the reader their result. The function renders the message from its
+    // own canonical copy, so it only needs the scoring outputs, not HTML.
+    submitResultEmail({
+      assessment: "taking-stock",
+      email: email,
+      name: name,
+      primary: arch.primary,
+      secondary: arch.blended ? arch.secondary : "",
+      blended: !!arch.blended,
+      band: bandInfo.band,
+      avg: bandInfo.avg.toFixed(1),
+      energy_gives: c.energy,
+      costs_most: c.costs,
+      off_white_coat: c.offcoat,
+      next_chapter: c.nextchapter
+    });
+
+    renderResult(arch, bandInfo, c, firstName);
+    show("step-result");
+  });
+
+  document.getElementById("li-restart").addEventListener("click", function () {
+    document.querySelectorAll('#li-app input[type="radio"]').forEach(function (r) {
+      r.checked = false;
+      var wrap = r.closest(".li-opt") || r.closest("label");
+      if (wrap) wrap.classList.remove("is-checked");
+    });
+    ["li-c11", "li-c12", "li-c13", "li-c14", "li-name", "li-email"].forEach(function (id) {
+      document.getElementById(id).value = "";
+    });
+    document.getElementById("li-referral").value = "";
+    show("step-a");
+  });
+
+  buildQuestions();
+  show("step-a");
+})();
+</script>
+
+</body>
+</html>
