@@ -47,10 +47,11 @@ nav { position: sticky; top: 0; background: var(--bg); border-bottom: 0.5px soli
 /* === Buttons === */
 .btn { display: inline-block; font-size: 11px; font-weight: 400; letter-spacing: 0.1em; text-transform: uppercase; padding: 12px 24px; border: 0.5px solid var(--bd2); color: var(--tx); text-decoration: none; transition: background 0.2s; }
 .btn:hover { background: var(--bg2); border-color: var(--teal); }
-/* Larger primary call to action (assessment entry points). Same understated
-   language as .btn, sized up so a lead-magnet button reads as the main action. */
-.btn-lg { display: inline-block; font-size: 13px; font-weight: 400; letter-spacing: 0.09em; text-transform: uppercase; padding: 16px 40px; border: 1px solid var(--teal); color: var(--teal); text-decoration: none; transition: background 0.2s, color 0.2s; }
-.btn-lg:hover { background: var(--teal); color: #FEFCF9; }
+/* Larger primary call to action (assessment entry points). A filled teal
+   button in the same language as the newsletter Subscribe button, sized up so
+   a lead-magnet button reads as the main action. */
+.btn-lg { display: inline-block; font-size: 13px; font-weight: 500; letter-spacing: 0.09em; text-transform: uppercase; padding: 16px 40px; background: var(--teal); border: 1px solid var(--teal); color: #FEFCF9; text-decoration: none; transition: background 0.2s, border-color 0.2s; }
+.btn-lg:hover { background: var(--teal-dark); border-color: var(--teal-dark); }
 .btn-ghost { display: inline-block; font-size: 11px; letter-spacing: 0.1em; text-transform: uppercase; padding: 11px 22px; border: 0.5px solid rgba(254,252,249,0.4); color: #FEFCF9; text-decoration: none; transition: background 0.2s; }
 .btn-ghost:hover { background: rgba(254,252,249,0.12); }
 
