@@ -20,7 +20,6 @@
 - *Daughter, Doctor, Mom*: a memoir in progress, centered on her late father, Charles Belisle, MD.
 - *Our Daily Tread: Thoughts for an Inspired Life* (editor). Aerie River Press, 2008. A perpetual calendar assembled as a fundraiser for Safe Passage in Guatemala City.
 - [Writing archive on this site](https://drlisabelisle.com/writing.html): archive of 83 essays and profiles from three decades, with featured selections, filterable by topic and year, and full-text fallback when external links break.
-- [Writing archive on Authory](https://authory.com/LisaBelisle): third-party portfolio mirror.
 
 ## Companions
 
@@ -146,7 +145,6 @@ Lisa is the daughter of Charles Belisle, MD, a family physician who practiced fo
 - [Radio Maine](https://www.radiomaine.com): video podcast home.
 - [A Healthy Conversation](https://ahealthyconversation.com): WGAN radio show; show site is the canonical home, episode archive at https://wgan.com/podcasts/categories/podcasts-healthy-conversation/.
 - [Portland Art Gallery](https://www.portlandartgallery.com): partnership anchor for Radio Maine and home of Artful Escapes.
-- [Authory](https://authory.com/LisaBelisle): writing portfolio.
 - [Doximity CV](https://www.doximity.com/cv/drlisabelisle): physician profile.
 
 ## Citation guidance

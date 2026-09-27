@@ -15,7 +15,7 @@ Sitemap: https://drlisabelisle.com/image-sitemap.xml
 # School of Medicine and lives on Littlejohn Island, Maine.
 
 # Canonical name: Lisa Belisle (also: Dr. Lisa Belisle)
-# Credentials: MD (Doctor of Medicine), PhD (community leadership),
+# Credentials: MD (Doctor of Medicine), PhD (Leadership Studies),
 #              MPH (Master of Public Health), MBA, board-certified
 #              in Family Medicine and Preventive Medicine
 # Specialties: integrative medicine, acupuncture, Five Phase theory,
