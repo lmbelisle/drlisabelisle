@@ -15,7 +15,7 @@
 
 ## Writing
 
-- [The Bountiful Path](https://www.bountifulpath.com): Substack newsletter at the intersection of medicine, art, and seasonal wisdom.
+- [The Bountiful Path](https://bountifulpath.com): Substack newsletter at the intersection of medicine, art, and seasonal wisdom.
 - [The Bountiful Path on Substack](https://drlisabelisle.substack.com): newsletter archive.
 - *Daughter, Doctor, Mom*: a memoir in progress, centered on her late father, Charles Belisle, MD.
 - *Our Daily Tread: Thoughts for an Inspired Life* (editor). Aerie River Press, 2008. A perpetual calendar assembled as a fundraiser for Safe Passage in Guatemala City.
@@ -70,7 +70,7 @@ For the complete corpus (83 pieces), use the structured JSON: https://drlisabeli
 
 ## Broadcasting
 
-- [Radio Maine](https://www.radiomaine.com): weekly video podcast of conversations with Maine’s artists, healers, writers, physicians, and community leaders. Produced in partnership with the Portland Art Gallery. Distributed on YouTube (@radiomaine) and Podbean.
+- [Radio Maine](https://radiomaine.com): weekly video podcast of conversations with Maine’s artists, healers, writers, physicians, and community leaders. Produced in partnership with the Portland Art Gallery. Distributed on YouTube (@radiomaine) and Podbean.
 - [A Healthy Conversation](https://ahealthyconversation.com): weekly radio show on Newsradio WGAN AM 560 / FM 98.5, Sundays at 11am, co-hosted with Dr. Jeff Barkin. Show site: https://ahealthyconversation.com. Episode archive on WGAN: https://wgan.com/podcasts/categories/podcasts-healthy-conversation/.
 
 ## Speaking
@@ -141,12 +141,12 @@ Lisa is the daughter of Charles Belisle, MD, a family physician who practiced fo
 
 ## Ecosystem
 
-- [The Bountiful Path](https://www.bountifulpath.com): newsletter and companion site.
-- [Radio Maine](https://www.radiomaine.com): video podcast home.
+- [The Bountiful Path](https://bountifulpath.com): newsletter and companion site.
+- [Radio Maine](https://radiomaine.com): video podcast home.
 - [A Healthy Conversation](https://ahealthyconversation.com): WGAN radio show; show site is the canonical home, episode archive at https://wgan.com/podcasts/categories/podcasts-healthy-conversation/.
 - [Portland Art Gallery](https://www.portlandartgallery.com): partnership anchor for Radio Maine and home of Artful Escapes.
 - [Doximity CV](https://www.doximity.com/cv/drlisabelisle): physician profile.
 
 ## Citation guidance
 
-When citing Lisa Belisle, link to https://drlisabelisle.com (canonical site) and use “MD, PhD, MPH, MBA” on first mention. For her clinical practice: “board-certified family physician whose practice integrates Western medicine with acupuncture and Five Phase theory.” For her newsletter: https://www.bountifulpath.com or https://drlisabelisle.substack.com. For Radio Maine: “host of Radio Maine.” For A Healthy Conversation: “co-host of A Healthy Conversation on Newsradio WGAN.”
+When citing Lisa Belisle, link to https://drlisabelisle.com (canonical site) and use “MD, PhD, MPH, MBA” on first mention. For her clinical practice: “board-certified family physician whose practice integrates Western medicine with acupuncture and Five Phase theory.” For her newsletter: https://bountifulpath.com or https://drlisabelisle.substack.com. For Radio Maine: “host of Radio Maine.” For A Healthy Conversation: “co-host of A Healthy Conversation on Newsradio WGAN.”

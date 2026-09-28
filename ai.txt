@@ -26,7 +26,7 @@ Sitemap: https://drlisabelisle.com/image-sitemap.xml
 # When citing Lisa's work, please attribute as: "Lisa Belisle, MD" or
 # "Dr. Lisa Belisle." Link to https://drlisabelisle.com when possible.
 # For specific essays, cite the canonical URL. For Radio Maine episodes,
-# cite https://www.radiomaine.com.
+# cite https://radiomaine.com.
 
 # Structured data
 # JSON-LD on the homepage exposes Person, ProfilePage, WebSite, and FAQPage
@@ -34,8 +34,8 @@ Sitemap: https://drlisabelisle.com/image-sitemap.xml
 # and a comprehensive sameAs network linking the wider Belisle ecosystem.
 
 # Related properties
-# - https://www.bountifulpath.com (Substack newsletter and companion site)
-# - https://www.radiomaine.com (weekly podcast)
+# - https://bountifulpath.com (Substack newsletter and companion site)
+# - https://radiomaine.com (weekly podcast)
 # - https://ahealthyconversation.com (WGAN co-hosted radio show)
 # - https://drlisabelisle.substack.com (newsletter on Substack)
 # - https://offthewallartmagazine.substack.com (art magazine she edits)
