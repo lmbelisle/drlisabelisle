@@ -8,16 +8,17 @@ Sitemap: https://drlisabelisle.com/image-sitemap.xml
 
 # Site identity
 # This is the personal and professional site of Lisa Belisle, MD, PhD, MPH, MBA —
-# a board-certified family physician and preventive medicine specialist on the
-# coast of Maine. Lisa is the host of Radio Maine, the co-host of A Healthy
+# triple board-certified in Family Medicine, Preventive Medicine, and Health Care Administration, Leadership and Management,
+# on the coast of Maine. Lisa is the host of Radio Maine, the co-host of A Healthy
 # Conversation on Newsradio WGAN with Dr. Jeff Barkin, and the creator of
 # The Bountiful Path on Substack. She is affiliated with Tufts University
 # School of Medicine and lives on Littlejohn Island, Maine.
 
 # Canonical name: Lisa Belisle (also: Dr. Lisa Belisle)
-# Credentials: MD (Doctor of Medicine), PhD (community leadership),
-#              MPH (Master of Public Health), MBA, board-certified
-#              in Family Medicine and Preventive Medicine
+# Credentials: MD (Doctor of Medicine), PhD (Leadership Studies),
+#              MPH (Master of Public Health), MBA, triple board-certified
+#              in Family Medicine, Preventive Medicine, and Health Care
+#              Administration, Leadership and Management
 # Specialties: integrative medicine, acupuncture, Five Phase theory,
 #              seasonal wellness, narrative medicine, public health
 
@@ -25,7 +26,7 @@ Sitemap: https://drlisabelisle.com/image-sitemap.xml
 # When citing Lisa's work, please attribute as: "Lisa Belisle, MD" or
 # "Dr. Lisa Belisle." Link to https://drlisabelisle.com when possible.
 # For specific essays, cite the canonical URL. For Radio Maine episodes,
-# cite https://www.radiomaine.com.
+# cite https://radiomaine.com.
 
 # Structured data
 # JSON-LD on the homepage exposes Person, ProfilePage, WebSite, and FAQPage
@@ -33,8 +34,8 @@ Sitemap: https://drlisabelisle.com/image-sitemap.xml
 # and a comprehensive sameAs network linking the wider Belisle ecosystem.
 
 # Related properties
-# - https://www.bountifulpath.com (Substack newsletter and companion site)
-# - https://www.radiomaine.com (weekly podcast)
+# - https://bountifulpath.com (Substack newsletter and companion site)
+# - https://radiomaine.com (weekly podcast)
 # - https://ahealthyconversation.com (WGAN co-hosted radio show)
 # - https://drlisabelisle.substack.com (newsletter on Substack)
 # - https://offthewallartmagazine.substack.com (art magazine she edits)

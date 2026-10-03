@@ -48,7 +48,7 @@
       "@type": "PodcastSeries",
       "@id": "https://drlisabelisle.com/podcast.html#radiomaine",
       "name": "Radio Maine",
-      "url": "https://www.radiomaine.com",
+      "url": "https://radiomaine.com",
       "description": "A video podcast of conversations with Maine’s artists, healers, writers, physicians, and community leaders, exploring creativity and the human spirit. Produced in partnership with The Portland Art Gallery.",
       "author": { "@id": "https://drlisabelisle.com/#person" },
       "actor": { "@id": "https://drlisabelisle.com/#person" },
@@ -111,9 +111,9 @@
   <aside class="cross-site-banner" aria-label="Also from Dr. Lisa Belisle">
     <p>
       <span class="cross-site-banner-label">Also from Dr. Lisa Belisle:</span>
-      <a href="https://www.bountifulpath.com" target="_blank" rel="noopener">The Bountiful Path</a>
+      <a href="https://bountifulpath.com" target="_blank" rel="noopener">The Bountiful Path</a>
       <span class="sep">&middot;</span>
-      <a href="https://www.radiomaine.com" target="_blank" rel="noopener">Radio Maine</a>
+      <a href="https://radiomaine.com" target="_blank" rel="noopener">Radio Maine</a>
       <span class="sep">&middot;</span>
       <a href="https://ahealthyconversation.com/" target="_blank" rel="noopener">A Healthy Conversation</a>
       <span class="sep">&middot;</span>
@@ -144,7 +144,7 @@
       <div class="feature-piece-title">A weekly conversation about creativity and the human spirit.</div>
       <div class="feature-piece-desc" data-copy-key="listen.rm.desc">Lisa hosts conversations with Maine&rsquo;s artists, healers, physicians, writers, and community leaders. Episodes are filmed in partnership with the Portland Art Gallery and released weekly. The Bountiful Path series is a sub-channel devoted to longer-form pieces tied to the newsletter.</div>
       <div>
-        <a class="feature-piece-link" href="https://www.radiomaine.com" target="_blank">Visit Radio Maine &rarr;</a>
+        <a class="feature-piece-link" href="https://radiomaine.com" target="_blank">Visit Radio Maine &rarr;</a>
         <a class="feature-piece-link" href="https://www.youtube.com/@radiomaine" target="_blank">Watch on YouTube &rarr;</a>
       </div>
     </div>
@@ -157,7 +157,7 @@
      fails — the page reads fine without it. -->
 <section class="fade-in no-rule" id="rm-latest-section" hidden>
   <div class="section-label">Latest from Radio Maine</div>
-  <a id="rm-latest" class="rm-latest" href="https://www.radiomaine.com" target="_blank" rel="noopener" aria-label="Latest Radio Maine episode">
+  <a id="rm-latest" class="rm-latest" href="https://radiomaine.com" target="_blank" rel="noopener" aria-label="Latest Radio Maine episode">
     <div class="rm-latest-thumb"><img id="rm-latest-img" alt=""></div>
     <div class="rm-latest-body">
       <div class="rm-latest-eyebrow">Most recent conversation</div>
@@ -176,7 +176,7 @@
       <div class="brief-item-cat">Radio Maine</div>
       <div class="brief-item-title">radiomaine.com</div>
       <div class="brief-item-desc">Featured episodes, the Voices archive, and how to be a guest.</div>
-      <a class="brief-item-link" href="https://www.radiomaine.com" target="_blank">Visit Radio Maine &rarr;</a>
+      <a class="brief-item-link" href="https://radiomaine.com" target="_blank">Visit Radio Maine &rarr;</a>
     </div>
     <div>
       <div class="brief-item-cat">Video</div>
@@ -222,8 +222,8 @@
     <span class="footer-name">Lisa Belisle, MD, PhD, MPH, MBA &nbsp;&middot;&nbsp; Littlejohn Island, Maine</span>
     <span class="footer-copy">&copy; 2026 Dr. Lisa Belisle. All rights reserved.</span>
     <ul class="footer-links">
-      <li><a href="https://www.bountifulpath.com" target="_blank">The Bountiful Path</a></li>
-      <li><a href="https://www.radiomaine.com" target="_blank">Radio Maine</a></li>
+      <li><a href="https://bountifulpath.com" target="_blank">The Bountiful Path</a></li>
+      <li><a href="https://radiomaine.com" target="_blank">Radio Maine</a></li>
       <li><a href="https://ahealthyconversation.com/" target="_blank">A Healthy Conversation</a></li>
       <li><a href="https://portlandartgallery.com" target="_blank">Portland Art Gallery</a></li>
       <li><a href="contact.html">Contact</a></li>
@@ -319,7 +319,7 @@ document.querySelectorAll('.fade-in').forEach(el => observer.observe(el));
 // rest of the page reads fine without it.
 (async () => {
   try {
-    // Use the apex (non-www) host — www.radiomaine.com 301-redirects to
+    // Use the apex (non-www) host — radiomaine.com 301-redirects to
     // radiomaine.com but the 301 carries no CORS header, so browsers block
     // the redirect before reaching the JSON. Fetching the canonical apex
     // directly skips that.
@@ -344,7 +344,7 @@ document.querySelectorAll('.fade-in').forEach(el => observer.observe(el));
       : '';
     const description = (latest.description || '').slice(0, 200);
     desc.textContent = description ? description + (latest.description && latest.description.length > 200 ? '…' : '') : '';
-    if (latest.slug) card.href = 'https://www.radiomaine.com/episodes/' + latest.slug + '.html';
+    if (latest.slug) card.href = 'https://radiomaine.com/episodes/' + latest.slug + '.html';
     else if (latest.videoId) card.href = 'https://www.youtube.com/watch?v=' + latest.videoId;
     sec.hidden = false;
     // Re-observe so the just-unhidden section gets its fade-in
