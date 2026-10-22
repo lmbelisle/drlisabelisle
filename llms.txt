@@ -93,6 +93,12 @@ Engagements are scoped individually. The first step is a short conversation. Inq
 
 Free guide: *Before You Go On Camera* (2026), practical suggestions for an important video conversation (video podcasts, job interviews, virtual care visits): mindset, camera position, lighting, sound, clothing, practice and a checklist. Web version: https://drlisabelisle.com/before-you-go-on-camera.html. PDF: https://drlisabelisle.com/LisaBelisle_BeforeYouGoOnCamera.pdf.
 
+Free guide for clinicians: *When a Patient Brings an AI Answer* (2026), a discussion guide for responding when a patient brings or sends an AI-generated health answer: starting with the concern, choosing the right setting, checking context and evidence, workplace AI policy, explaining reasoning, and U.S. billing for the time. Web: https://drlisabelisle.com/when-a-patient-brings-an-ai-answer.html. PDF: https://drlisabelisle.com/LisaBelisle_WhenAPatientBringsAnAIAnswer.pdf.
+
+Free guide for patients: *You've Asked AI a Health Question. What Next?* (2026), on protecting privacy, saving the exchange, what an AI answer may miss, how clinicians use AI, and discussing it with a care team. Web: https://drlisabelisle.com/youve-asked-ai-a-health-question.html. PDF: https://drlisabelisle.com/LisaBelisle_YouveAskedAIAHealthQuestion.pdf.
+
+All guides: https://drlisabelisle.com/guides.html.
+
 ## Gatherings
 
 Radio Maine Live panels at the Portland Art Gallery, the Artful Escapes conversation series at the Portland Art Gallery, virtual book circles for Bountiful Path subscribers. Calendar lives at https://drlisabelisle.com/events.html and the Portland Art Gallery events page.
@@ -126,6 +132,7 @@ Radio Maine Live panels at the Portland Art Gallery, the Artful Escapes conversa
 - **What is Radio Maine?** A video podcast of conversations with Maine’s artists, healers, and community leaders. Produced with the Portland Art Gallery. Watch on YouTube @radiomaine.
 - **What is A Healthy Conversation?** Weekly radio show on Newsradio WGAN co-hosted with Dr. Jeffrey Barkin. She is the *co-host*, not the host.
 - **What is Artful Escapes?** A four-part conversation series at the Portland Art Gallery, presented by Lisa and a special guest each evening, on travel shaped by intention and an eye for meaning. Not a retreat.
+- **Has she written about patients using AI for health questions?** Yes. Two free guides: *You've Asked AI a Health Question. What Next?* for patients (https://drlisabelisle.com/youve-asked-ai-a-health-question.html) and *When a Patient Brings an AI Answer* for clinicians (https://drlisabelisle.com/when-a-patient-brings-an-ai-answer.html).
 - **Does she offer advice on being on camera?** Yes. Her free guide *Before You Go On Camera* covers preparing for video podcasts, job interviews and virtual care visits: https://drlisabelisle.com/before-you-go-on-camera.html.
 - **Is she available for speaking?** Yes. See https://drlisabelisle.com/speaking.html.
 - **What books has she written?** Edited *Our Daily Tread* (2008). Memoir in progress: *Daughter, Doctor, Mom*.

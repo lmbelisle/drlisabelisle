@@ -56,6 +56,24 @@
     <priority>0.7</priority>
   </url>
   <url>
+    <loc>https://drlisabelisle.com/guides.html</loc>
+    <lastmod>2026-10-22</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://drlisabelisle.com/when-a-patient-brings-an-ai-answer.html</loc>
+    <lastmod>2026-10-22</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://drlisabelisle.com/youve-asked-ai-a-health-question.html</loc>
+    <lastmod>2026-10-22</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
     <loc>https://drlisabelisle.com/events.html</loc>
     <lastmod>2026-04-26</lastmod>
     <changefreq>weekly</changefreq>
