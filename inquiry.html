@@ -128,19 +128,27 @@
         <select id="inq-type" name="inquiry_type" required>
           <option value="">Please choose&hellip;</option>
           <option value="Speaking">Speaking &mdash; keynote, conference, or institutional event</option>
-          <option value="Consulting or coaching">Consulting or coaching &mdash; leadership, teams, strategy</option>
+          <option value="Coaching">Coaching &mdash; one-to-one for physicians</option>
+          <option value="Consulting">Consulting &mdash; leadership, teams, strategy</option>
           <option value="Press or interview">Press or interview</option>
           <option value="Something else">Something else</option>
         </select>
       </div>
 
-      <div class="inq-field">
+      <!-- Coaching start: shown only for coaching inquiries (see script below). Optional. -->
+      <div class="inq-field inq-coaching-start" hidden>
+        <label class="inq-label" for="inq-start">When would you like to start?</label>
+        <span class="inq-hint">Optional. A rough sense is fine &mdash; &ldquo;this fall,&rdquo; &ldquo;after the new year,&rdquo; or &ldquo;still deciding.&rdquo;</span>
+        <input type="text" id="inq-start" name="coaching_start">
+      </div>
+
+      <div class="inq-field inq-organizer">
         <label class="inq-label" for="inq-timeline">Event date or timeline <span class="req" aria-hidden="true">*</span></label>
         <span class="inq-hint">A firm date if you have one, or a season and year if you don&rsquo;t. &ldquo;Spring 2027&rdquo; is a useful answer.</span>
         <input type="text" id="inq-timeline" name="date_or_timeline" required>
       </div>
 
-      <div class="inq-row">
+      <div class="inq-row inq-organizer">
         <div class="inq-field">
           <label class="inq-label" for="inq-audience">Who is the audience?</label>
           <span class="inq-hint">Physicians, executives, students, members, the public&hellip;</span>
@@ -162,7 +170,7 @@
         </div>
       </div>
 
-      <div class="inq-field">
+      <div class="inq-field inq-organizer">
         <span class="inq-label" id="inq-format-label">Format</span>
         <span class="inq-hint">Choose as many as apply, or none if you are still deciding.</span>
         <div class="inq-checks" role="group" aria-labelledby="inq-format-label">
@@ -175,7 +183,7 @@
         </div>
       </div>
 
-      <div class="inq-field">
+      <div class="inq-field inq-organizer">
         <label class="inq-label" for="inq-budget">Is a budget already set for this?</label>
         <span class="inq-hint">No figures needed here. This only tells Lisa where the conversation should start.</span>
         <select id="inq-budget" name="budget_status">
@@ -236,7 +244,7 @@
 <footer>
   <div class="footer-inner">
     <span class="footer-name">Lisa Belisle, MD, PhD, MPH, MBA &nbsp;&middot;&nbsp; Littlejohn Island, Maine</span>
-    <span class="footer-copy">&copy; 2026 Dr. Lisa Belisle. All rights reserved.</span>
+    <span class="footer-copy">Belisle Advisory LLC &nbsp;&middot;&nbsp; &copy; 2026 Dr. Lisa Belisle. All rights reserved.</span>
     <ul class="footer-links">
       <li><a href="https://bountifulpath.com" target="_blank">The Bountiful Path</a></li>
       <li><a href="https://radiomaine.com" target="_blank">Radio Maine</a></li>
@@ -259,18 +267,45 @@ const observer = new IntersectionObserver((entries) => {
 document.querySelectorAll('.fade-in').forEach(el => observer.observe(el));
 
 // Pre-select the inquiry type when arriving from a Speaking / Consulting /
-// Press call to action, e.g. inquiry.html?type=speaking.
+// Coaching / Press call to action, e.g. inquiry.html?type=coaching. The form
+// also adapts to the chosen type: a coaching inquiry does not need the
+// event-organizer questions, so those are hidden and an optional "when would
+// you like to start?" is shown instead. All of this is progressive — with no
+// JavaScript the full form is shown and works.
 (function () {
   const map = {
     speaking: 'Speaking',
-    consulting: 'Consulting or coaching',
-    coaching: 'Consulting or coaching',
+    consulting: 'Consulting',
+    coaching: 'Coaching',
     press: 'Press or interview'
   };
-  const want = map[new URLSearchParams(location.search).get('type')];
-  if (!want) return;
   const sel = document.getElementById('inq-type');
-  if (sel && [...sel.options].some(o => o.value === want)) sel.value = want;
+  if (!sel) return;
+
+  // Fields only an event organizer needs, and the coaching-only start field.
+  const organizerRows = [...document.querySelectorAll('.inq-organizer')];
+  const coachingStart = document.querySelector('.inq-coaching-start');
+  const timeline = document.getElementById('inq-timeline');
+
+  function setMode(isCoaching) {
+    organizerRows.forEach(row => {
+      row.hidden = isCoaching;
+      // Disabled fields are not submitted, so a coaching inquiry stays clean.
+      row.querySelectorAll('input, select, textarea').forEach(el => {
+        el.disabled = isCoaching;
+      });
+    });
+    // The event date is required for everyone except coaching inquiries.
+    if (timeline) timeline.required = !isCoaching;
+    if (coachingStart) coachingStart.hidden = !isCoaching;
+  }
+
+  // Apply the type from the URL on arrival, if present and valid.
+  const want = map[new URLSearchParams(location.search).get('type')];
+  if (want && [...sel.options].some(o => o.value === want)) sel.value = want;
+
+  setMode(sel.value === 'Coaching');
+  sel.addEventListener('change', () => setMode(sel.value === 'Coaching'));
 })();
 </script>
 

@@ -34,6 +34,26 @@
     # by other sites, and any insecure (http) content.
     Content-Security-Policy = "default-src 'self' https:; script-src 'self' 'unsafe-inline' https:; style-src 'self' 'unsafe-inline' https:; img-src 'self' data: https:; font-src 'self' data: https:; connect-src 'self' https:; frame-src https:; object-src 'none'; base-uri 'self'; form-action 'self'; frame-ancestors 'self'; upgrade-insecure-requests"
 
+# === belisleadvisory.com → the consulting page ===
+# Belisle Advisory is the legal/billing name for Lisa's practice, not a
+# separate site. The domain is a billboard that points at the consulting page
+# on drlisabelisle.com. These rules only take effect once belisleadvisory.com
+# and www.belisleadvisory.com are added as domain aliases in the Netlify site
+# settings AND the registrar DNS is pointed at this Netlify site. force = true
+# sends every path on the domain to the consulting page. Netlify upgrades any
+# http request to https before matching, so the https rules cover both.
+[[redirects]]
+  from = "https://belisleadvisory.com/*"
+  to = "https://drlisabelisle.com/consulting.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "https://www.belisleadvisory.com/*"
+  to = "https://drlisabelisle.com/consulting.html"
+  status = 301
+  force = true
+
 # === Permanent redirects from old page names to new ===
 # Nav rename April 2026: Read/Listen/Invite/Join/Connect → Writing/Podcast/Speaking/Events/Contact.
 # These keep external links and search-engine indexes working through the transition.
