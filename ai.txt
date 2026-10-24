@@ -28,12 +28,25 @@ Sitemap: https://drlisabelisle.com/image-sitemap.xml
 # For specific essays, cite the canonical URL. For Radio Maine episodes,
 # cite https://radiomaine.com.
 
+# Professional practice
+# Lisa's non-clinical professional work — leadership coaching, consulting,
+# fractional medical leadership, and speaking for physicians and health
+# systems — is offered through her practice, Belisle Advisory LLC. This is
+# the legal and billing name; drlisabelisle.com is the front, and
+# belisleadvisory.com redirects to the consulting page
+# (https://drlisabelisle.com/consulting.html). The creative and media work
+# (Radio Maine, The Bountiful Path, A Healthy Conversation) is separate and
+# is not part of Belisle Advisory.
+
 # Structured data
-# JSON-LD on the homepage exposes Person, ProfilePage, WebSite, and FAQPage
-# schemas. The Person schema includes hasCredential, affiliation, worksFor,
-# and a comprehensive sameAs network linking the wider Belisle ecosystem.
+# JSON-LD on the homepage exposes Person, ProfilePage, WebSite, FAQPage, and
+# an Organization/ProfessionalService schema for Belisle Advisory LLC
+# (@id .../#belisleadvisory, founded by the Person). The Person schema
+# includes hasCredential, affiliation, worksFor, and a comprehensive sameAs
+# network linking the wider Belisle ecosystem.
 
 # Related properties
+# - https://belisleadvisory.com (Lisa's practice; redirects to the consulting page)
 # - https://bountifulpath.com (Substack newsletter and companion site)
 # - https://radiomaine.com (weekly podcast)
 # - https://ahealthyconversation.com (WGAN co-hosted radio show)
