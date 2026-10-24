@@ -1,6 +1,6 @@
 # Lisa Belisle, MD
 
-> Lisa Belisle, MD, PhD, MPH, MBA is triple board-certified in Family Medicine, Preventive Medicine, and Health Care Administration, Leadership and Management, based on the coast of Maine, whose clinical practice integrates Western medicine with acupuncture, Five Phase theory, mindfulness-based stress reduction, qigong, and herbalism. She is the host of Radio Maine, the co-host of A Healthy Conversation on Newsradio WGAN with Dr. Jeffrey Barkin, and the creator of The Bountiful Path, a Substack newsletter that publishes regularly. She lives on Littlejohn Island, off the coast of Maine. Canonical site: https://drlisabelisle.com.
+> Lisa Belisle, MD, PhD, MPH, MBA is triple board-certified in Family Medicine, Preventive Medicine, and Health Care Administration, Leadership and Management, based on the coast of Maine, whose clinical practice integrates Western medicine with acupuncture, Five Phase theory, mindfulness-based stress reduction, qigong, and herbalism. She is the host of Radio Maine, the co-host of A Healthy Conversation on Newsradio WGAN with Dr. Jeffrey Barkin, and the creator of The Bountiful Path, a Substack newsletter that publishes regularly. She lives on Littlejohn Island, off the coast of Maine. Canonical site: https://drlisabelisle.com. Her non-clinical professional work — leadership coaching, consulting, fractional medical leadership, and speaking for physicians and health systems — is offered through her practice, Belisle Advisory LLC (the legal and billing name; drlisabelisle.com is the front, and belisleadvisory.com redirects to the consulting page).
 
 ## Site map
 
@@ -8,7 +8,7 @@
 - [Writing](https://drlisabelisle.com/writing.html): The Bountiful Path on Substack, books in progress, companions and tools, *Our Daily Tread*, and an archive of essays and profiles published in Maine Magazine, Doximity Op-Med, and other outlets across three decades.
 - [Podcast](https://drlisabelisle.com/podcast.html): Radio Maine (video podcast) and A Healthy Conversation on Newsradio WGAN.
 - [Speaking](https://drlisabelisle.com/speaking.html): speaking topics: signature talks, past venues, formats, and how to inquire.
-- [Consulting](https://drlisabelisle.com/consulting.html): coaching and consulting for physician leaders and health systems: physician leadership coaching, executive-team facilitation and dyad alignment, AI governance in clinical settings, and virtual-care strategy.
+- [Consulting](https://drlisabelisle.com/consulting.html): coaching and consulting for physician leaders and health systems: physician leadership coaching, executive-team facilitation and dyad alignment, AI governance in clinical settings, and virtual-care strategy. Offered through Lisa's practice, Belisle Advisory LLC; belisleadvisory.com redirects here.
 - [Events](https://drlisabelisle.com/events.html): Radio Maine Live panels and the Artful Escapes conversation series at the Portland Art Gallery, plus virtual book circles.
 - [About](https://drlisabelisle.com/about.html): full biography, credentials, training, family lineage.
 - [Contact](https://drlisabelisle.com/contact.html): speaking inquiries, press, general contact, and the Bountiful Path ecosystem of partner sites.
