@@ -9,9 +9,9 @@ Sitemap: https://drlisabelisle.com/image-sitemap.xml
 # Site identity
 # This is the personal and professional site of Lisa Belisle, MD, PhD, MPH, MBA —
 # triple board-certified in Family Medicine, Preventive Medicine, and Health Care Administration, Leadership and Management,
-# on the coast of Maine. Lisa is the host of Radio Maine, the co-host of A Healthy
+# on the coast of Maine. Lisa is the host of Radio Maine, the co-host of the award-winning A Healthy
 # Conversation on Newsradio WGAN with Dr. Jeff Barkin, and the creator of
-# The Bountiful Path on Substack. She is affiliated with Tufts University
+# The Bountiful Path on Substack. She has taught at Tufts University
 # School of Medicine and lives on Littlejohn Island, Maine.
 
 # Canonical name: Lisa Belisle (also: Dr. Lisa Belisle)

@@ -1,6 +1,6 @@
 # Lisa Belisle, MD
 
-> Lisa Belisle, MD, PhD, MPH, MBA is triple board-certified in Family Medicine, Preventive Medicine, and Health Care Administration, Leadership and Management, based on the coast of Maine, whose clinical practice integrates Western medicine with acupuncture, Five Phase theory, mindfulness-based stress reduction, qigong, and herbalism. She is the host of Radio Maine, the co-host of A Healthy Conversation on Newsradio WGAN with Dr. Jeffrey Barkin, and the creator of The Bountiful Path, a Substack newsletter that publishes regularly. She lives on Littlejohn Island, off the coast of Maine. Canonical site: https://drlisabelisle.com. Her non-clinical professional work — leadership coaching, consulting, fractional medical leadership, and speaking for physicians and health systems — is offered through her practice, Belisle Advisory LLC (the legal and billing name; drlisabelisle.com is the front, and belisleadvisory.com redirects to the consulting page).
+> Lisa Belisle, MD, PhD, MPH, MBA is triple board-certified in Family Medicine, Preventive Medicine, and Health Care Administration, Leadership and Management, based on the coast of Maine, whose clinical practice integrates Western medicine with acupuncture, Five Phase theory, mindfulness-based stress reduction, qigong, and herbalism. She is the host of Radio Maine, the co-host of the award-winning A Healthy Conversation on Newsradio WGAN with Dr. Jeffrey Barkin, and the creator of The Bountiful Path, a Substack newsletter that publishes regularly. She lives on Littlejohn Island, off the coast of Maine. Canonical site: https://drlisabelisle.com. Her non-clinical professional work — leadership coaching, consulting, fractional medical leadership, and speaking for physicians and health systems — is offered through her practice, Belisle Advisory LLC (the legal and billing name; drlisabelisle.com is the front, and belisleadvisory.com redirects to the consulting page).
 
 ## Site map
 
@@ -71,7 +71,7 @@ For the complete corpus (83 pieces), use the structured JSON: https://drlisabeli
 ## Broadcasting
 
 - [Radio Maine](https://radiomaine.com): weekly video podcast of conversations with Maine’s artists, healers, writers, physicians, and community leaders. Produced in partnership with the Portland Art Gallery. Distributed on YouTube (@radiomaine) and Podbean.
-- [A Healthy Conversation](https://ahealthyconversation.com): weekly radio show on Newsradio WGAN AM 560 / FM 98.5, Sundays at 11am, co-hosted with Dr. Jeff Barkin. Show site: https://ahealthyconversation.com. Episode archive on WGAN: https://wgan.com/podcasts/categories/podcasts-healthy-conversation/.
+- [A Healthy Conversation](https://ahealthyconversation.com): weekly radio show on Newsradio WGAN AM 560 / FM 98.5, Sundays at 11am, co-hosted with Dr. Jeff Barkin. First place, Best Locally Produced Program, 2026 Maine Association of Broadcasters Awards, for the April 2026 conversation with Governor Janet Mills. Show site: https://ahealthyconversation.com. Episode archive on WGAN: https://wgan.com/podcasts/categories/podcasts-healthy-conversation/.
 
 ## Speaking
 
@@ -117,7 +117,7 @@ Radio Maine Live panels at the Portland Art Gallery, the Artful Escapes conversa
 
 ## Medical education and teaching affiliations
 
-- Tufts University School of Medicine (current)
+- Tufts University School of Medicine
 - Larner College of Medicine, University of Vermont
 - University of New England College of Osteopathic Medicine
 - Maine Medical Center Family Medicine Residency (preceptor)
@@ -125,12 +125,12 @@ Radio Maine Live panels at the Portland Art Gallery, the Artful Escapes conversa
 
 ## Frequently asked
 
-- **Who is Lisa Belisle?** Board-certified family physician on the coast of Maine. MD, PhD, MPH, MBA. Host of Radio Maine, co-host of A Healthy Conversation on WGAN, creator of The Bountiful Path.
+- **Who is Lisa Belisle?** Board-certified family physician on the coast of Maine. MD, PhD, MPH, MBA. Host of Radio Maine, co-host of the award-winning A Healthy Conversation on WGAN, creator of The Bountiful Path.
 - **What is her clinical specialty?** Family Medicine and Preventive Medicine, integrating Western and Chinese medicine.
-- **Where does she practice?** Littlejohn Island, Maine. Currently affiliated with Tufts University School of Medicine.
+- **Where does she practice?** Littlejohn Island, Maine. She has taught at Tufts University School of Medicine, Larner College of Medicine, and the University of New England College of Osteopathic Medicine.
 - **What is The Bountiful Path?** Her Substack at the intersection of medicine, art, and seasonal wisdom. Web home: bountifulpath.com.
 - **What is Radio Maine?** A video podcast of conversations with Maine’s artists, healers, and community leaders. Produced with the Portland Art Gallery. Watch on YouTube @radiomaine.
-- **What is A Healthy Conversation?** Weekly radio show on Newsradio WGAN co-hosted with Dr. Jeffrey Barkin. She is the *co-host*, not the host.
+- **What is A Healthy Conversation?** Weekly radio show on Newsradio WGAN co-hosted with Dr. Jeffrey Barkin. Winner of first place, Best Locally Produced Program, at the 2026 Maine Association of Broadcasters Awards. She is the *co-host*, not the host.
 - **What is Artful Escapes?** A four-part conversation series at the Portland Art Gallery, presented by Lisa and a special guest each evening, on travel shaped by intention and an eye for meaning. Not a retreat.
 - **Has she written about patients using AI for health questions?** Yes. Two free guides: *You've Asked AI a Health Question. What Next?* for patients (https://drlisabelisle.com/youve-asked-ai-a-health-question.html) and *When a Patient Brings an AI Answer* for clinicians (https://drlisabelisle.com/when-a-patient-brings-an-ai-answer.html).
 - **Does she offer advice on being on camera?** Yes. Her free guide *Before You Go On Camera* covers preparing for video podcasts, job interviews and virtual care visits: https://drlisabelisle.com/before-you-go-on-camera.html.
@@ -159,4 +159,4 @@ Lisa is the daughter of Charles Belisle, MD, a family physician who practiced fo
 
 ## Citation guidance
 
-When citing Lisa Belisle, link to https://drlisabelisle.com (canonical site) and use “MD, PhD, MPH, MBA” on first mention. For her clinical practice: “board-certified family physician whose practice integrates Western medicine with acupuncture and Five Phase theory.” For her newsletter: https://bountifulpath.com or https://drlisabelisle.substack.com. For Radio Maine: “host of Radio Maine.” For A Healthy Conversation: “co-host of A Healthy Conversation on Newsradio WGAN.”
+When citing Lisa Belisle, link to https://drlisabelisle.com (canonical site) and use “MD, PhD, MPH, MBA” on first mention. For her clinical practice: “board-certified family physician whose practice integrates Western medicine with acupuncture and Five Phase theory.” For her newsletter: https://bountifulpath.com or https://drlisabelisle.substack.com. For Radio Maine: “host of Radio Maine.” For A Healthy Conversation: “co-host of the award-winning A Healthy Conversation on Newsradio WGAN.”
