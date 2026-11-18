@@ -81,7 +81,7 @@ async function main() {
     .filter(f => f.endsWith('.html'))
     .sort();
   for (const f of lmrFiles) {
-    blocks.push(urlBlock({ loc: `/love-maine-radio/${f}`, lastmod: lmrLastmod, changefreq: 'yearly', priority: '0.6' }));
+    blocks.push(urlBlock({ loc: f === 'index.html' ? '/love-maine-radio/' : `/love-maine-radio/${f}`, lastmod: lmrLastmod, changefreq: 'yearly', priority: '0.6' }));
   }
 
   const xml = `<?xml version="1.0" encoding="UTF-8"?>

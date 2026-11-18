@@ -275,6 +275,19 @@ ${body}
 </div>`;
 }
 
+// Doximity prefixes every Op-Med piece with the same boilerplate line, and
+// some Airtable blurbs carry nothing else. Strip it so each page gets its own
+// description, falling back to the article's opening sentences.
+const OPMED_BOILERPLATE = /^Op-Med is a collection of original articles contributed by Doximity members\.\s*/i;
+function cleanBlurb(item) {
+  const blurb = (item.blurb || '').replace(OPMED_BOILERPLATE, '').trim();
+  if (blurb) return blurb;
+  if (!item.blurb) return '';
+  const body = (item.fullText || '').replace(OPMED_BOILERPLATE, '').trim();
+  const sentences = body.match(/[^.!?]+[.!?]+/g) || [];
+  return sentences.slice(0, 2).join(' ').replace(/\s+/g, ' ').trim();
+}
+
 function renderArticleSchema(item, slug) {
   const url = `https://drlisabelisle.com/writing/${slug}.html`;
   const schema = {
@@ -287,7 +300,7 @@ function renderArticleSchema(item, slug) {
     publisher: { '@id': 'https://drlisabelisle.com/#person' },
     mainEntityOfPage: url,
     isBasedOn: item.url || undefined,
-    description: item.blurb || undefined,
+    description: cleanBlurb(item) || undefined,
     inLanguage: 'en-US'
   };
   return `<script type="application/ld+json">\n${JSON.stringify(schema, null, 2)}\n</script>`;
@@ -297,7 +310,7 @@ function buildSubtitle(item) {
   // The Airtable `blurb` field tends to mirror the opening of the article itself,
   // which would duplicate the drop-cap paragraph. Suppress the subtitle when the
   // blurb shares its opening words with the article body.
-  const blurb = (item.blurb || '').trim();
+  const blurb = cleanBlurb(item);
   if (!blurb) return '';
   const fullText = (item.fullText || '').trim();
   const blurbHead = blurb.slice(0, Math.min(40, blurb.length)).toLowerCase();
@@ -379,7 +392,7 @@ ${items}
 function pageHTML(item, slug, allItems) {
   const dateStr = fmtDate(item.date);
   const outlet = item.outlet || '';
-  const description = (item.blurb || `${item.title} — originally published at ${outlet}, ${dateStr}.`).slice(0, 240);
+  const description = (cleanBlurb(item) || `${item.title} — originally published at ${outlet}, ${dateStr}.`).slice(0, 240);
   const ogImage = 'https://drlisabelisle.com/coast-sunset.jpg';
   const minutes = readingMinutes(item.fullText || '');
 

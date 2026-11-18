@@ -101,6 +101,15 @@ ${items}
 <title>Love Maine Radio: Selected Episodes</title>
 <meta name="description" content="Selected episodes from Love Maine Radio (2011–2018), hosted by Dr. Lisa Belisle. Originally The Dr. Lisa Radio Hour &amp; Podcast. The current show is Radio Maine, which began in 2021.">
 <link rel="canonical" href="https://drlisabelisle.com/love-maine-radio/">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta property="og:site_name" content="Lisa Belisle, MD">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://drlisabelisle.com/love-maine-radio/">
+<meta property="og:title" content="Love Maine Radio: Selected Episodes">
+<meta property="og:description" content="Selected episodes from Love Maine Radio (2011–2018), hosted by Dr. Lisa Belisle.">
+<meta property="og:image" content="https://drlisabelisle.com/lisa-mic.jpg">
+<meta name="twitter:card" content="summary_large_image">
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "CollectionPage", "@id": "https://drlisabelisle.com/love-maine-radio/#webpage", "url": "https://drlisabelisle.com/love-maine-radio/", "name": "Love Maine Radio: Selected Episodes", "description": "Selected episodes from Love Maine Radio (2011–2018), hosted by Dr. Lisa Belisle. The current show is Radio Maine, which began in 2021.", "inLanguage": "en-US", "isPartOf": {"@id": "https://drlisabelisle.com/#website"}, "author": {"@id": "https://drlisabelisle.com/#person"}, "about": {"@type": "RadioSeries", "name": "Love Maine Radio", "alternateName": "The Dr. Lisa Radio Hour & Podcast", "startDate": "2011", "endDate": "2018", "actor": {"@id": "https://drlisabelisle.com/#person"}}}</script>
 <link rel="stylesheet" href="/love-maine-radio/lmr.css">
 </head>
 <body>
