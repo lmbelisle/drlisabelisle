@@ -38,6 +38,16 @@ Sitemap: https://drlisabelisle.com/image-sitemap.xml
 # (Radio Maine, The Bountiful Path, A Healthy Conversation) is separate and
 # is not part of Belisle Advisory.
 
+# Physician consultations for individuals
+# Under the name "Making Sense of Your Health Information", Lisa offers two
+# physician consultations for individuals: the Results Review ($750) and the
+# Whole-Record Review ($2,250). They are provided in her own name as a
+# physician and are not part of Belisle Advisory LLC. She reviews what a
+# person sends, talks with them by video and sends a letter, questions for
+# their own clinician and a one-page summary. She gives no diagnosis and
+# recommends no course of action. For now, for adults located in Maine.
+# Page: https://drlisabelisle.com/records-review.html
+
 # Structured data
 # JSON-LD on the homepage exposes Person, ProfilePage, WebSite, FAQPage, and
 # an Organization/ProfessionalService schema for Belisle Advisory LLC
