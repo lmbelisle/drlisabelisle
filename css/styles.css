@@ -20,6 +20,26 @@ nav { position: sticky; top: 0; background: var(--bg); border-bottom: 0.5px soli
 .nav-links a.active { border-bottom: 1px solid var(--gold); padding-bottom: 2px; }
 .nav-toggle { display: none; background: none; border: none; cursor: pointer; padding: 4px; flex-direction: column; gap: 5px; }
 .nav-toggle span { display: block; width: 22px; height: 1px; background: var(--tx); }
+.nav-name, .nav-links a, .nav-group-label { white-space: nowrap; }
+/* Grouped menu: a label with a short list under it. Opens on hover or keyboard focus (CSS) and on click or tap (js/main.js). */
+.nav-group { position: relative; padding: 0.7rem 0; margin: -0.7rem 0; }
+.nav-group-label { font-family: inherit; font-size: 11px; font-weight: 400; letter-spacing: 0.1em; text-transform: uppercase; color: var(--tx2); background: none; border: none; padding: 0; cursor: pointer; }
+.nav-group-label::after { content: ''; display: inline-block; width: 4px; height: 4px; margin-left: 6px; border-right: 1px solid currentColor; border-bottom: 1px solid currentColor; transform: translateY(-3px) rotate(45deg); }
+.nav-group-label:hover, .nav-group-label.active, .nav-group:hover .nav-group-label, .nav-group.open .nav-group-label { color: var(--tx); }
+.nav-group-label.active { border-bottom: 1px solid var(--gold); padding-bottom: 2px; }
+.nav-sub { display: none; position: absolute; top: 100%; left: -1.1rem; min-width: 15rem; list-style: none; background: var(--bg); border: 0.5px solid var(--bd); padding: 0.9rem 1.1rem; z-index: 200; }
+.nav-sub li + li { margin-top: 0.8rem; }
+.nav-group:hover > .nav-sub, .nav-group:focus-within > .nav-sub, .nav-group.open > .nav-sub { display: block; }
+/* Below 860px the five items and the name no longer fit on one line: use the menu button, with each group's list shown in place. */
+@media (max-width: 860px) {
+  .nav-links { display: none; }
+  .nav-links.open { display: flex; flex-direction: column; position: absolute; top: 100%; left: 0; right: 0; background: var(--bg); border-bottom: 0.5px solid var(--bd); padding: 1rem var(--pad); gap: 1rem; z-index: 200; }
+  .nav-toggle { display: flex; }
+  .nav-group { padding: 0; margin: 0; }
+  .nav-group-label { cursor: default; pointer-events: none; color: var(--tx3); }
+  .nav-group-label::after { display: none; }
+  .nav-sub { display: block; position: static; border: none; min-width: 0; padding: 0.8rem 0 0 1rem; }
+}
 
 /* === Hero (Home only) === */
 .hero { padding: 3rem 0 0; border-bottom: 0.5px solid var(--bd); }
@@ -70,13 +90,18 @@ section.no-rule { border-bottom: none; padding-bottom: 1rem; }
 .section-label { font-size: 10px; letter-spacing: 0.2em; text-transform: uppercase; color: var(--teal); margin-bottom: 1.25rem; font-weight: 400; }
 
 /* === Front-door cards (Home page) === */
-.doors { display: grid; grid-template-columns: repeat(5, 1fr); gap: 1px; background: var(--bd); border: 0.5px solid var(--bd); margin-top: 1rem; }
+.doors { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1px; background: var(--bd); border: 0.5px solid var(--bd); margin-top: 1rem; }
 .door { display: block; background: var(--bg); padding: 2rem 1.75rem; text-decoration: none; transition: background 0.2s; min-height: 220px; position: relative; }
 .door:hover { background: var(--bg2); }
 .door-eyebrow { font-size: 10px; letter-spacing: 0.22em; text-transform: uppercase; color: var(--teal); margin-bottom: 0.85rem; }
 .door-title { font-family: var(--serif); font-style: italic; font-size: 32px; font-weight: 400; color: var(--tx); line-height: 1.1; margin-bottom: 0.75rem; }
 .door-desc { font-size: 15px; color: var(--tx2); line-height: 1.6; }
 .door-cta { font-size: 11px; letter-spacing: 0.06em; color: var(--teal); margin-top: 1rem; display: inline-block; }
+.door-links { list-style: none; margin-top: 1.2rem; }
+.door-links li + li { margin-top: 0.65rem; }
+.door-links a { font-size: 13px; letter-spacing: 0.03em; color: var(--teal); text-decoration: none; }
+.door-links a:hover { text-decoration: underline; }
+.door-note { font-size: 13px; color: var(--tx3); line-height: 1.7; margin-top: 1.2rem; }
 
 /* === Feature pieces (used on Read, Listen) === */
 .feature-piece { display: flex; flex-direction: column; }
@@ -393,7 +418,7 @@ html[data-reading-progress] body::before {
 
 /* === Responsive === */
 @media (max-width: 880px) {
-  .doors { grid-template-columns: repeat(2, 1fr); }
+  .doors { grid-template-columns: 1fr; }
   .wide-feature { grid-template-columns: 1fr; gap: 2rem; }
   .wide-feature--text-first { grid-template-columns: 1fr; }
   .two-col { grid-template-columns: 1fr; gap: 2.5rem; }
@@ -427,6 +452,10 @@ html[data-reading-progress] body::before {
   .nav-links { display: none; }
   .nav-links.open { display: flex; flex-direction: column; position: absolute; top: 100%; left: 0; right: 0; background: var(--bg); border-bottom: 0.5px solid var(--bd); padding: 1rem var(--pad); gap: 1rem; z-index: 200; }
   .nav-toggle { display: flex; }
+  .nav-group { padding: 0; margin: 0; }
+  .nav-group-label { cursor: default; pointer-events: none; color: var(--tx3); }
+  .nav-group-label::after { display: none; }
+  .nav-sub { display: block; position: static; border: none; min-width: 0; padding: 0.8rem 0 0 1rem; }
   .footer-inner { flex-direction: column; align-items: flex-start; }
   .footer-links { gap: 1rem; }
 }
