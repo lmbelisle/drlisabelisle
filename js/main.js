@@ -96,4 +96,23 @@
     }, { passive: true });
     update();
   }
+  // Grouped menu: open a group on click or tap; hover and keyboard focus are handled in CSS.
+  function closeMenuGroups(except) {
+    document.querySelectorAll('.nav-group.open').forEach((g) => {
+      if (g === except) return;
+      g.classList.remove('open');
+      const b = g.querySelector('.nav-group-label');
+      if (b) b.setAttribute('aria-expanded', 'false');
+    });
+  }
+  document.addEventListener('click', (e) => {
+    const label = e.target.closest ? e.target.closest('.nav-group-label') : null;
+    if (!label) { closeMenuGroups(null); return; }
+    const group = label.parentElement;
+    const willOpen = !group.classList.contains('open');
+    closeMenuGroups(group);
+    group.classList.toggle('open', willOpen);
+    label.setAttribute('aria-expanded', willOpen ? 'true' : 'false');
+  });
+  document.addEventListener('keydown', (e) => { if (e.key === 'Escape') closeMenuGroups(null); });
 })();

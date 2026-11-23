@@ -172,13 +172,25 @@
   <div class="nav-inner">
     <a href="/" class="nav-name">Lisa Belisle</a>
     <ul class="nav-links" id="nav-links">
-      <li><a href="writing.html">Writing</a></li>
-      <li><a href="podcast.html">Podcast</a></li>
-      <li><a href="speaking.html">Speaking</a></li>
-      <li><a href="consulting.html">Consulting</a></li>
-      <li><a href="coaching.html">Coaching</a></li>
+      <li class="nav-group">
+        <button type="button" class="nav-group-label" aria-expanded="false">Leadership</button>
+        <ul class="nav-sub">
+          <li><a href="consulting.html">Consulting</a></li>
+          <li><a href="coaching.html">Coaching</a></li>
+          <li><a href="speaking.html">Speaking</a></li>
+          <li><a href="leader-identity.html">Leader Identity self-assessment</a></li>
+          <li><a href="taking-stock.html">Taking Stock self-assessment</a></li>
+        </ul>
+      </li>
       <li><a href="records-review.html">Health Reviews</a></li>
-      <li><a href="events.html">Events</a></li>
+      <li class="nav-group">
+        <button type="button" class="nav-group-label" aria-expanded="false">Writing &amp; Conversations</button>
+        <ul class="nav-sub">
+          <li><a href="writing.html">Writing</a></li>
+          <li><a href="podcast.html">Podcast</a></li>
+          <li><a href="events.html">Events</a></li>
+        </ul>
+      </li>
       <li><a href="about.html">About</a></li>
       <li><a href="contact.html">Contact</a></li>
     </ul>
@@ -222,21 +234,6 @@
   </div>
 </div>
 
-<div class="wrap">
-<section class="fade-in">
-  <div class="section-label">For physicians at a turning point</div>
-  <p style="font-size:16px; color:var(--tx1); line-height:1.9; max-width:680px; margin-bottom:1.4rem;">Two short self-assessments, one for each path. Both take about five minutes: you get an honest read, the research behind it and one next step.</p>
-  <p style="font-size:16px; color:var(--tx1); line-height:1.9; max-width:680px;"><strong style="color:var(--tx);">Stepping into leadership.</strong> Take the Leader Identity assessment for an honest read on the kind of leader you are becoming.</p>
-  <div class="speaking-actions" style="margin-top:0.6rem;">
-    <a href="leader-identity.html" class="btn-lg">Leader Identity &rarr;</a>
-  </div>
-  <p style="font-size:16px; color:var(--tx1); line-height:1.9; max-width:680px; margin-top:1.5rem;"><strong style="color:var(--tx);">Taking stock, or building something new.</strong> Take the Taking Stock assessment for a read on where your career is and what kind of move fits.</p>
-  <div class="speaking-actions" style="margin-top:0.6rem;">
-    <a href="taking-stock.html" class="btn-lg">Taking Stock &rarr;</a>
-  </div>
-  <p style="font-size:14px; color:var(--tx3); line-height:1.8; max-width:680px; margin-top:1.75rem;">The coaching and advising behind this is Belisle Advisory, Lisa&rsquo;s practice for physicians and health system leaders.</p>
-</section>
-</div>
 
 <div class="pull-quote">
   <blockquote data-copy-key="home.pullquote">&ldquo;How we live matters as much as how long we live.&rdquo;</blockquote>
@@ -261,47 +258,40 @@
 
   <div class="doors stagger">
 
-    <a class="door" href="writing.html">
-      <div class="door-eyebrow">Read</div>
-      <div class="door-title">The writing</div>
-      <div class="door-desc" data-copy-key="home.doors.read.desc">The Bountiful Path on Substack, books in progress, and tools that turn the writing into practice.</div>
-      <span class="door-cta">Open Read &rarr;</span>
-    </a>
+    <div class="door">
+      <div class="door-eyebrow">For physicians and health systems</div>
+      <div class="door-title">Leadership</div>
+      <div class="door-desc">Leadership coaching, consulting, and fractional medical leadership for physicians and health systems. Two short self-assessments, one for each path.</div>
+      <ul class="door-links">
+        <li><a href="consulting.html">Consulting &rarr;</a></li>
+        <li><a href="coaching.html">Coaching &rarr;</a></li>
+        <li><a href="speaking.html">Speaking &rarr;</a></li>
+        <li><a href="leader-identity.html">Leader Identity self-assessment &rarr;</a></li>
+        <li><a href="taking-stock.html">Taking Stock self-assessment &rarr;</a></li>
+      </ul>
+      <p class="door-note">The coaching and advising behind this is Belisle Advisory, Lisa&rsquo;s practice for physicians and health system leaders.</p>
+    </div>
 
-    <a class="door" href="podcast.html">
-      <div class="door-eyebrow">Listen</div>
-      <div class="door-title">The conversations</div>
-      <div class="door-desc" data-copy-key="home.doors.listen.desc">Radio Maine: a video podcast of conversations with Maine&rsquo;s artists, healers, and community leaders.</div>
-      <span class="door-cta">Open Listen &rarr;</span>
-    </a>
-
-    <a class="door" href="speaking.html">
-      <div class="door-eyebrow">Invite</div>
-      <div class="door-title">Speaking</div>
-      <div class="door-desc" data-copy-key="home.doors.invite.desc">Featured talks, fireside conversations, workshops, and panel moderation. Topics, past venues, and how to reach Lisa.</div>
-      <span class="door-cta">Open Invite &rarr;</span>
-    </a>
-
-    <a class="door" href="consulting.html">
-      <div class="door-eyebrow">Engage</div>
-      <div class="door-title">Consulting &amp; coaching</div>
-      <div class="door-desc">Leadership coaching, consulting, and fractional medical leadership for physicians and health systems.</div>
-      <span class="door-cta">Open Consulting &rarr;</span>
-    </a>
-
-    <a class="door" href="records-review.html">
-      <div class="door-eyebrow">Review</div>
+    <div class="door">
+      <div class="door-eyebrow">For patients and families</div>
       <div class="door-title">Your health information</div>
       <div class="door-desc">Physician consultations with Dr. Lisa Belisle: the Results Review and the Whole-Record Review.</div>
-      <span class="door-cta">Open Review &rarr;</span>
-    </a>
+      <ul class="door-links">
+        <li><a href="records-review.html">Health Reviews &rarr;</a></li>
+        <li><a href="youve-asked-ai-a-health-question.html">Guide: You&rsquo;ve asked AI a health question &rarr;</a></li>
+      </ul>
+    </div>
 
-    <a class="door" href="events.html">
-      <div class="door-eyebrow">Join</div>
-      <div class="door-title">In the room</div>
-      <div class="door-desc" data-copy-key="home.doors.join.desc">Live panels, gallery evenings, and virtual book circles. Where to be in the room with Lisa.</div>
-      <span class="door-cta">Open Join &rarr;</span>
-    </a>
+    <div class="door">
+      <div class="door-eyebrow">For readers and listeners</div>
+      <div class="door-title">Writing &amp; conversations</div>
+      <div class="door-desc">The Bountiful Path on Substack, the Radio Maine video podcast and live events.</div>
+      <ul class="door-links">
+        <li><a href="writing.html">Writing &rarr;</a></li>
+        <li><a href="podcast.html">Podcast &rarr;</a></li>
+        <li><a href="events.html">Events &rarr;</a></li>
+      </ul>
+    </div>
 
   </div>
 </section>
